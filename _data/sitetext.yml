@@ -11,10 +11,10 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Democratic Socialists of America
-    text: Flint Hills
-    button: Become a Member
-    buttonlink: "#contact"
+    #title: Dialectical Praxis
+    text: Dialectical Praxis
+    #button: Become a Member
+    #buttonlink: "#contact"
 
   about:
     title: "About"
@@ -24,26 +24,11 @@ en: &DEFAULT_EN
 
 
   team:
-    title: "Steering Committee"
-    text: "The Chapter is led by a group of local volunteers living in and around Manhattan, KS."
+    #title: "Steering Committee"
+    #text: "The Chapter is led by a group of local volunteers living in and around Manhattan, KS."
     #subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
     section: team
     people:
-      - name: "Noah (he/they)"
-        role: "Co-chair"
-        image: assets/img/team/placeholder.png
-      - name: "Peter (he/him)"
-        role: "Co-chair"
-        image: assets/img/team/placeholder.png
-      - name: "Steve (he/him)"
-        role: "Treasurer"
-        image: assets/img/team/placeholder.png
-      - name: "Beccah (they/them)"
-        role: "Co-secretary"
-        image: assets/img/team/placeholder.png
-      - name: "Al (they/them)"
-        role: "Co-secretary"
-        image: assets/img/team/placeholder.png
       - name: "Derron (they/he)"
         role: "Membership Coordinator"
         image: assets/img/team/derron.png
@@ -68,8 +53,6 @@ en: &DEFAULT_EN
   footer:
     legal: "Privacy Policy"
     social:
-      - url: https://www.x.com/flinthillsdsa
-        icon: "fab fa-x"
       - url: https://facebook.com/flinthillsdsa
         icon: "fab fa-facebook-f"
       - url: https://instagram.com/flinthillsdsa
