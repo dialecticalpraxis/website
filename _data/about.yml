@@ -1,0 +1,14 @@
+# _data/about.yml
+about_items:
+  - id: bylaws
+    title: "By-Laws"
+    icon: "fa-gavel"
+    modal_target: "#modal-bylaws"
+  - id: events
+    title: "Upcoming Events"
+    icon: "fa-calendar-alt"
+    modal_target: "#modal-events"
+  - id: organizing
+    title: "Organizing"
+    icon: "fa-users-cog"
+    modal_target: "#modal-organizing"
