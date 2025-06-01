@@ -29,8 +29,8 @@ en: &DEFAULT_EN
     #subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
     section: team
     people:
-      - name: "Derron (they/he)"
-        role: "Membership Coordinator"
+      - name: "PhD Student | Educator | Facilitator | Writer  Researcher | Linguist | Vegan"
+        role: "they/he"
         image: assets/img/derron.png
         bio:  |
           **Derron** is a vegan Marxist-Leninist socialist from Ohio. They are currently pursuing a PhD in adult learning and leadership. 
