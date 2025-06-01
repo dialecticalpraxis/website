@@ -31,7 +31,7 @@ en: &DEFAULT_EN
     people:
       - name: "Derron (they/he)"
         role: "Membership Coordinator"
-        image: assets/img/team/derron.png
+        image: assets/img/derron.png
         bio:  |
           **Derron** is a vegan Marxist-Leninist socialist from Ohio. They are currently pursuing a PhD in adult learning and leadership. 
           In their free time, you can find Derron at their plot at the Manhattan Community Gardens, volunteering, crafting, learning languages, 
