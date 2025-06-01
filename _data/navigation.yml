@@ -12,7 +12,7 @@
 en: &DEFAULT_EN
   nav:
     - title: "About"
-      section: team
+      section: about
 
 
 en-001: #English (World)
