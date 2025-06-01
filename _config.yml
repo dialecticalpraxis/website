@@ -17,10 +17,7 @@ logo:
 
 locale: "en-US"
 
-analytics:
-  google:    # add tracking ID if you use GA
-  
-future: true
+
 # ----------------------------------------
 # Collections
 # ----------------------------------------
