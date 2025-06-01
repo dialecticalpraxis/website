@@ -29,7 +29,7 @@ en: &DEFAULT_EN
       - url: https://www.tiktok.com/@dialecticalpraxis
         icon: "fab fa-tiktok"
       - url: https://scholar.google.com/citations?hl=en&user=K4fEPEIAAAAJ
-        icon: "fab fa-google-sholar"
+        icon: "fab fa-google-scholar"
       - url: https://github.com/dialecticalpraxis
         icon: "fab fa-github"
       - url: https://www.linkedin.com/in/derronborders
