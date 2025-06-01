@@ -1,9 +1,11 @@
-{% if site.locale and site.locale != "" and site.locale != nil %}
-{{ site.data.sitetext[site.locale].about.title | default: "About" }}
-{{ site.data.sitetext[site.locale].about.text | default: "" }}
-{{ site.data.sitetext[site.locale].about.body | markdownify }}
-{% else %}
-{{ site.data.sitetext.about.title | default: "About" }}
-{{ site.data.sitetext.about.text | default: "" }}
-{{ site.data.sitetext.about.body | markdownify }}
-{% endif %}
+  about:
+    title: "About"
+    #text: ""
+    body: Welcome to Dialectical Praxis, the professional and personal website for Derron Borders, PhD student in the Adult Learning and Leadership program at Kansas State University. 
+    
+    Dialectical praxis is the transformative process by which individuals and groups come to understand and change the world through reflective, critical, and embodied action. It is rooted in Marxist dialectics, enriched by Freirean conscientização, deepened through adult learning, and oriented toward liberation.
+
+Dialectical (adj.) refers to a way of thinking, reasoning, or engaging with the world that emphasizes contradiction, change, and the dynamic interplay of opposing forces. It is rooted in dialectics, a philosophical method with a long history, but most prominently developed by German philosopher, Georg Wilhelm Friedrich Hegel Hegel.
+
+Praxis (noun) refers to the process of putting theory into action, especially in a deliberate, reflective, and socially meaningful way. It’s not just action, and it’s not just thought — praxis is the fusion of both.
+    section: about
