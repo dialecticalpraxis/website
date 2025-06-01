@@ -1,0 +1,52 @@
+// Styling for the footer
+.footer {
+  background-color: #212529 !important;
+  color: #ffffff;
+  padding: 25px 0;
+  text-align: center;
+  span.copyright {
+    font-size: 90%;
+    color: #ffffff; 
+    line-height: 40px;
+    text-transform: none;
+    @include heading-font;
+  }
+  ul.quicklinks {
+    font-size: 90%;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+    @include heading-font;
+  }
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+
+  li {
+    a {
+      font-size: 20px;
+      width: 50px;
+      height: 50px;
+      display: block;
+      color: white;
+      border-radius: 100%;
+      background-color: $primary;
+      transition: all 0.3s;
+
+      /* --- NEW: flex-center the FontAwesome icon --- */
+      display: inline-flex;          /* replaces plain “block” */
+      align-items: center;           /* vertical center */
+      justify-content: center;       /* horizontal center */
+      line-height: 1;                /* stop baseline offset */
+      /* --------------------------------------------- */
+
+      &:hover, &:focus, &:active {
+        background-color: #ffffff;
+        color: #212529;
+        text-decoration: none !important;
+      }
+    }
+  }
+}
+

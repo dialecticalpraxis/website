@@ -1,0 +1,37 @@
+---
+# file: _layouts/resource.html
+---
+{% include head.html %}
+
+<body id="page-top" data-section="{{ page.section }}">
+
+  {% include nav.html %}
+
+  <!-- Page content -->
+  <section class="page-section bg-light" id="resources">
+    <div class="container">
+
+      <!-- Main document content, nicely centered & constrained -->
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <article class="markdown-body px-3">
+            {{ content }}
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  {% include footer.html %}
+
+  <!-- JavaScript bundle -->
+  <script src="{{ '/assets/js/jquery.min.js'           | relative_url }}"></script>
+  <script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/jquery.easing.min.js'    | relative_url }}"></script>
+  <script src="{{ '/assets/js/jqBootstrapValidation.js'| relative_url }}"></script>
+  <script src="{{ '/assets/js/contact_me.js'           | relative_url }}"></script>
+  <script src="{{ '/assets/js/modal-forms.js'          | relative_url }}"></script>
+  <script src="{{ '/assets/js/agency.min.js'           | relative_url }}"></script>
+</body>
+</html>
