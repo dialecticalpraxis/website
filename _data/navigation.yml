@@ -12,13 +12,8 @@
 en: &DEFAULT_EN
   nav:
     - title: "About"
-      section: about
-    - title: "Leadership"
       section: team
-    - title: "Resources"
-      section: resources
-    - title: "Contact"
-      section: contact
+
 
 en-001: #English (World)
   <<: *DEFAULT_EN
