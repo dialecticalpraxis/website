@@ -3,16 +3,16 @@
 # ----------------------------------------
 remote_theme: raviriley/agency-jekyll-theme
 
-url       : "https://www.fhdsa.org"
+url       : "https://www.dialecticalpraxis.com"
 baseurl   : ""                 # leave empty for root‐domain site
 
-title       : "Flint Hills DSA"
-email       : "chapter@fhdsa.org"
-description : "Official website for the Flint Hills Chapter of the Democratic Socialists of America"
+title       : "dialectical praxis"
+#email       : ""
+description : "Official website for Derron Borders."
 author      : "Derron Borders"
 
 logo:
-  path  : "/assets/img/clients/fhdsalogo.png"
+  path  : "/assets/img/dplogo.png"
   height: 60
 
 locale: "en-US"
@@ -27,32 +27,15 @@ future: true
 collections:
   portfolio:
     output: true
-  about:
-    output: true
-  resources:
-    output: true
-    permalink: /resources/:path/
 
-# ----------------------------------------
-# Default front‐matter for resources
-# ----------------------------------------
-defaults:
-  - scope:
-      path: ""               # every file in the resources collection
-      type: resources
-    values:
-      layout : resource
-      section: resources
+
+
 
 # ----------------------------------------
 # Markdown processor
 # ----------------------------------------
 markdown: kramdown
 
-# ----------------------------------------
-# Formspree (contact & modal forms)
-# ----------------------------------------
-formspree_form_path: "f/xyzwrkba"
 
 # ----------------------------------------
 # Plugins (GitHub Pages–allowed only)
