@@ -32,8 +32,7 @@ en: &DEFAULT_EN
         icon: "fab fa-google-scholar"
       - url: https://github.com/dialecticalpraxis
         icon: "fab fa-github"
-      - url: https://www.linkedin.com/in/derronborders
-        icon: "fab fa-linkedin"
+   
         
 
 en-001: #English (World)
