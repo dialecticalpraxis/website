@@ -48,7 +48,7 @@ en: &DEFAULT_EN
         desc: "Taught elementary and high school ESL in Campos and s'Alqueria Blanca, Mallorca, Spain."
         image: assets/img/timeline/5.png
         alt:
-       - title: "University of Utah"
+      - title: "University of Utah"
         year: "2010-2015"
         desc: "M.A. in Linguistics, Project Manager - Shohoni Language Project, Instructor - Department of Linguistics"
         image: assets/img/timeline/6.png
