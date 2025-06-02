@@ -18,7 +18,6 @@ en: &DEFAULT_EN
 
   timeline:
     title: "Academic and Professional Timeline"
-    #text: ""
     section: timeline
     # left is the default
     #start_align: "left"
