@@ -25,7 +25,7 @@ en: &DEFAULT_EN
     events:
       - title: "Rotary Youth Exchange Program"
         year: "2002-2003"
-        desc: "I spent a year in Chimay and Couvin, Beligum as a high school exchange student, living with three different host families."
+        desc: "I spent a year in Chimay and Couvin, Belgium as a high school exchange student, living with three different host families."
         image: assets/img/timeline/1.jpg
         alt:
       - title: "Columubs State Community College"
