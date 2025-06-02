@@ -6,7 +6,7 @@ caption: #what displays in the portfolio grid:
   
 #what displays when the item is clicked:
 title: Philosophy
-subtitle: My philosophical framework for approaching adult learning resarch and practice
+subtitle: My philosophical framework for approaching adult learning resarch and practice.
 #image: 
 #alt: image alt text
 
