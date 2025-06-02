@@ -20,15 +20,21 @@
         </ul>
 
         <!-- Social Media Buttons (copied from footer) -->
+       
         <ul class="list-inline social-buttons">
-          {% for network in site.social %}
-            <li class="list-inline-item">
-              <a href="{{ network.url }}" target="_blank">
-                <i class="fa fa-{{ network.title }}"></i>
-              </a>
-            </li>
+          {% for link in site.data.sitetext[site.locale].footer.social %}
+          <li class="list-inline-item">
+            {% if link.url %}
+            <a href="{{ link.url }}"  
+				       target="_blank"
+   				     rel="noopener noreferrer">
+              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
+            </a>
+            {% endif %}
+          </li>
           {% endfor %}
         </ul>
+      
       </div>
     </div>
   </div>
