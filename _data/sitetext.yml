@@ -16,6 +16,12 @@ en: &DEFAULT_EN
     #button: Become a Member
     #buttonlink: "#contact"
 
+  portfolio:
+    title: "Academia"
+    text: "Learn more about my academic philosophies toward education, my research, and the organizational structure towards obtaining my PhD."
+    section: portfolio
+    closebutton: "Close"
+
   timeline:
     title: "Academic and Professional Timeline"
     section: timeline
