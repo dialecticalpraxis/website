@@ -41,3 +41,17 @@ $header-image: "{{ site.data.style.header-image }}";
 @import "layout/team.scss";
 @import "layout/contact.scss";
 @import "layout/footer.scss";
+
+#derron ul.social-buttons {
+  li a {
+    background-color: $gray-800;
+    color: white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: white;
+      color: $gray-800;
+    }
+  }
+}
