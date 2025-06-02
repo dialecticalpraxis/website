@@ -16,7 +16,39 @@ en: &DEFAULT_EN
     #button: Become a Member
     #buttonlink: "#contact"
 
-
+imeline:
+    title: "Academic and Professional Timeline"
+    #text: ""
+    section: timeline
+    # left is the default
+    #start_align: "left"
+    events:
+      - title: "Rotary Youth Exchange Program"
+        year: "2002-2003"
+        desc: "I spent a year in Chimay and Couvin, Beligum as a high school exchange student, living with three different host families."
+        image: assets/img/timeline/1.jpg
+        alt:
+      - title: "Columubs State Community College"
+        year: "2003-2005"
+        desc: "Took courses towards an associate's while working full time."
+        image: assets/img/timeline/2.jpg
+        alt:
+      - title: "The Ohio State University"
+        year: "2008"
+        desc: "B.A. in Linguistics, B.A. in French"
+        image: assets/img/timeline/3.jpg
+        alt: image alt text
+      - title: "Teaching Assistant Program in France"
+        year: "2008-2009"
+        desc: "Taught elementary ESL in Dax, France."
+        image: assets/img/timeline/4.jpg
+        alt:
+      - title: "North American Language and Culture Assistants Program"
+        year: "2009-2010"
+        desc: "Taught elementary and high school ESL in Campos and s'Alqueria Blanca, Mallorca, Spain."
+        image: assets/img/timeline/4.jpg
+        alt:
+    end: "Be Part <br> of Our <br> Story!"
 
 
   footer:
