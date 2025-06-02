@@ -16,7 +16,7 @@ en: &DEFAULT_EN
     #button: Become a Member
     #buttonlink: "#contact"
 
-  Timeline:
+  timeline:
     title: "Academic and Professional Timeline"
     #text: ""
     section: timeline
