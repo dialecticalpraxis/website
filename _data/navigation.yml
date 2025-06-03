@@ -13,6 +13,8 @@ en: &DEFAULT_EN
   nav:
     - title: "About"
       section: derron
+    - title: "Academia"
+      section: portfolio
     - title: "Timeline"
       section: timeline
 
