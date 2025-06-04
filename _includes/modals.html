@@ -98,3 +98,29 @@
     </div>
   </div>
 </div>
+
+
+{% comment %}
+  Existing header / close-button markup stays as-is
+{% endcomment %}
+
+<div class="modal-body">
+  <h2 class="text-uppercase">{{ project.title }}</h2>
+  <p class="item-intro text-muted">{{ project.subtitle }}</p>
+
+  {%- if project.pdf and project.pdf != "" -%}
+      <!-- PDF viewer -->
+      <iframe src="{{ project.pdf | relative_url }}"
+              style="width:100%;height:75vh;border:none;"
+              title="PDF viewer – {{ project.title }}"></iframe>
+  {%- else -%}
+      <!-- Fallback to normal content -->
+      <p>{{ project.content }}</p>
+  {%- endif -%}
+
+  <button class="btn btn-primary" data-dismiss="modal" type="button">
+     <i class="fas fa-times"></i>
+     {{ site.data.sitetext[site.locale].portfolio.closebutton
+        | default: "Close Window" }}
+  </button>
+</div>
