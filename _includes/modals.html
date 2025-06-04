@@ -99,28 +99,36 @@
   </div>
 </div>
 
+<!-- Stand-alone CV modal (no tile) -->
+<div class="portfolio-modal modal fade" id="cvModal" tabindex="-1"
+     role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr"><div class="rl"></div></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
 
-{% comment %}
-  Existing header / close-button markup stays as-is
-{% endcomment %}
+              <h2 class="text-uppercase">Curriculum&nbsp;Vitae</h2>
+              <p class="item-intro text-muted">Full academic CV (PDF)</p>
 
-<div class="modal-body">
-  <h2 class="text-uppercase">{{ project.title }}</h2>
-  <p class="item-intro text-muted">{{ project.subtitle }}</p>
+              <!-- PDF viewer -->
+              <iframe src="{{ '/assets/pdf/cv.pdf' | relative_url }}"
+                      style="width:100%;height:75vh;border:none;"
+                      title="CV PDF viewer"></iframe>
 
-  {%- if project.pdf and project.pdf != "" -%}
-      <!-- PDF viewer -->
-      <iframe src="{{ project.pdf | relative_url }}"
-              style="width:100%;height:75vh;border:none;"
-              title="PDF viewer – {{ project.title }}"></iframe>
-  {%- else -%}
-      <!-- Fallback to normal content -->
-      <p>{{ project.content }}</p>
-  {%- endif -%}
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close Window
+              </button>
 
-  <button class="btn btn-primary" data-dismiss="modal" type="button">
-     <i class="fas fa-times"></i>
-     {{ site.data.sitetext[site.locale].portfolio.closebutton
-        | default: "Close Window" }}
-  </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
