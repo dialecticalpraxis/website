@@ -27,6 +27,13 @@
 	{% endfor %}
     </div>
   </div>
+
+<a class="btn btn-primary btn-xl"
+   data-toggle="modal"
+   href="#p{{ site.portfolio | where: "title", "Curriculum Vitae" | first | index }}"
+   role="button">
+  View my CV
+</a>
 </section>
 {% else %}
 <section class="bg-light page-section" id="{{ site.data.sitetext.portfolio.section | default: "portfolio" }}">
@@ -56,6 +63,12 @@
 	{% endfor %}
     </div>
   </div>
+	<a class="btn btn-primary btn-xl"
+   data-toggle="modal"
+   href="#p{{ site.portfolio | where: "title", "Curriculum Vitae" | first | index }}"
+   role="button">
+  View my CV
+</a>
 </section>
 {% endif %}
 {% include modals.html %}
