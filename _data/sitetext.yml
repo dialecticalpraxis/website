@@ -18,7 +18,7 @@ en: &DEFAULT_EN
 
   portfolio:
     title: "Academia"
-    text: "Learn more about my academic philosophies toward education, my research, and my organizational structure towards obtaining my PhD."
+    text: "Learn more about my research, my academic philosophies toward education, and my organizational structure towards obtaining my PhD."
     section: portfolio
     closebutton: "Close"
 
