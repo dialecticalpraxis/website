@@ -15,8 +15,7 @@ en: &DEFAULT_EN
       section: derron
     - title: "Academia"
       section: portfolio
-    - title: "Timeline"
-      section: timeline
+
 
 
 en-001: #English (World)
