@@ -83,8 +83,6 @@ en: &DEFAULT_EN
         icon: "fab fa-bluesky"
       - url: https://instagram.com/dialecticalpraxis
         icon: "fab fa-instagram"
-      - url: https://www.tiktok.com/@dialecticalpraxis
-        icon: "fab fa-tiktok"
       - url: https://scholar.google.com/citations?hl=en&user=K4fEPEIAAAAJ
         icon: "fab fa-google-scholar"
 
