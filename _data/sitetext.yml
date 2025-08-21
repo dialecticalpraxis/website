@@ -87,8 +87,7 @@ en: &DEFAULT_EN
         icon: "fab fa-tiktok"
       - url: https://scholar.google.com/citations?hl=en&user=K4fEPEIAAAAJ
         icon: "fab fa-google-scholar"
-      - url: https://github.com/dialecticalpraxis
-        icon: "fab fa-github"
+
    
         
 
