@@ -79,10 +79,6 @@ en: &DEFAULT_EN
   footer:
     legal: "Privacy Policy"
     social:
-      - url: https://bsky.app/profile/dialecticalpraxis.com
-        icon: "fab fa-bluesky"
-      - url: https://instagram.com/dialecticalpraxis
-        icon: "fab fa-instagram"
       - url: https://scholar.google.com/citations?hl=en&user=K4fEPEIAAAAJ
         icon: "fab fa-google-scholar"
 
