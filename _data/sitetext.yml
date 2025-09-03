@@ -78,9 +78,7 @@ en: &DEFAULT_EN
 
   footer:
     legal: "Privacy Policy"
-    social:
-      - url: https://scholar.google.com/citations?hl=en&user=K4fEPEIAAAAJ
-        icon: "fab fa-google-scholar"
+
 
    
         
