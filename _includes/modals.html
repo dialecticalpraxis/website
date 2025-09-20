@@ -173,17 +173,29 @@
 </div>
 
 <script>
-$(document).ready(function() {
-  // Load feed when modal is shown
-  $('#activismModal').on('shown.bs.modal', function() {
-    if (!$('#substack-feed').attr('data-loaded')) {
-      loadSubstackFeed();
-    }
+// Wait for both jQuery and the document to be ready
+function initSubstackFeed() {
+  if (typeof $ === 'undefined') {
+    // If jQuery isn't loaded yet, wait a bit and try again
+    setTimeout(initSubstackFeed, 100);
+    return;
+  }
+  
+  $(document).ready(function() {
+    // Load feed when modal is shown
+    $('#activismModal').on('shown.bs.modal', function() {
+      if (!$('#substack-feed').attr('data-loaded')) {
+        loadSubstackFeed();
+      }
+    });
   });
-});
+}
+
+// Start the initialization
+initSubstackFeed();
 
 async function loadSubstackFeed() {
-  const feedContainer = $('#substack-feed');
+  const feedContainer = document.getElementById('substack-feed');
   const substackUrl = 'https://dialecticalpraxis.substack.com/feed';
   
   console.log('Loading feed from:', substackUrl);
@@ -205,25 +217,25 @@ async function loadSubstackFeed() {
     
     if (data.status === 'ok' && data.items && data.items.length > 0) {
       displayPosts(data.items);
-      feedContainer.attr('data-loaded', 'true');
+      feedContainer.setAttribute('data-loaded', 'true');
     } else {
       throw new Error(`API returned: ${data.status || 'unknown error'} - ${data.message || 'No items found'}`);
     }
   } catch (error) {
     console.error('Error loading Substack feed:', error);
-    feedContainer.html(`
+    feedContainer.innerHTML = `
       <div class="alert alert-warning">
         <h5>Unable to load recent posts</h5>
         <p><strong>Error:</strong> ${error.message}</p>
         <p>Please visit my <a href="${substackUrl.replace('/feed', '')}" target="_blank" class="alert-link">Substack directly</a> to read my latest writings.</p>
         <button onclick="loadSubstackFeed()" class="btn btn-sm btn-outline-primary">Try Again</button>
       </div>
-    `);
+    `;
   }
 }
 
 function displayPosts(posts) {
-  const feedContainer = $('#substack-feed');
+  const feedContainer = document.getElementById('substack-feed');
   
   let html = '<div class="row">';
   
@@ -258,7 +270,7 @@ function displayPosts(posts) {
     </div>
   `;
   
-  feedContainer.html(html);
+  feedContainer.innerHTML = html;
 }
 </script>
 
