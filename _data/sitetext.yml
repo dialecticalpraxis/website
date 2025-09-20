@@ -22,6 +22,10 @@ en: &DEFAULT_EN
     section: portfolio
     closebutton: "Close"
 
+  activism:
+    title: "Activism"
+    section: activism
+
   timeline:
     title: "Academic and Professional Timeline"
     section: timeline
