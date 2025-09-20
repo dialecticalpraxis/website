@@ -132,9 +132,8 @@
   </div>
 </div>
 
-<!-- Activism modal with RSS feed -->
-<div class="portfolio-modal modal fade" id="activismModal" tabindex="-1"
-     role="dialog" aria-hidden="true">
+<!-- Update your activismModal section in _includes/modals.html -->
+<div class="portfolio-modal modal fade" id="activismModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="close-modal" data-dismiss="modal">
@@ -144,30 +143,27 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <div class="modal-body">
-
+              
               <h2 class="text-uppercase">Recent Substack Posts</h2>
               <p class="item-intro text-muted">My latest thoughts and writings</p>
               
               <!-- RSS Feed Container -->
-              <div id="substack-feed" class="mb-4">
+              <div id="substack-feed" class="mt-4">
                 <div class="text-center">
                   <div class="spinner-border" role="status">
                     <span class="sr-only">Loading...</span>
                   </div>
-                  <p>Loading recent posts...</p>
+                  <p class="mt-2">Loading recent posts...</p>
                 </div>
               </div>
 
-              <div class="text-center">
-                <a href="https://dialecticalpraxis.substack.com" target="_blank" class="btn btn-secondary mr-3">
-                  Visit Full Substack
-                </a>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Window
+              <div class="text-center mt-4">
+                <button class="btn btn-primary" type="button" data-dismiss="modal">
+                  <i class="fa fa-times"></i>
+                  Close
                 </button>
               </div>
-
+              
             </div>
           </div>
         </div>
@@ -177,107 +173,113 @@
 </div>
 
 <script>
-// Load RSS feed when modal opens
-$('#activismModal').on('shown.bs.modal', function () {
-  if (!document.getElementById('substack-feed').hasAttribute('data-loaded')) {
-    loadSubstackFeed();
-  }
+$(document).ready(function() {
+  // Load feed when modal is shown
+  $('#activismModal').on('shown.bs.modal', function() {
+    if (!$('#substack-feed').attr('data-loaded')) {
+      loadSubstackFeed();
+    }
+  });
 });
 
 async function loadSubstackFeed() {
-  const feedContainer = document.getElementById('substack-feed');
-  const substackUrl = 'https://dialecticalpraxis.substack.com/feed'; // Your Substack RSS feed
+  const feedContainer = $('#substack-feed');
+  const substackUrl = 'https://dialecticalpraxis.substack.com/feed';
   
-  console.log('Loading feed from:', substackUrl); // Debug log
+  console.log('Loading feed from:', substackUrl);
   
   try {
-    // Try RSS2JSON first
-    let apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(substackUrl)}&count=5`;
-    console.log('API URL:', apiUrl); // Debug log
+    // Using RSS2JSON service
+    const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(substackUrl)}&count=5`;
+    console.log('API URL:', apiUrl);
     
-    let response = await fetch(apiUrl);
-    console.log('Response status:', response.status); // Debug log
+    const response = await fetch(apiUrl);
+    console.log('Response status:', response.status);
     
     if (!response.ok) {
-      // Fallback to AllOrigins
-      apiUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(substackUrl)}`;
-      response = await fetch(apiUrl);
-      
-      if (response.ok) {
-        const data = await response.json();
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(data.contents, 'text/xml');
-        const items = xmlDoc.querySelectorAll('item');
-        
-        const posts = Array.from(items).slice(0, 5).map(item => ({
-          title: item.querySelector('title')?.textContent || 'Untitled',
-          link: item.querySelector('link')?.textContent || '#',
-          pubDate: item.querySelector('pubDate')?.textContent || '',
-          description: item.querySelector('description')?.textContent || ''
-        }));
-        
-        displayPosts(posts);
-        feedContainer.setAttribute('data-loaded', 'true');
-        return;
-      }
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
     
     const data = await response.json();
-    console.log('Response data:', data); // Debug log
+    console.log('Response data:', data);
     
     if (data.status === 'ok' && data.items && data.items.length > 0) {
       displayPosts(data.items);
-      feedContainer.setAttribute('data-loaded', 'true');
+      feedContainer.attr('data-loaded', 'true');
     } else {
       throw new Error(`API returned: ${data.status || 'unknown error'} - ${data.message || 'No items found'}`);
     }
   } catch (error) {
     console.error('Error loading Substack feed:', error);
-    feedContainer.innerHTML = `
+    feedContainer.html(`
       <div class="alert alert-warning">
         <h5>Unable to load recent posts</h5>
         <p><strong>Error:</strong> ${error.message}</p>
-        <p>Please visit my <a href="${substackUrl.replace('/feed', '')}" target="_blank">Substack directly</a> to read my latest writings.</p>
+        <p>Please visit my <a href="${substackUrl.replace('/feed', '')}" target="_blank" class="alert-link">Substack directly</a> to read my latest writings.</p>
         <button onclick="loadSubstackFeed()" class="btn btn-sm btn-outline-primary">Try Again</button>
       </div>
-    `;
+    `);
   }
 }
 
 function displayPosts(posts) {
-  const feedContainer = document.getElementById('substack-feed');
+  const feedContainer = $('#substack-feed');
   
   let html = '<div class="row">';
   
-  posts.forEach((post, index) => {
-    if (index < 3) { // Show only first 3 posts
-      const date = new Date(post.pubDate).toLocaleDateString();
-      const excerpt = post.description ? 
-        post.description.replace(/<[^>]*>/g, '').substring(0, 150) + '...' : 
-        'Click to read more...';
-      
-      html += `
-        <div class="col-md-12 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="${post.link}" target="_blank" class="text-decoration-none">
-                  ${post.title}
-                </a>
-              </h5>
-              <p class="card-text text-muted small">${date}</p>
-              <p class="card-text">${excerpt}</p>
-              <a href="${post.link}" target="_blank" class="btn btn-outline-primary btn-sm">
-                Read Full Post
-              </a>
-            </div>
+  posts.slice(0, 3).forEach((post, index) => {
+    const date = new Date(post.pubDate).toLocaleDateString();
+    const excerpt = post.description ? 
+      post.description.replace(/<[^>]*>/g, '').substring(0, 150) + '...' : 
+      'Click to read more...';
+    
+    html += `
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">${post.title}</h5>
+            <p class="card-text text-muted small">${date}</p>
+            <p class="card-text flex-grow-1">${excerpt}</p>
+            <a href="${post.link}" target="_blank" class="btn btn-primary btn-sm mt-auto">Read More</a>
           </div>
         </div>
-      `;
-    }
+      </div>
+    `;
   });
   
   html += '</div>';
-  feedContainer.innerHTML = html;
+  
+  // Add link to view all posts
+  html += `
+    <div class="text-center mt-4">
+      <a href="${posts[0].link.split('/p/')[0]}" target="_blank" class="btn btn-outline-primary">
+        View All Posts on Substack
+      </a>
+    </div>
+  `;
+  
+  feedContainer.html(html);
 }
 </script>
+
+<style>
+/* Custom styles for the feed */
+#substack-feed .card {
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s ease-in-out;
+}
+
+#substack-feed .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#substack-feed .spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+.alert-link {
+  font-weight: bold;
+}
+</style>
