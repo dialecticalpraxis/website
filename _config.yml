@@ -17,7 +17,6 @@ logo:
 
 locale: "en-US"
 
-
 # ----------------------------------------
 # Collections
 # ----------------------------------------
@@ -25,17 +24,16 @@ collections:
   portfolio:
     output: true
 
-
-
-
 # ----------------------------------------
 # Markdown processor
 # ----------------------------------------
 markdown: kramdown
 
-
 # ----------------------------------------
-# Plugins (GitHub Pages–allowed only)
+# Plugins - MINIMAL SET FOR REMOTE THEME ONLY
 # ----------------------------------------
 plugins:
   - jekyll-remote-theme
+
+# Explicitly exclude GitHub Pages defaults that conflict
+github: [metadata]
