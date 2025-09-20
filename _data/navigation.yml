@@ -15,6 +15,10 @@ en: &DEFAULT_EN
       section: derron
     - title: "Academia"
       section: portfolio
+    - title: "Activism"
+      section: activism
+    - title: "Education & Experience"
+      section: timeline
 
 
 
