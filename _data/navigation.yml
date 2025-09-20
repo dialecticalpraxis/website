@@ -11,14 +11,8 @@
 # -----------------
 en: &DEFAULT_EN
   nav:
-    - title: "About"
-      section: derron
-    - title: "Academia"
-      section: portfolio
-    - title: "Activism"
-      section: activism
-    - title: "Education & Experience"
-      section: timeline
+
+
 
 
 
