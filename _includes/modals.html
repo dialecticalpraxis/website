@@ -186,25 +186,59 @@ $('#activismModal').on('shown.bs.modal', function () {
 
 async function loadSubstackFeed() {
   const feedContainer = document.getElementById('substack-feed');
-  const substackUrl = 'https://dialecticalpraxis.substack.com/feed'; // Replace with your Substack URL
+  const substackUrl = 'https://dialecticalpraxis.substack.com/feed'; // Your Substack RSS feed
+  
+  console.log('Loading feed from:', substackUrl); // Debug log
   
   try {
-    // Using RSS2JSON service (free tier - no API key needed)
-    const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(substackUrl)}&count=5`);
-    const data = await response.json();
+    // Try RSS2JSON first
+    let apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(substackUrl)}&count=5`;
+    console.log('API URL:', apiUrl); // Debug log
     
-    if (data.status === 'ok') {
+    let response = await fetch(apiUrl);
+    console.log('Response status:', response.status); // Debug log
+    
+    if (!response.ok) {
+      // Fallback to AllOrigins
+      apiUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(substackUrl)}`;
+      response = await fetch(apiUrl);
+      
+      if (response.ok) {
+        const data = await response.json();
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(data.contents, 'text/xml');
+        const items = xmlDoc.querySelectorAll('item');
+        
+        const posts = Array.from(items).slice(0, 5).map(item => ({
+          title: item.querySelector('title')?.textContent || 'Untitled',
+          link: item.querySelector('link')?.textContent || '#',
+          pubDate: item.querySelector('pubDate')?.textContent || '',
+          description: item.querySelector('description')?.textContent || ''
+        }));
+        
+        displayPosts(posts);
+        feedContainer.setAttribute('data-loaded', 'true');
+        return;
+      }
+    }
+    
+    const data = await response.json();
+    console.log('Response data:', data); // Debug log
+    
+    if (data.status === 'ok' && data.items && data.items.length > 0) {
       displayPosts(data.items);
       feedContainer.setAttribute('data-loaded', 'true');
     } else {
-      throw new Error('Failed to load feed');
+      throw new Error(`API returned: ${data.status || 'unknown error'} - ${data.message || 'No items found'}`);
     }
   } catch (error) {
     console.error('Error loading Substack feed:', error);
     feedContainer.innerHTML = `
       <div class="alert alert-warning">
         <h5>Unable to load recent posts</h5>
-        <p>Please visit my <a href="https://yoursubstack.substack.com" target="_blank">Substack directly</a> to read my latest writings.</p>
+        <p><strong>Error:</strong> ${error.message}</p>
+        <p>Please visit my <a href="${substackUrl.replace('/feed', '')}" target="_blank">Substack directly</a> to read my latest writings.</p>
+        <button onclick="loadSubstackFeed()" class="btn btn-sm btn-outline-primary">Try Again</button>
       </div>
     `;
   }
