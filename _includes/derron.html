@@ -22,22 +22,10 @@
 		  <p>My research sits at the intersection of social epistemology and adult learning, with a particular focus on how people break free from hegemonic frames—the deeply embedded worldviews shaped by ideology, power, and social belonging. I study how adults in so-called “post-truth” societies navigate—and sometimes transcend—epistemic bubbles, echo chambers, and neoliberal discourses that shape public understanding of political issues.</p>
         <!-- Social Media Buttons (copied from footer) -->
        
-        <ul class="list-inline social-buttons d-flex justify-content-center">
-          {% for link in site.data.sitetext[site.locale].footer.social %}
+        <ul class="list-inline d-flex justify-content-center">
+      
           <li class="list-inline-item">
-            {% if link.url %}
-            <a href="{{ link.url }}"  
-				       target="_blank"
-   				     rel="noopener noreferrer">
-              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
-            </a>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-
-	       <div class="text-center mt-4">
-  <button
+			 <button
     class="btn btn-primary btn-xl align-items-center"
     data-toggle="modal"
     data-target="#derronsModal"
@@ -45,7 +33,22 @@
   >
     Learn More
   </button>
-</div>
+          </li>
+
+			  <li class="list-inline-item">
+			    <button
+    class="btn btn-primary btn-xl align-items-center"
+    data-toggle="modal"
+    data-target="#cvModal"
+    type="button"
+  >
+    Curriculum Vitae
+  </button>
+          </li>
+          {% endfor %}
+        </ul>
+
+	      
       </div>
 	   
     </div>
