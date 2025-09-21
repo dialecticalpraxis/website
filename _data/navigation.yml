@@ -11,7 +11,8 @@
 # -----------------
 en: &DEFAULT_EN
   nav:
-
+    - title: "Substack"
+      url: "http://dialecticalpraxis.substack.com"
 
 
 
