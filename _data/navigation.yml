@@ -12,7 +12,8 @@
 en: &DEFAULT_EN
   nav:
     - title: "Substack"
-      url: "http://dialecticalpraxis.substack.com{:target="_blank" :rel="noopener noreferrer"}"
+      url: "http://dialecticalpraxis.substack.com"
+      target: "_blank"
 
 
 
