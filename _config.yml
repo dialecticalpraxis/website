@@ -6,7 +6,7 @@ remote_theme: raviriley/agency-jekyll-theme
 url       : "https://www.dialecticalpraxis.com"
 baseurl   : ""                 # leave empty for root‐domain site
 
-title       : "dialectical praxis"
+title       : "Dialectical Praxis"
 #email       : ""
 description : "Professional website for Derron Borders."
 author      : "Derron Borders"
