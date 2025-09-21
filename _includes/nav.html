@@ -41,7 +41,7 @@
 
           {%- if link.url -%}
             <li class="nav-item">
-              <a class="nav-link" href="{{ link.url | relative_url }}">{{ link.title }}</a>
+              <a class="nav-link" href="{{ item.url }}" target="{{ item.target }}" rel="noopener noreferrer">{{ item.title }}</a>
             </li>
 
           {%- elsif link.section == "resources" -%}
@@ -54,39 +54,7 @@
                 </a>
                <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
 
-  <!-- Chapter Documentation -->
-  <a class="dropdown-item font-weight-bold" href="{{ '/resources/chapter-documentation/' | relative_url }}">
-    Chapter Documentation
-  </a>
-  <a class="dropdown-item pl-4" href="{{ '/resources/chapter-documentation/governing-documents/' | relative_url }}">
-    Governing Documents
-  </a>
-
-  <a class="dropdown-item pl-4" href="{{ '/resources/chapter-documentation/historical-documents/' | relative_url }}">
-    Historical Documents
-  </a>
-  <div class="dropdown-divider"></div>
-
-  <!-- Committees -->
-  <a class="dropdown-item font-weight-bold" href="{{ '/resources/committees/' | relative_url }}">
-    Committees
-  </a>
-  <!-- committee sub-pages here with pl-4 -->
-  <div class="dropdown-divider"></div>
-
-  <!-- Educational Resources -->
-  <a class="dropdown-item font-weight-bold" href="{{ '/resources/educational-resources/' | relative_url }}">
-    Educational Resources
-  </a>
-  <!-- educational sub-pages here -->
-  <div class="dropdown-divider"></div>
-
-  <!-- Working Groups -->
-  <a class="dropdown-item font-weight-bold" href="{{ '/resources/working-groups/' | relative_url }}">
-    Working Groups
-  </a>
-  <!-- working-group sub-pages here -->
-</div>
+ 
 
               </li>
             {%- else -%}
