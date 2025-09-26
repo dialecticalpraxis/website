@@ -6,11 +6,11 @@ background: grey
 
 <div align="center">
  
-## Toward a decolonized andragogy: Addressing the limits of neoliberal adult education
+<h2> Toward a decolonized andragogy: Addressing the limits of neoliberal adult education</h2>
 
 <br>
 
-### Presented at AAACE 2025, September 26, 2025
+<h3>Presented at AAACE 2025, September 26, 2025</h3>
 
 </div>
 <br>
