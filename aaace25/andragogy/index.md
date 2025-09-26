@@ -3,6 +3,7 @@ layout: page
 title: "Toward a Decolonized Androgagy"
 background: grey
 ---
+## References
 
 <p style="padding-left: 2em; text-indent: -2em;">
 Dantus, S. J. (2021). A triadic worldview? The misconception and bias of universality in Knowles’
