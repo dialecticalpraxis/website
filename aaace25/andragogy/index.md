@@ -37,7 +37,11 @@ andragogical model of adult learning. Performance Improvement Quarterly, 14(1), 
  <p style="padding-left: 2em; text-indent: -2em;">
    Merriam, S. B., & Kim, Y. S. (2008). Non‐western perspectives on learning and knowing. New
 Directions for Adult and Continuing Education, 2008(119), 71–81. https://doi.org/10.1002/ace.307
-
-
  </p>
+
+  <p style="padding-left: 2em; text-indent: -2em;">
+   Rachal, J. R. (2002). Andragogy’s detectives: A critique of the present and a proposal for the future.
+Adult Education Quarterly, 52(3), 210–227. https://doi.org/10.1177/0741713602052003004
+ </p>
+
 
