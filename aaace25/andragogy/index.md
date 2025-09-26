@@ -3,9 +3,12 @@ layout: page
 title: "Toward a Decolonized Androgagy"
 background: grey
 ---
-# Toward a decolonized andragogy: Addressing the limits of neoliberal adult education
+## Toward a decolonized andragogy: Addressing the limits of neoliberal adult education
 
-## References
+### Presented at AAACE 2025, September 26, 2025
+<br>
+
+### References
 
 <p style="padding-left: 2em; text-indent: -2em;">
 Dantus, S. J. (2021). A triadic worldview? The misconception and bias of universality in Knowles’
