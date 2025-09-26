@@ -3,9 +3,16 @@ layout: page
 title: "Toward a Decolonized Androgagy"
 background: grey
 ---
+
+<div align="center">
+ 
 ## Toward a decolonized andragogy: Addressing the limits of neoliberal adult education
 
+<br>
+
 ### Presented at AAACE 2025, September 26, 2025
+
+</div>
 <br>
 
 ### References
