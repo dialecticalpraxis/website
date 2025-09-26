@@ -3,6 +3,8 @@ layout: page
 title: "Toward a Decolonized Androgagy"
 background: grey
 ---
+# Toward a decolonized andragogy: Addressing the limits of neoliberal adult education
+
 ## References
 
 <p style="padding-left: 2em; text-indent: -2em;">
