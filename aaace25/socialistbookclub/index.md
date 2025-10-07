@@ -10,7 +10,7 @@ background: grey
 
 <br>
 
-<h3>Presented at AAACE 2025, October 9, 2025</h3>
+<h3>Presented at the American Association For Adult and Continuing Education Conference, October 9, 2025</h3>
 
 </div>
 <br>
