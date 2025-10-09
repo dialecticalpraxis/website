@@ -18,12 +18,12 @@ background: grey
        
 			 <button
     class="btn btn-primary btn-xl align-items-center"
-    data-toggle="modal"
-    data-target="https://www.dialecticalpraxis.com/aaace2025/socialistbookclub/Borders_AAACE_2025.pdf"
-    type="button"
-  >
+   
+    href="https://www.dialecticalpraxis.com/aaace25/socialistbookclub/Borders_AAACE_2025.pdf"
+    type="button">
     Access Presentation
   </button>
+  
 <br>
 
 ### References
