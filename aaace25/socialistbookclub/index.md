@@ -13,6 +13,17 @@ background: grey
 <h3>Presented at the American Association For Adult and Continuing Education Conference, October 9, 2025</h3>
 
 </div>
+
+ <div class="text-center mt-4">
+       
+			 <button
+    class="btn btn-primary btn-xl align-items-center"
+    data-toggle="modal"
+    data-target="https://www.dialecticalpraxis.com/aaace2025/socialistbookclub/Borders_AAACE_2025.pdf"
+    type="button"
+  >
+    Access Presentation
+  </button>
 <br>
 
 ### References
