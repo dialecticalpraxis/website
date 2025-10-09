@@ -12,10 +12,10 @@ background: grey
 
 <h3>Presented at the American Association For Adult and Continuing Education Conference, October 9, 2025</h3>
 
-</div>
       
 <div class="col-sm-12 col-md-6 text-center mb-4">
   <p><a href="https://www.dialecticalpraxis.com/aaace25/socialistbookclub/Borders_AAACE_2025.pdf" class="btn btn-primary btn-xl text-uppercase w-100">View Slide Deck </a></p>
+</div>
 </div>
 
   
