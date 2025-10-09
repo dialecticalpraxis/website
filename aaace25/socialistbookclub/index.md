@@ -6,7 +6,7 @@ background: grey
 
 <div align="center">
  
-<h2 style="padding-top: 2em;"> Raising Class Consciousness: Adult Learning in a "Digital" Socialist Book Club</h2>
+<h2 style="padding-top: 2em;"> Raising Class Consciousness: Adult Learning in a Socialist Book Club</h2>
 
 <br>
 
