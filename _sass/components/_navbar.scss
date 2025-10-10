@@ -1,6 +1,6 @@
 // Styling for the navbar
 #mainNav {
-  background-color: #f6f5f3;
+  background-color: $primary;
   .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -19,7 +19,7 @@
     &:active,
     &:focus,
     &:hover {
-      color: darken($primary, 10%);
+      color: darken(#f6f5f3, 10%);
     }
   }
   .navbar-nav {
