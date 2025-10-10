@@ -11,8 +11,8 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    #title: Dialectical Praxis
-    #text: Dialectical Praxis
+    title: 
+    text: 
     #button: Become a Member
     #buttonlink: "#contact"
 
