@@ -78,10 +78,12 @@
             color: #f6f5f3;
             transition: color 0.3s ease; // Smooth transition
             &.active,
-            &:hover,
-            &:focus {
+            &:hover {
               color: #b4b4b4; // White on hover/click when dark background
             }
+            &:focus {
+              color: #f6f5f3;
+              }
           }
         }
       }
