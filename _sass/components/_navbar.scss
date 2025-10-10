@@ -6,7 +6,7 @@
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color: $primary;
+    color: white;
     border: 0;
     background-color: $primary;
     @include heading-font;
@@ -29,16 +29,19 @@
         font-weight: 400;
         padding: 0.75em 0;
         letter-spacing: 1px;
-        color: #403e3e; // Dark color for transparent navbar
+        color: #f6f5f3; // Light color for solid navbar (single pages)
         @include heading-font;
-        transition: color 0.3s ease; // Smooth transition
-        &:hover {
-          color: #b4b4b4; // Black on hover/click when transparent
+        transition: color 0.3s ease;
+        &.active,
+        &:hover,
+        &:focus {
+          color: #ffffff; // White on hover for solid navbar
         }
       }
     }
   }
 }
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
@@ -53,11 +56,19 @@
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
+      color: white; // White for transparent navbar
     }
     .navbar-nav {
       .nav-item {
         .nav-link {
           padding: 1.1em 1em !important;
+          color: #403e3e; // Dark color for transparent navbar (home page)
+          transition: color 0.3s ease;
+          &.active,
+          &:hover,
+          &:focus {
+            color: #000000; // Black on hover when transparent
+          }
         }
       }
     }
@@ -74,9 +85,11 @@
         .nav-item {
           .nav-link {
             color: #f6f5f3;
-            transition: color 0.3s ease; // Smooth transition
-            &:hover {
-              color: #b4b4b4; // White on hover/click when dark background
+            transition: color 0.3s ease;
+            &.active,
+            &:hover,
+            &:focus {
+              color: #ffffff; // White on hover/click when dark background
             }
           }
         }
@@ -104,7 +117,7 @@ body[data-section="resources"] #mainNav {
     .nav-item {
       .nav-link {
         color: #f6f5f3;
-        transition: color 0.3s ease; // Smooth transition
+        transition: color 0.3s ease;
         &.active,
         &:hover,
         &:focus {
