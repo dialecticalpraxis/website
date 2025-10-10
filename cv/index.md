@@ -5,6 +5,7 @@ background: grey
 ---
 
 <h2 class="text-uppercase">Curriculum&nbsp;Vitae</h2>
+<br>
 <!-- PDF viewer -->
 <iframe src="{{ '/assets/pdf/cv.pdf' | relative_url }}" style="width:100%;height:100vh;border:none;" title="CV PDF viewer"></iframe>
 <br>
