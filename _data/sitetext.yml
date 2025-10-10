@@ -34,7 +34,7 @@ en: &DEFAULT_EN
       <p>My research sits at the intersection of social epistemology and adult learning, with a particular focus on the conditions that may enable adults to move out of hegemonic frames, particularly epistemic bubbles, echo chambers, and neoliberal Western imperialist discourses that shape public understanding of political issues. I am especially interested in how transformative learning might emerge through trusted relationships, and whether such transformations influence adults’ learning behaviors and critical use of social media.</p>
       <p>Simply put, my research interests are in how people learn to think for themselves when surrounded by misinformation, bias, and pressure to believe what everyone else believes. I study how trusted relationships, honest conversations, and lived experiences can help adults see the world in new ways and make better decisions for themselves and their communities.</p>
     section: research
-    # image: /assets/img/research-image.jpg  # Optional - uncomment to add an image
+    image: /assets/img/olive.png  # Optional - uncomment to add an image
     # image_alt: Research  # Optional
     # button:  # Optional - uncomment to add a modal button
     #   text: "Learn More About My Research"
