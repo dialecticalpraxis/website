@@ -17,9 +17,9 @@
 {% endif %}
 
 // Custom colors
-$primary: {{ site.data.style.highlight | default: "#EC1F27" }} !default;
-$white: {{ site.data.style.white | default: "#fff" }} !default;
-$black: {{ site.data.style.black | default: "#000" }} !default;
+$primary: {{ site.data.style.highlight | default: "#403e3e" }} !default;
+$white: {{ site.data.style.white | default: "#fdfdfa" }} !default;
+$black: {{ site.data.style.black | default: "#403e3e" }} !default;
 
 // Custom Images
 $header-image: "{{ site.data.style.header-image }}";
