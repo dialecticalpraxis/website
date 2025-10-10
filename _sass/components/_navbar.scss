@@ -35,7 +35,7 @@
         &.active,
         &:hover,
         &:focus {
-          color: #000000; // Black on hover/click when transparent
+          color: #b4b4b4; // Black on hover/click when transparent
         }
       }
     }
@@ -80,7 +80,7 @@
             &.active,
             &:hover,
             &:focus {
-              color: #ffffff; // White on hover/click when dark background
+              color: #b4b4b4; // White on hover/click when dark background
             }
           }
         }
