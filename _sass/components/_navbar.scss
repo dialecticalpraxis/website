@@ -29,11 +29,11 @@
         font-weight: 400;
         padding: 0.75em 0;
         letter-spacing: 1px;
-        color: #f6f5f3;
+        color: #403e3e; // Dark color for transparent navbar
         @include heading-font;
         &.active,
         &:hover {
-          color: #f6f5f3;
+          color: #403e3e;
         }
       }
     }
@@ -69,10 +69,21 @@
         font-size: 1.25em;
         padding: 12px 0;
       }
+      // Light color when navbar has background
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: #f6f5f3;
+            &.active,
+            &:hover {
+              color: #f6f5f3;
+            }
+          }
+        }
+      }
     }
   }
 }
-
 
 /* -----------------------------------------------
    Keep the nav compact on pages flagged "resources"
@@ -86,5 +97,18 @@ body[data-section="resources"] #mainNav {
   .navbar-brand {
     font-size: 1.25em;
     padding: 12px 0;
+  }
+  
+  // Light color for resource pages
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: #f6f5f3;
+        &.active,
+        &:hover {
+          color: #f6f5f3;
+        }
+      }
+    }
   }
 }
