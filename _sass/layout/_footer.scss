@@ -19,6 +19,15 @@
     text-transform: none;
     @include heading-font;
     
+    // Style the Privacy Policy link
+    a {
+      color: #f6f5f3;
+      &:hover,
+      &:focus {
+        color: darken(#f6f5f3, 10%);
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -37,7 +46,7 @@ ul.social-buttons {
       transition: all 0.3s;
 
       /* --- NEW: flex-center the FontAwesome icon --- */
-      display: inline-flex;          /* replaces plain “block” */
+      display: inline-flex;          /* replaces plain "block" */
       align-items: center;           /* vertical center */
       justify-content: center;       /* horizontal center */
       line-height: 1;                /* stop baseline offset */
@@ -51,4 +60,3 @@ ul.social-buttons {
     }
   }
 }
-
