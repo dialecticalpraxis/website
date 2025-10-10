@@ -64,7 +64,7 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: #f6f5f3;
+      background-color: $primary;
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
@@ -81,7 +81,7 @@ body[data-section="resources"] #mainNav {
   /* match the .navbar-shrink state */
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  background-color: #efeeec !important;
+  background-color: $primary !important;
 
   .navbar-brand {
     font-size: 1.25em;
