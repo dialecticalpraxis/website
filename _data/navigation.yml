@@ -13,8 +13,10 @@ en: &DEFAULT_EN
   nav:
     - title: "About"
       section: about
+    - title: "Education"
+      section: education
     - title: "Scholarship"
-      section: research
+      section: scholarship
     - title: "CV"
       url: "/cv/"
 
