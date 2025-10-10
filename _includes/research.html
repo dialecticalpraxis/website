@@ -2,8 +2,14 @@
 {% if site.locale and site.locale != "" and site.locale != nil %}
 <section class="page-section" id="{{ site.data.sitetext[site.locale].research.section | default: "research" }}">
   <div class="container">
+    <div class="row">
+      <div class="col-lg-12" text-center>
+        <h2 class="section-heading text-center text-uppercase">{{ site.data.sitetext[site.locale].research.title | default: "" }}</h2>
+        <h3 class="section-subheading text-center text-muted">{{ site.data.sitetext[site.locale].research.text | default: "" }}</h3>
+      </div>
+    </div>
     <div class="row align-items-center">
-      <!-- Image column on the LEFT (comes first) -->
+      <!-- Image column on the LEFT -->
       <div class="col-lg-5">
         {% if site.data.sitetext[site.locale].research.image %}
         <img src="{{ site.data.sitetext[site.locale].research.image }}" 
@@ -11,14 +17,24 @@
              class="img-fluid rounded">
         {% endif %}
       </div>
-      <!-- Text column on the RIGHT (comes second) -->
+      <!-- Text column on the RIGHT -->
       <div class="col-lg-7">
         <div class="large text-muted">{{ site.data.sitetext[site.locale].research.body | markdownify }}</div>
-        {% if site.data.sitetext[site.locale].research.button %}
+        
+        <!-- Button container -->
+        {% if site.data.sitetext[site.locale].research.button or site.data.sitetext[site.locale].research.cv_button %}
         <div class="text-center mt-4">
-          <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" data-target="#researchModal">
+          {% if site.data.sitetext[site.locale].research.cv_button %}
+          <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" data-target="#cvModal">
+            {{ site.data.sitetext[site.locale].research.cv_button.text }}
+          </button>
+          {% endif %}
+          
+          {% if site.data.sitetext[site.locale].research.button %}
+          <button class="btn btn-primary btn-xl text-uppercase ml-2" data-toggle="modal" data-target="#researchModal">
             {{ site.data.sitetext[site.locale].research.button.text }}
           </button>
+          {% endif %}
         </div>
         {% endif %}
       </div>
@@ -28,8 +44,14 @@
 {% else %}
 <section class="page-section" id="{{ site.data.sitetext.research.section | default: "research" }}">
   <div class="container">
+    <div class="row">
+      <div class="col-lg-12" text-center>
+        <h2 class="section-heading text-center text-uppercase">{{ site.data.sitetext.research.title | default: "" }}</h2>
+        <h3 class="section-subheading text-center text-muted">{{ site.data.sitetext.research.text | default: "" }}</h3>
+      </div>
+    </div>
     <div class="row align-items-center">
-      <!-- Image column on the LEFT (comes first) -->
+      <!-- Image column on the LEFT -->
       <div class="col-lg-5">
         {% if site.data.sitetext.research.image %}
         <img src="{{ site.data.sitetext.research.image }}" 
@@ -37,14 +59,24 @@
              class="img-fluid rounded">
         {% endif %}
       </div>
-      <!-- Text column on the RIGHT (comes second) -->
+      <!-- Text column on the RIGHT -->
       <div class="col-lg-7">
         <div class="large text-muted">{{ site.data.sitetext.research.body | markdownify }}</div>
-        {% if site.data.sitetext.research.button %}
+        
+        <!-- Button container -->
+        {% if site.data.sitetext.research.button or site.data.sitetext.research.cv_button %}
         <div class="text-center mt-4">
-          <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" data-target="#researchModal">
+          {% if site.data.sitetext.research.cv_button %}
+          <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" data-target="#cvModal">
+            {{ site.data.sitetext.research.cv_button.text }}
+          </button>
+          {% endif %}
+          
+          {% if site.data.sitetext.research.button %}
+          <button class="btn btn-primary btn-xl text-uppercase ml-2" data-toggle="modal" data-target="#researchModal">
             {{ site.data.sitetext.research.button.text }}
           </button>
+          {% endif %}
         </div>
         {% endif %}
       </div>
