@@ -19,7 +19,7 @@ en: &DEFAULT_EN
       <p>When not working, studying, or doing research, one can find me volunteering and organizing,  working at my garden plot at the Manhattan Community Garden, reading epic fantasy fiction, crafting, playing cozy video games, and studying and discussing linguistics and language.</p>
     section: about
     image: /assets/img/influence.png  # Add your image path here
-    image_alt: Derron Borders  # Add alt text for accessibility
+    image_alt:   # Add alt text for accessibility
     button:
       text: "What is Dialectical Praxis?"
       modal_content: |
@@ -35,11 +35,10 @@ en: &DEFAULT_EN
       <p>Simply put, my research interests are in how people learn to think for themselves when surrounded by misinformation, bias, and pressure to believe what everyone else believes. I study how trusted relationships, honest conversations, and lived experiences can help adults see the world in new ways and make better decisions for themselves and their communities.</p>
     section: research
     image: /assets/img/olive.png  # Optional - uncomment to add an image
-    # image_alt: Research  # Optional
-    # button:  # Optional - uncomment to add a modal button
-    #   text: "Learn More About My Research"
-    #   modal_content: |
-    #     <p>Your detailed research methodology or additional information here...</p>
+    image_alt: Olive branch with olives.  # Optional
+    cv_button:  # Optional - uncomment to add a modal button
+       text: "View my Curriculum Vitae"
+
 
 
   footer:
