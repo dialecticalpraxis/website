@@ -46,6 +46,11 @@ h6 {
   }
 }
 
+// Add border to first section
+.page-section:first-of-type {
+  border-top: 1px solid $primary;
+}
+
 // Alternating section backgrounds
 .page-section:nth-of-type(odd) {
   background-color: #f6f5f3;
