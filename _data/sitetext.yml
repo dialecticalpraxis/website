@@ -27,11 +27,12 @@ en: &DEFAULT_EN
         <p><i>Dialectical</i> (adj.) - refers to a way of thinking, reasoning, or engaging with the world that emphasizes contradiction, change, and the dynamic interplay of opposing forces. It is rooted in dialectics, a philosophical method with a long history, but most prominently developed by German philosopher, Georg Wilhelm Friedrich Hegel.</p>
         <p><i>Praxis</i> (noun) - refers to the process of putting theory into action, especially in a deliberate, reflective, and socially meaningful way. It's not just action, and it's not just thought — praxis is the fusion of both.</p>
 
+
   research:
     title: ""
     text: ""
     body: |
-      <p> My research sits at the intersection of social epistemology and adult learning, with a particular focus on how people break free from hegemonic frames—the deeply embedded worldviews       shaped by ideology, power, and social belonging. I study how adults in so-called “post-truth” societies navigate—and sometimes transcend—epistemic bubbles, echo chambers, and neoliberal         discourses that shape public understanding of political issues.</p>
+      <p> My research sits at the intersection of social epistemology and adult learning, with a particular focus on how people break free from hegemonic frames—the deeply embedded worldviews       shaped by ideology, power, and social belonging. I study how adults in so-called "post-truth" societies navigate—and sometimes transcend—epistemic bubbles, echo chambers, and neoliberal discourses that shape public understanding of political issues.</p>
     section: research
     image: /assets/img/olive.png  # Optional - uncomment to add an image
     image_alt: Olive branch with olives.  # Optional
@@ -53,8 +54,8 @@ en: &DEFAULT_EN
         </ul>
         <p>My research emphasizes the role of liberatory praxis in building not only individual intellectual growth, but also collective epistemic well-being. I aim to contribute actionable insights for educators, organizers, and policymakers designing interventions that empower adults to critically engage with complex information landscapes.</p>
         <p>Ultimately, my goal is to illuminate pathways out of epistemic entrenchment and to advance a vision of lifelong learning as both a personal and collective project—where knowledge is not merely acquired, but ethically lived.</p>
-     cv_button:  # Optional - uncomment to add a modal button
-       text: "Curriculum Vitae"
+    cv_button:
+      text: "Curriculum Vitae"
 
 
 
