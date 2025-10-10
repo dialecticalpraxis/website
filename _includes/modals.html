@@ -66,34 +66,7 @@
 {% endfor %}
 <!-- End Portfolio Modals -->
 
-<!-- Derron Modal -->
-<div class="modal fade" id="derronsModal" tabindex="-1" role="dialog" aria-labelledby="derronsModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr"><div class="rl"></div></div>
-      </div>
-      <div class="modal-body text-left p-4">
-        <h2 id="derronsModalLabel" class="text-uppercase">More About Derron</h2>
-        <p class="item-intro text-muted">Activist | Scholar | Educator</p>
-        <p>Hailing from Ohio, Derron is a higher education professional who is passionate about collective liberation. He believes in the power of commmunity building across difference through interpersonal connections rooted in authenticity, trust, and grace.</p>
 
-        <p>As a PhD student in Kansas State University' Adult Learning and Leadership program, Derron is interested in radical philosophies of education, focusing on social epistemology, liberatory praxis, information literacy, and the impact that settler colonization and neoliberalism have on adult learning.</p>
-
-        <p>When not working, studying, or doing research, one can find Derron volunteering and organizing in his community,  working at his garden plot at the Manhattan Community Garden, reading epic fantasy fiction, crafting, playing cozy video games, and studying and discussing linguistics and language.
-        </p>
-        <button
-          class="btn btn-primary"
-          data-dismiss="modal"
-          type="button"
-        >
-          <i class="fas fa-times"></i>
-          Close Window
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
@@ -132,38 +105,32 @@
   </div>
 </div>
 
-<!-- Update your activismModal section in _includes/modals.html -->
-<div class="portfolio-modal modal fade" id="activismModal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+<!-- Dialectical Praxis Modal -->
+<div class="portfolio-modal modal fade" id="dialecticalPraxisModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="close-modal" data-dismiss="modal">
         <div class="lr"><div class="rl"></div></div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-10 mx-auto">
+          <div class="col-lg-8 mx-auto">
             <div class="modal-body">
-              
-              <h2 class="text-uppercase">Recent Substack Posts</h2>
-              <p class="item-intro text-muted">My latest musings...</p>
-              
-              <!-- RSS Feed Container -->
-              <div id="substack-feed" class="mt-4">
-                <div class="text-center">
-                  <div class="spinner-border" role="status">
-                    <span class="sr-only">Loading...</span>
-                  </div>
-                  <p class="mt-2">Loading recent posts...</p>
+              {% if site.locale and site.locale != "" and site.locale != nil %}
+                <h2 class="text-uppercase">{{ site.data.sitetext[site.locale].about.button.text }}</h2>
+                <div class="modal-text">
+                  {{ site.data.sitetext[site.locale].about.button.modal_content | markdownify }}
                 </div>
-              </div>
-
-              <div class="text-center mt-4">
-                <button class="btn btn-primary" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close
-                </button>
-              </div>
-              
+              {% else %}
+                <h2 class="text-uppercase">{{ site.data.sitetext.about.button.text }}</h2>
+                <div class="modal-text">
+                  {{ site.data.sitetext.about.button.modal_content | markdownify }}
+                </div>
+              {% endif %}
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close
+              </button>
             </div>
           </div>
         </div>
@@ -171,247 +138,3 @@
     </div>
   </div>
 </div>
-
-<script>
-// Wait for both jQuery and the document to be ready
-function initSubstackFeed() {
-  if (typeof $ === 'undefined') {
-    // If jQuery isn't loaded yet, wait a bit and try again
-    setTimeout(initSubstackFeed, 100);
-    return;
-  }
-  
-  $(document).ready(function() {
-    // Load feed when modal is shown
-    $('#activismModal').on('shown.bs.modal', function() {
-      if (!$('#substack-feed').attr('data-loaded')) {
-        loadSubstackFeed();
-      }
-    });
-  });
-}
-
-// Start the initialization
-initSubstackFeed();
-
-async function loadSubstackFeed() {
-  const feedContainer = document.getElementById('substack-feed');
-  const substackUrl = 'https://dialecticalpraxis.substack.com/feed';
-  
-  console.log('Loading feed from:', substackUrl);
-  
-  try {
-    // Try multiple RSS to JSON services
-    const services = [
-      {
-        name: 'AllOrigins',
-        url: `https://api.allorigins.win/get?url=${encodeURIComponent(substackUrl)}`,
-        parser: 'xml'
-      },
-      {
-        name: 'RSS2JSON',
-        url: `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(substackUrl)}&count=5`,
-        parser: 'json'
-      },
-      {
-        name: 'CORS-Anywhere',
-        url: `https://cors-anywhere.herokuapp.com/${substackUrl}`,
-        parser: 'xml'
-      }
-    ];
-    
-    for (const service of services) {
-      try {
-        console.log(`Trying ${service.name}...`);
-        const response = await fetch(service.url);
-        
-        if (!response.ok) {
-          console.log(`${service.name} failed with status:`, response.status);
-          continue;
-        }
-        
-        const data = await response.json();
-        
-        if (service.parser === 'json') {
-          // RSS2JSON format
-          if (data.status === 'ok' && data.items && data.items.length > 0) {
-            displayPosts(data.items);
-            feedContainer.setAttribute('data-loaded', 'true');
-            return;
-          }
-        } else {
-          // XML format from AllOrigins or CORS-Anywhere
-          const xmlContent = data.contents || data;
-          const posts = parseRSSXML(xmlContent);
-          if (posts.length > 0) {
-            displayPosts(posts);
-            feedContainer.setAttribute('data-loaded', 'true');
-            return;
-          }
-        }
-      } catch (serviceError) {
-        console.log(`${service.name} error:`, serviceError.message);
-        continue;
-      }
-    }
-    
-    // If all services fail, show manual fallback
-    throw new Error('All RSS services unavailable');
-    
-  } catch (error) {
-    console.error('Error loading Substack feed:', error);
-    
-    // Show a manual fallback with your latest posts
-    showManualFallback();
-  }
-}
-
-function parseRSSXML(xmlString) {
-  try {
-    const parser = new DOMParser();
-    const xmlDoc = parser.parseFromString(xmlString, 'text/xml');
-    const items = xmlDoc.querySelectorAll('item');
-    
-    const posts = [];
-    items.forEach((item, index) => {
-      if (index < 5) { // Limit to 5 posts
-        posts.push({
-          title: item.querySelector('title')?.textContent || 'Untitled',
-          link: item.querySelector('link')?.textContent || '#',
-          pubDate: item.querySelector('pubDate')?.textContent || '',
-          description: item.querySelector('description')?.textContent || ''
-        });
-      }
-    });
-    
-    return posts;
-  } catch (error) {
-    console.error('Error parsing RSS XML:', error);
-    return [];
-  }
-}
-
-function showManualFallback() {
-  const feedContainer = document.getElementById('substack-feed');
-  
-  // Manual fallback with placeholder posts - you can update these with your actual recent posts
-  const fallbackPosts = [
-    {
-      title: "Welcome to Dialectical Praxis",
-      description: "Exploring the intersection of theory and practice...",
-      link: "https://dialecticalpraxis.substack.com",
-      pubDate: "Recent"
-    },
-    {
-      title: "Latest Thoughts",
-      description: "Check out my latest writings and analysis...", 
-      link: "https://dialecticalpraxis.substack.com",
-      pubDate: "Recent"
-    },
-    {
-      title: "Subscribe for Updates",
-      description: "Join the conversation and get updates...",
-      link: "https://dialecticalpraxis.substack.com",
-      pubDate: "Recent"
-    }
-  ];
-  
-  let html = `
-    <div class="alert alert-info mb-4">
-      <h5><i class="fa fa-info-circle"></i> RSS Feed Temporarily Unavailable</h5>
-      <p>Having trouble loading the latest posts automatically. Please visit my Substack directly for the most recent content.</p>
-    </div>
-    <div class="row">
-  `;
-  
-  fallbackPosts.forEach((post) => {
-    html += `
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">${post.title}</h5>
-            <p class="card-text text-muted small">${post.pubDate}</p>
-            <p class="card-text flex-grow-1">${post.description}</p>
-            <a href="${post.link}" target="_blank" class="btn btn-primary btn-sm mt-auto">Visit Substack</a>
-          </div>
-        </div>
-      </div>
-    `;
-  });
-  
-  html += `
-    </div>
-    <div class="text-center mt-4">
-      <a href="https://dialecticalpraxis.substack.com" target="_blank" class="btn btn-primary btn-xl">
-        <i class="fa fa-external-link"></i> Visit Dialectical Praxis on Substack
-      </a>
-      <button onclick="loadSubstackFeed()" class="btn btn-outline-secondary ml-2">
-        <i class="fa fa-refresh"></i> Try Loading Feed Again
-      </button>
-    </div>
-  `;
-  
-  feedContainer.innerHTML = html;
-}
-
-function displayPosts(posts) {
-  const feedContainer = document.getElementById('substack-feed');
-  
-  let html = '<div class="row">';
-  
-  posts.slice(0, 3).forEach((post, index) => {
-    const date = new Date(post.pubDate).toLocaleDateString();
-    const excerpt = post.description ? 
-      post.description.replace(/<[^>]*>/g, '').substring(0, 150) + '...' : 
-      'Click to read more...';
-    
-    html += `
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">${post.title}</h5>
-            <p class="card-text text-muted small">${date}</p>
-            <p class="card-text flex-grow-1">${excerpt}</p>
-            <a href="${post.link}" target="_blank" class="btn btn-primary btn-sm mt-auto">Read More</a>
-          </div>
-        </div>
-      </div>
-    `;
-  });
-  
-  html += '</div>';
-  
-  // Add link to view all posts
-  html += `
-    <div class="text-center mt-4">
-      <a href="${posts[0].link.split('/p/')[0]}" target="_blank" class="btn btn-primary btn-xl">
-        View All Posts on Substack
-      </a>
-    </div>
-  `;
-  
-  feedContainer.innerHTML = html;
-}
-</script>
-
-<style>
-/* Custom styles for the feed */
-#substack-feed .card {
-  border: 1px solid #e0e0e0;
-  transition: transform 0.2s ease-in-out;
-}
-
-#substack-feed .card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-#substack-feed .spinner-border {
-  width: 3rem;
-  height: 3rem;
-}
-
-.alert-link {
-  font-weight: bold;
-}
-</style>
