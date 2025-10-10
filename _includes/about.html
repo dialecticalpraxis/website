@@ -11,10 +11,17 @@
     <div class="row align-items-center">
       <div class="col-lg-7">
         <div class="large text-muted">{{ site.data.sitetext[site.locale].about.body | markdownify }}</div>
+        {% if site.data.sitetext[site.locale].about.button %}
+        <div class="text-center mt-4">
+          <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" data-target="#dialecticalPraxisModal">
+            {{ site.data.sitetext[site.locale].about.button.text }}
+          </button>
+        </div>
+        {% endif %}
       </div>
       <div class="col-lg-5">
-        <img src="{{ site.data.sitetext[site.locale].about.image | default: '/assets/img/influence.png' }}" 
-             alt="{{ site.data.sitetext[site.locale].about.image_alt | default: 'Photo collage of socialist and Marxist scholars and writers.' }}" 
+        <img src="{{ site.data.sitetext[site.locale].about.image | default: '/assets/img/about-image.jpg' }}" 
+             alt="{{ site.data.sitetext[site.locale].about.image_alt | default: 'About image' }}" 
              class="img-fluid rounded">
       </div>
     </div>
@@ -32,6 +39,13 @@
     <div class="row align-items-center">
       <div class="col-lg-7">
         <div class="large text-muted">{{ site.data.sitetext.about.body | markdownify }}</div>
+        {% if site.data.sitetext.about.button %}
+        <div class="text-center mt-4">
+          <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" data-target="#dialecticalPraxisModal">
+            {{ site.data.sitetext.about.button.text }}
+          </button>
+        </div>
+        {% endif %}
       </div>
       <div class="col-lg-5">
         <img src="{{ site.data.sitetext.about.image | default: '/assets/img/about-image.jpg' }}" 
