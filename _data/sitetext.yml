@@ -10,13 +10,18 @@
 # English [default] (https://localizely.com/language-code/en/)
 # -----------------
 en: &DEFAULT_EN
-  header:
-    title: 
-    text: 
-    #button: Become a Member
-    #buttonlink: "#contact"
 
+  derron:
+    title: About Derron
+    text: Activist | Educator | Scholar
+    body: |
+        <p>Hailing from Ohio, Derron is a higher education professional who is passionate about collective liberation. He believes in the power of commmunity building across difference through interpersonal connections rooted in authenticity, trust, and grace.</p>
 
+        <p>As a PhD student in Kansas State University' Adult Learning and Leadership program, Derron is interested in radical philosophies of education, focusing on social epistemology, liberatory praxis, information literacy, and the impact that settler colonization and neoliberalism have on adult learning.</p>
+
+        <p>When not working, studying, or doing research, one can find Derron volunteering and organizing in his community,  working at his garden plot at the Manhattan Community Garden, reading epic fantasy fiction, crafting, playing cozy video games, and studying and discussing linguistics and language.
+        </p>
+    section:derron
 
   footer:
     legal: "Privacy Policy"
