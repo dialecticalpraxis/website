@@ -31,9 +31,11 @@
         letter-spacing: 1px;
         color: #403e3e; // Dark color for transparent navbar
         @include heading-font;
+        transition: color 0.3s ease; // Smooth transition
         &.active,
-        &:hover {
-          color: #403e3e;
+        &:hover,
+        &:focus {
+          color: #000000; // Black on hover/click when transparent
         }
       }
     }
@@ -74,9 +76,11 @@
         .nav-item {
           .nav-link {
             color: #f6f5f3;
+            transition: color 0.3s ease; // Smooth transition
             &.active,
-            &:hover {
-              color: #f6f5f3;
+            &:hover,
+            &:focus {
+              color: #ffffff; // White on hover/click when dark background
             }
           }
         }
@@ -104,9 +108,11 @@ body[data-section="resources"] #mainNav {
     .nav-item {
       .nav-link {
         color: #f6f5f3;
+        transition: color 0.3s ease; // Smooth transition
         &.active,
-        &:hover {
-          color: #f6f5f3;
+        &:hover,
+        &:focus {
+          color: #ffffff; // White on hover/click when dark background
         }
       }
     }
