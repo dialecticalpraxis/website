@@ -41,26 +41,25 @@ en: &DEFAULT_EN
 
         <p>At the heart of my work are questions about how adults learn in conditions of polarization and disinformation:</p>
 
-      <ul>
-        <li>Under what circumstances do people move beyond entrenched beliefs?</li>
-        <li>How do trusted relationships and dialogue open space for transformative learning?</li>
-        <li>In what ways do social media practices both reflect and reshape critical consciousness?</li>
-      </ul>
+        <ul>
+          <li>Under what circumstances do people move beyond entrenched beliefs?</li>
+          <li>How do trusted relationships and dialogue open space for transformative learning?</li>
+          <li>In what ways do social media practices both reflect and reshape critical consciousness?</li>
+        </ul>
 
-      <p>To answer these questions, I draw on transformative learning theory, critical pedagogy, and social epistemology, using narrative inquiry, digital ethnography, and mixed methods. My case study work explores how adults shift their stance from a pro-Western imperialist frame to an anti-colonial lens as an example of how ideological transformation unfolds in practice.        </p>
+        <p>To answer these questions, I draw on transformative learning theory, critical pedagogy, and social epistemology, using narrative inquiry, digital ethnography, and mixed methods. My case study work explores how adults shift their stance from a pro-Western imperialist frame to an anti-colonial lens as an example of how ideological transformation unfolds in practice.        </p>
 
-      <p>More broadly, I investigate how adults:</p>
+        <p>More broadly, I investigate how adults:</p>
 
-      <ul>
-        <li>Reconcile moral intuitions with the demands of epistemic responsibility.</li>
-        <li>Negotiate identity within knowledge communities, balancing belonging and autonomy</li>
-        <li>Cultivate reflective judgment and intellectual humility in evaluating sources, claims, and lived experiences.</li>
-      </ul>
+        <ul>
+          <li>Reconcile moral intuitions with the demands of epistemic responsibility.</li>
+          <li>Negotiate identity within knowledge communities, balancing belonging and autonomy</li>
+          <li>Cultivate reflective judgment and intellectual humility in evaluating sources, claims, and lived experiences.</li>
+        </ul>
 
-      <p>My research emphasizes the role of liberatory praxis in building not only individual intellectual growth, but also collective epistemic well-being. I aim to contribute actionable insights for educators, organizers, and policymakers designing interventions that empower adults to critically engage with complex information landscapes.</p>
+        <p>My research emphasizes the role of liberatory praxis in building not only individual intellectual growth, but also collective epistemic well-being. I aim to contribute actionable insights for educators, organizers, and policymakers designing interventions that empower adults to critically engage with complex information landscapes.</p>
 
         <p>Ultimately, my goal is to illuminate pathways out of epistemic entrenchment and to advance a vision of lifelong learning as both a personal and collective project—where knowledge is not merely acquired, but ethically lived.</p>
-
      cv_button:  # Optional - uncomment to add a modal button
        text: "Curriculum Vitae"
 
