@@ -45,6 +45,21 @@ h6 {
     @include serif-font;
   }
 }
+
+// Alternating section backgrounds
+.page-section:nth-of-type(odd) {
+  background-color: #f6f5f3;
+}
+
+.page-section:nth-of-type(even) {
+  background-color: #efeeec;
+}
+
+// Override for sections with bg-light class
+.page-section.bg-light {
+  background-color: #f6f5f3 !important;
+}
+
 @media (min-width: 768px) {
   section {
     padding: 150px 0;
