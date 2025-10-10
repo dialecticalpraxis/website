@@ -13,7 +13,7 @@
     z-index: 1050;
   }
   .navbar-brand {
-    color: #f6f5f3;
+    color: $primary;
     @include script-font;
     &.active,
     &:active,
