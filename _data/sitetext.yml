@@ -31,7 +31,7 @@ en: &DEFAULT_EN
     title: "Education"
     text: ""
     body: |
-      <p>My philosophical framework is rooted in dialectical liberatory praxis—the symbiotic interplay of critical reflection and transformative action—as a means to dismantle oppressive systems and cultivate collective freedom. Grounded in the works of Paulo Freire, Myles Horton, bell hooks, Frantz Fanon, and other critical theorists, this framework rejects neutrality in education, insisting instead that teaching and learning must be acts of resistance, healing, and reclamation. Below, I outline the core pillars of my approach, weaving together feminist, decolonial, Marxist, and critical race theories to advance a pedagogy of radical hope and embodied justice.</p>
+      <p>My philosophical framework of education is rooted in dialectical liberatory praxis—the symbiotic interplay of critical reflection and transformative action—as a means to dismantle oppressive systems and cultivate collective freedom. Grounded in the works of Paulo Freire, Myles Horton, bell hooks, Frantz Fanon, and other critical theorists, this framework rejects neutrality in education, insisting instead that teaching and learning must be acts of resistance, healing, and reclamation. Below, I outline the core pillars of my approach, weaving together feminist, decolonial, Marxist, and critical race theories to advance a pedagogy of radical hope and embodied justice.</p>
     section: education
     image: /assets/img/influence.png  # Optional
     image_alt: Philosophy  # Optional
