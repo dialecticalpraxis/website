@@ -8,9 +8,14 @@
         <h3 class="section-subheading text-center text-muted">{{ site.data.sitetext[site.locale].about.text | default: "" }}</h3>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-12 mx-auto">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
         <div class="large text-muted">{{ site.data.sitetext[site.locale].about.body | markdownify }}</div>
+      </div>
+      <div class="col-lg-5">
+        <img src="{{ site.data.sitetext[site.locale].about.image | default: '/assets/img/influence.png' }}" 
+             alt="{{ site.data.sitetext[site.locale].about.image_alt | default: 'Photo collage of socialist and Marxist scholars and writers.' }}" 
+             class="img-fluid rounded">
       </div>
     </div>
   </div>
@@ -24,9 +29,14 @@
         <h3 class="section-subheading text-center text-muted">{{ site.data.sitetext.about.text | default: "" }}</h3>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-12 mx-auto">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
         <div class="large text-muted">{{ site.data.sitetext.about.body | markdownify }}</div>
+      </div>
+      <div class="col-lg-5">
+        <img src="{{ site.data.sitetext.about.image | default: '/assets/img/about-image.jpg' }}" 
+             alt="{{ site.data.sitetext.about.image_alt | default: 'About image' }}" 
+             class="img-fluid rounded">
       </div>
     </div>
   </div>
