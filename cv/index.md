@@ -8,4 +8,8 @@ background: grey
 
 <p class="item-intro text-muted"><a href="/assets/pdf/cv.pdf" target="_blank">Full academic CV (PDF)</a></p>
 <!-- PDF viewer -->
-<iframe src="{{ '/assets/pdf/cv.pdf' | relative_url }}" style="width:100%;height:200vh;border:none;" title="CV PDF viewer"></iframe>
+<iframe src="{{ '/assets/pdf/cv.pdf' | relative_url }}" style="width:100%;height:100vh;border:none;" title="CV PDF viewer"></iframe>
+<br>
+<br>
+<br>
+<br>
