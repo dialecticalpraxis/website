@@ -27,8 +27,12 @@ en: &DEFAULT_EN
         <p><i>Dialectical</i> (adj.) - refers to a way of thinking, reasoning, or engaging with the world that emphasizes contradiction, change, and the dynamic interplay of opposing forces. It is rooted in dialectics, a philosophical method with a long history, but most prominently developed by German philosopher, Georg Wilhelm Friedrich Hegel.</p>
         <p><i>Praxis</i> (noun) - refers to the process of putting theory into action, especially in a deliberate, reflective, and socially meaningful way. It's not just action, and it's not just thought — praxis is the fusion of both.</p>
 
-
-  research:
+  education:
+    body: |
+      Test
+    section: education
+    
+  scholarship:
     title: ""
     text: ""
     body: |
