@@ -31,8 +31,29 @@ en: &DEFAULT_EN
     title: ""
     text: ""
     body: |
-      <p>My research sits at the intersection of social epistemology and adult learning, with a particular focus on the conditions that may enable adults to move out of hegemonic frames, particularly epistemic bubbles, echo chambers, and neoliberal Western imperialist discourses that shape public understanding of political issues. I am especially interested in how transformative learning might emerge through trusted relationships, and whether such transformations influence adults’ learning behaviors and critical use of social media.</p>
-      <p>Simply put, my research interests are in how people learn to think for themselves when surrounded by misinformation, bias, and pressure to believe what everyone else believes. I study how trusted relationships, honest conversations, and lived experiences can help adults see the world in new ways and make better decisions for themselves and their communities.</p>
+      <p> My research sits at the intersection of social epistemology and adult learning, with a particular focus on how people break free from hegemonic frames—the deeply embedded worldviews       shaped by ideology, power, and social belonging. I study how adults in so-called “post-truth” societies navigate—and sometimes transcend—epistemic bubbles, echo chambers, and neoliberal         discourses that shape public understanding of political issues.</p>
+
+      <p>At the heart of my work are questions about how adults learn in conditions of polarization and disinformation:</p>
+
+      <ul>
+        <li>Under what circumstances do people move beyond entrenched beliefs?</li>
+        <li>How do trusted relationships and dialogue open space for transformative learning?</li>
+        <li>In what ways do social media practices both reflect and reshape critical consciousness?</li>
+      </ul>
+
+      <p>To answer these questions, I draw on transformative learning theory, critical pedagogy, and social epistemology, using narrative inquiry, digital ethnography, and mixed methods. My           case study work explores how adults shift their stance from a pro-Western imperialist frame to an anti-colonial lens as an example of how ideological transformation unfolds in practice.        </p>
+
+      <p>More broadly, I investigate how adults:</p>
+
+      <ul>
+        <li>Reconcile moral intuitions with the demands of epistemic responsibility.</li>
+        <li>Negotiate identity within knowledge communities, balancing belonging and autonomy</li>
+        <li>Cultivate reflective judgment and intellectual humility in evaluating sources, claims, and lived experiences.</li>
+      </ul>
+
+      <p>My research emphasizes the role of liberatory praxis in building not only individual intellectual growth, but also collective epistemic well-being. I aim to contribute actionable             insights for educators, organizers, and policymakers designing interventions that empower adults to critically engage with complex information landscapes.</p>
+
+        <p>Ultimately, my goal is to illuminate pathways out of epistemic entrenchment and to advance a vision of lifelong learning as both a personal and collective project—where knowledge is         not merely acquired, but ethically lived.</p>
     section: research
     image: /assets/img/olive.png  # Optional - uncomment to add an image
     image_alt: Olive branch with olives.  # Optional
