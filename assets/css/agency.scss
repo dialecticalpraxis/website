@@ -98,3 +98,22 @@ article.blog-post {
   text-decoration-thickness: 2px;
   transition: all 0.2s ease;
 }
+
+.post-content img {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Center image captions (if you add them) */
+.post-content p > img + em,
+.post-content p > em:only-child {
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+  color: #6c757d;
+  margin-top: 0.5rem;
+}
