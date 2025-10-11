@@ -11,6 +11,8 @@
 # -----------------
 en: &DEFAULT_EN
   nav:
+    - title: "Home"
+      url: "https://www.dialecticalpraxis.com"
     - title: "About"
       section: about
     - title: "Education"
