@@ -13,16 +13,6 @@ document.getElementById("page-top").className="bg-light";
 </script>
 {% endif %}
 
-<!-- Add script to ensure navbar is dark on page load -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var mainNav = document.getElementById('mainNav');
-  if (mainNav) {
-    mainNav.classList.add('navbar-shrink');
-  }
-});
-</script>
-
 <div class="container" id="pagecontainer">
 {{ content }}
 </div>
