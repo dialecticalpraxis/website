@@ -107,7 +107,15 @@ en: &DEFAULT_EN
         <p>My research emphasizes the role of liberatory praxis in building not only individual intellectual growth, but also collective epistemic well-being. I aim to contribute actionable insights for educators, organizers, and policymakers designing interventions that empower adults to critically engage with complex information landscapes.</p>
         <p>Ultimately, my goal is to illuminate pathways out of epistemic entrenchment and to advance a vision of lifelong learning as both a personal and collective project—where knowledge is not merely acquired, but ethically lived.</p>
 
-
+  activism:
+      title: ""
+      text: ""
+      body: |
+        <p>My activism is grounded in the belief that transformative change emerges from collective action rooted in solidarity, mutual aid, and sustained community organizing. I engage in work that centers the voices and leadership of those most impacted by systemic oppression, building coalitions across movements for racial justice, economic equity, housing rights, and climate justice.</p>
+        <p>Whether through direct action, political education, or grassroots organizing, I strive to create spaces where people can develop critical consciousness, practice democratic participation, and exercise power together. My organizing philosophy draws from abolitionist frameworks, Indigenous sovereignty movements, and traditions of Black radical organizing.</p>
+      section: activism
+      image: /assets/img/activism.png
+      image_alt: Activism and organizing
 
 
   footer:
