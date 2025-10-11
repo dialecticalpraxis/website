@@ -1,0 +1,71 @@
+---
+layout: page
+---
+
+<article class="blog-post">
+  <div class="row">
+    <div class="col-lg-10 mx-auto">
+      <header class="post-header mb-4">
+        <h1 class="post-title">{{ page.title }}</h1>
+        
+        <div class="post-meta text-muted mb-3">
+          <i class="far fa-calendar"></i> {{ page.date | date: "%B %-d, %Y" }}
+          {% if page.author %}
+            <span class="mx-2">•</span>
+            <i class="far fa-user"></i> {{ page.author }}
+          {% endif %}
+          {% if page.reading_time %}
+            <span class="mx-2">•</span>
+            <i class="far fa-clock"></i> {{ page.reading_time }} min read
+          {% endif %}
+        </div>
+        
+        {% if page.categories.size > 0 %}
+          <div class="post-categories mb-3">
+            {% for category in page.categories %}
+              <span class="badge badge-primary">{{ category }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+        
+        {% if page.tags.size > 0 %}
+          <div class="post-tags mb-3">
+            <i class="fas fa-tags"></i>
+            {% for tag in page.tags %}
+              <span class="badge badge-secondary">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </header>
+      
+      <div class="post-content">
+        {{ content }}
+      </div>
+      
+      <footer class="post-footer mt-5 pt-4 border-top">
+        <div class="row">
+          <div class="col-md-6">
+            {% if page.previous.url %}
+              <a href="{{ page.previous.url | relative_url }}" class="btn btn-outline-primary">
+                <i class="fas fa-arrow-left"></i> Previous Post
+              </a>
+            {% endif %}
+          </div>
+          <div class="col-md-6 text-right">
+            {% if page.next.url %}
+              <a href="{{ page.next.url | relative_url }}" class="btn btn-outline-primary">
+                Next Post <i class="fas fa-arrow-right"></i>
+              </a>
+            {% endif %}
+          </div>
+        </div>
+        
+        <div class="mt-4 text-center">
+          <a href="/blog.html" class="btn btn-primary">
+            <i class="fas fa-list"></i> Back to All Posts
+          </a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</article>
