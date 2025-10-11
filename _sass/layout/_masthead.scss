@@ -7,9 +7,16 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  min-height: 400px; // Ensure minimum height even when empty
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;
+    width: 100%;
+    
     .intro-lead-in {
       font-size: 22px;
       font-style: italic;
@@ -26,11 +33,15 @@ header.masthead {
     }
   }
 }
+
 @media (min-width: 768px) {
   header.masthead {
+    min-height: 600px; // Larger minimum height on desktop
+    
     .intro-text {
       padding-top: 400px;
       padding-bottom: 300px;
+      
       .intro-lead-in {
         font-size: 40px;
         font-style: italic;
