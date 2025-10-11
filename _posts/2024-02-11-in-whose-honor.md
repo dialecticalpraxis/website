@@ -49,8 +49,6 @@ While some may argue that the use of Native American mascots like the "Braves" a
 
 - The completely inappropriate mascot, which used fake regalia and an oversized head, which was supposed to depict a Native American that the cheerleaders would wear at football games and other events.
 
-![Logan Elm High School mascot with inappropriate Native American imagery](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb86fd2c1-960f-4dfb-b922-0813e234748e_800x534.png)
-
 - The tomahawk chop chant and drum beat that the marching band would lead.
 
 - The use of red face in a 1998 production of Annie Get Your Gun.
