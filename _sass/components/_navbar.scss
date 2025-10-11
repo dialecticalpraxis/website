@@ -1,6 +1,8 @@
-// Styling for the navbar
+// Styling for the navbar - UNIFIED VERSION
 #mainNav {
-  background-color: $primary;
+  background-color: transparent; // Start transparent on ALL pages
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  
   .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -12,9 +14,11 @@
     @include heading-font;
     z-index: 1050;
   }
+  
   .navbar-brand {
     color: white;
     @include script-font;
+    transition: all 0.3s ease;
     &.active,
     &:active,
     &:focus,
@@ -22,6 +26,7 @@
       color: darken(white, 10%);
     }
   }
+  
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -29,13 +34,13 @@
         font-weight: 400;
         padding: 0.75em 0;
         letter-spacing: 1px;
-        color: #f6f5f3; // Light color for solid navbar (single pages)
+        color: #403e3e; // Dark color when transparent
         @include heading-font;
         transition: color 0.3s ease;
         &.active,
         &:hover,
         &:focus {
-          color: #ffffff; // White on hover for solid navbar
+          color: #000000; // Black on hover when transparent
         }
       }
     }
@@ -46,23 +51,25 @@
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s, background-color 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s, background-color 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s, background-color 0.3s;
     border: none;
     background-color: transparent;
+    
     .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
-      color: white; // White for transparent navbar
+      color: white;
     }
+    
     .navbar-nav {
       .nav-item {
         .nav-link {
           padding: 1.1em 1em !important;
-          color: #403e3e; // Dark color for transparent navbar (home page)
+          color: #403e3e; // Dark color for transparent navbar
           transition: color 0.3s ease;
           &.active,
           &:hover,
@@ -72,14 +79,18 @@
         }
       }
     }
+    
+    // Shrunk state applies to ALL pages when scrolled
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
       background-color: $primary;
+      
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
       }
+      
       // Light color when navbar has background
       .navbar-nav {
         .nav-item {
@@ -98,32 +109,5 @@
   }
 }
 
-/* -----------------------------------------------
-   Keep the nav compact on pages flagged "resources"
-   ----------------------------------------------- */
-body[data-section="resources"] #mainNav {
-  /* match the .navbar-shrink state */
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  background-color: $primary !important;
-
-  .navbar-brand {
-    font-size: 1.25em;
-    padding: 12px 0;
-  }
-  
-  // Light color for resource pages
-  .navbar-nav {
-    .nav-item {
-      .nav-link {
-        color: #f6f5f3;
-        transition: color 0.3s ease;
-        &.active,
-        &:hover,
-        &:focus {
-          color: #ffffff; // White on hover/click when dark background
-        }
-      }
-    }
-  }
-}
+// Remove the resource-specific override - no longer needed
+/* Resources pages now use the same behavior as home page */
