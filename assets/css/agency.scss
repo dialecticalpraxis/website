@@ -117,3 +117,25 @@ article.blog-post {
   color: #6c757d;
   margin-top: 0.5rem;
 }
+
+body:not(#page-top) #mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: $primary!important;
+}
+
+/* Ensure navbar shrink class works properly */
+#mainNav.navbar-shrink {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: $primary !important;
+}
+
+/* Make sure navbar brand/logo adjusts size when shrunk */
+#mainNav.navbar-shrink .navbar-brand {
+  font-size: 1.25em;
+}
+
+#mainNav.navbar-shrink .navbar-brand img {
+  height: 40px;
+}
