@@ -20,7 +20,7 @@ en: &DEFAULT_EN
     - title: "Activism"
       section: activism
     - title: "CV"
-      url: "/cv/"
+      url: "/cv.html"
 
 
 
