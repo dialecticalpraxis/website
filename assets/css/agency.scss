@@ -139,3 +139,52 @@ body:not(#page-top) #mainNav {
 #mainNav.navbar-shrink .navbar-brand img {
   height: 40px;
 }
+
+/* Add to assets/css/agency.css */
+
+/* Style Previous/Next post buttons to match home page buttons */
+.post-footer .btn-outline-primary {
+  color: #fdfdfa;
+  border-color: #403e3e;
+  background-color: #403e3e;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.post-footer .btn-outline-primary:hover {
+  background-color: #2d2c2c;
+  border-color: #2d2c2c;
+  color: #fdfdfa;
+}
+
+/* Style the "Back to All Posts" button to match primary buttons */
+.post-footer .btn-primary {
+  background-color: #403e3e;
+  border-color: #403e3e;
+  color: #fdfdfa;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.post-footer .btn-primary:hover {
+  background-color: #2d2c2c;
+  border-color: #2d2c2c;
+  color: #fdfdfa;
+}
+
+/* Optional: Make all buttons in post content match theme */
+.post-content .btn-primary,
+.blog-post .btn-primary {
+  background-color: #403e3e;
+  border-color: #403e3e;
+  color: #fdfdfa;
+}
+
+.post-content .btn-primary:hover,
+.blog-post .btn-primary:hover {
+  background-color: #2d2c2c;
+  border-color: #2d2c2c;
+  color: #fdfdfa;
+}
