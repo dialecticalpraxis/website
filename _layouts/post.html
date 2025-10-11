@@ -62,13 +62,11 @@ layout: default
   </nav>
   <!-- End Navigation -->
 
-  <!-- Header/Masthead for blog post -->
+  <!-- Header/Masthead for blog post (empty, just for spacing) -->
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        {%- if page.title -%}
-          <div class="intro-heading text-uppercase">{{ page.title }}</div>
-        {%- endif -%}
+        <!-- Empty masthead for consistent spacing -->
       </div>
     </div>
   </header>
@@ -77,7 +75,12 @@ layout: default
 <article class="blog-post">
   <div class="row">
     <div class="col-lg-10 mx-auto">
-      <header class="post-header mb-4">        
+      <header class="post-header mb-4">
+        <!-- Post Title as H2 -->
+        {%- if page.title -%}
+          <h2 class="post-title">{{ page.title }}</h2>
+        {%- endif -%}
+        
         <div class="post-meta text-muted mb-3">
           <i class="far fa-calendar"></i> {{ page.date | date: "%B %-d, %Y" }}
           {% if page.author %}
