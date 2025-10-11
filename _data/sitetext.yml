@@ -79,12 +79,13 @@ en: &DEFAULT_EN
         
         <h3>Vision</h3>
         <p>I strive to create educational ecosystems where adult learners are not merely "critical" but creators of liberatory futures. By intertwining Marxist critiques of capital, feminist ethics of care, and decolonial demands for land/body sovereignty, my work seeks to rupture epistemic bubbles and equip learners to re-member—to piece together fragmented selves and societies.</p>
+ 
   scholarship:
     title: ""
     text: ""
     body: |
       <p> My research sits at the intersection of social epistemology and adult learning, with a particular focus on how people break free from hegemonic frames—the deeply embedded worldviews       shaped by ideology, power, and social belonging. I study how adults in so-called "post-truth" societies navigate—and sometimes transcend—epistemic bubbles, echo chambers, and neoliberal discourses that shape public understanding of political issues.</p>
-    section: research
+    section: scholarship
     image: /assets/img/olive.png  # Optional - uncomment to add an image
     image_alt: Olive branch with olives.  # Optional
     button:
