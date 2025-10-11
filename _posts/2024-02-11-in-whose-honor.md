@@ -11,6 +11,10 @@ reading_time: 10
 
 ## Indigenous Mascots in 2024
 
+![Kansas City Chiefs fans chanting and doing “the chop” in 2018](https://substackcdn.com/image/fetch/$s_!xV9Z!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb86fd2c1-960f-4dfb-b922-0813e234748e_800x534.png)
+
+*Kansas City Chiefs fans chanting and doing “the chop” in 2018. (Charlie Riedel/AP)*
+
 As thousands of fans fill Allegiant Stadium in Las Vegas and living rooms across the country, they unite in a familiar ritual: the chanting of the "war chant" and the iconic tomahawk chop. Their team, the Kansas City Chiefs, prepares to battle the San Francisco 49ers for the title of champions in Super Bowl LVIII.
 
 The origins of the tomahawk chop trace back to the early 1980s. According to [Tomahawk Nation](https://www.tomahawknation.com/2012/5/1/2991946/the-real-story-of-how-the-seminole-war-chant-was-started), a member of the Florida State University (FSU) Theta Chi fraternity named Rob "Sweat" Hill initiated the ritual during a 1983 football game. He raised his hand in a chopping motion, synchronizing it with a traditional Indian war chant sung in harmony with the repetitive drumbeat of the FSU Marching Chiefs. The following year, the chant and chop [spread to fellow FSU students](https://www.nolefan.org/barnes/barnes07.html) at a pep rally organized by a student group known as the Scalphunters. By 1985, thousands of fans at Seminole football games were enthusiastically performing the tomahawk chop. This gesture transcended college sports and found its way into the realms of professional baseball with the Atlanta Braves, American football with the Kansas City Chiefs, and even into Great Britain with the English Exeter Chiefs.
@@ -18,6 +22,10 @@ The origins of the tomahawk chop trace back to the early 1980s. According to [To
 ## My Personal Experience
 
 My personal encounter with the tomahawk chop dates back to the late 1990s, during one of my high school football games, likely when I was in elementary or junior high. My alma mater, Logan Elm High School, is among the 73 school districts in Ohio that still employ Native American-themed mascots, as reported by the [National Congress of American Indians](https://infogram.com/native-mascots-in-ohio-1ho16voxxk7rx4n). Despite Ohio having zero federally or state-recognized tribes, it boasts the highest number of Indigenous mascots in the United States.
+
+![Logan Elm Braves Mascot](https://substackcdn.com/image/fetch/$s_!7_zw!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9239b3b8-2e9f-4567-a7c3-fb127da301a2_502x502.jpeg)
+
+*Logo of my high school alma mater, the Logan Elm Braves.*
 
 Situated on the unceded lands of the Shawnee Nation, Logan Elm High School derives its name from Cayuga Leader, Logan the Orator. In 1774, Logan delivered a speech, now known as Chief Logan's Lament, during peace negotiations following the murder of his family by white British settlers from Virginia. This speech, delivered under a large elm tree in present-day Pickaway County, Ohio, reflects Logan's complex relationship with the white settlers and his profound sense of loss and betrayal.
 
@@ -54,6 +62,10 @@ While some may argue that the use of Native American mascots like the "Braves" a
 - The use of red face in a 1998 production of Annie Get Your Gun.
 
 - The marching-band show, "honoring" the memory of Chief Logan, which used appropriated and stereotyped Native Imagery and sound, during the marching-band competition season of 2000.
+
+!(Logan Elm Braves Mascot)[https://substackcdn.com/image/fetch/$s_!qK_T!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa8e5b8b5-fbaa-4a9c-918f-371dd88d616c_484x1223.jpeg]
+
+*Logan Elm High School’s “Brave” mascot, used until the early 2000s.*
 
 ## The Question of "Honor"
 
