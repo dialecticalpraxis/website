@@ -68,11 +68,16 @@
               <a class="nav-link js-scroll-trigger" href="{{ site.baseurl }}/#{{ link.section }}">{{ link.title }}</a>
             </li>
 
-          {%- else -%}
+          {%- if link.url -%}
             <li class="nav-item">
-              <a class="nav-link" href="#">{{ link.title }}</a>
+                <a class="nav-link {% unless link.title == 'CV' or link.new_window %}js-scroll-trigger{% endunless %}"
+               href="{{ link.url }}"
+               {% if link.title == 'CV' or link.new_window %}
+               target="_blank" rel="noopener noreferrer"
+               {% endif %}>
+               {{ link.title }}
+                </a>
             </li>
-          {%- endif -%}
 
         {%- endfor -%}
 
