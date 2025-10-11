@@ -18,7 +18,7 @@ en: &DEFAULT_EN
       <p>As a doctoral student in Kansas State University's Adult Learning and Leadership program, I am interested in radical philosophies of education, focusing on social epistemology, liberatory praxis, media literacy, and adult learning in a settler colonial and neoliberal context.</p>
       <p>When not working, studying, or doing research, one can find me volunteering and organizing,  working at my garden plot at the Manhattan Community Garden, reading epic fantasy fiction, crafting, playing cozy video games, and studying and discussing linguistics and language.</p>
     section: about
-    image: /assets/img/influence.png  # Add your image path here
+    image: /assets/img/derron.png  # Add your image path here
     image_alt:   # Add alt text for accessibility
     button:
       text: "What is Dialectical Praxis?"
@@ -33,7 +33,7 @@ en: &DEFAULT_EN
     body: |
       <p>My philosophical framework of education is rooted in dialectical liberatory praxis—the symbiotic interplay of critical reflection and transformative action—as a means to dismantle oppressive systems and cultivate collective freedom. Grounded in the works of Paulo Freire, Myles Horton, bell hooks, Frantz Fanon, and other critical theorists, this framework rejects neutrality in education, insisting instead that teaching and learning must be acts of resistance, healing, and reclamation. Below, I outline the core pillars of my approach, weaving together feminist, decolonial, Marxist, and critical race theories to advance a pedagogy of radical hope and embodied justice.</p>
     section: education
-    image: /assets/img/derron.png  # Optional
+    image: /assets/img/influence.png  # Optional
     image_alt: Philosophy  # Optional
     button:
       text: "Learn More"
@@ -114,7 +114,7 @@ en: &DEFAULT_EN
         <p>My activism is grounded in the belief that transformative change emerges from collective action rooted in solidarity, mutual aid, and sustained community organizing. I engage in work that centers the voices and leadership of those most impacted by systemic oppression, building coalitions across movements for racial justice, economic equity, housing rights, and climate justice.</p>
         <p>Whether through direct action, political education, or grassroots organizing, I strive to create spaces where people can develop critical consciousness, practice democratic participation, and exercise power together. My organizing philosophy draws from abolitionist frameworks, Indigenous sovereignty movements, and traditions of radical organizing by the Global South.</p>
       section: activism
-      image: /assets/img/activism.png
+      image: /assets/img/flotilla.png
       image_alt: Activism and organizing
 
 
