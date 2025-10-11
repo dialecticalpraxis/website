@@ -42,4 +42,42 @@ $header-image: "{{ site.data.style.header-image }}";
 @import "layout/contact.scss";
 @import "layout/footer.scss";
 
+/* Add this to your assets/css/agency.css file or create a custom CSS file */
 
+/* Fix 1: Add padding to top of blog posts so content doesn't hide under navbar */
+.blog-post {
+  padding-top: 120px; /* Adjust this value based on your navbar height */
+}
+
+/* Alternative: If you want to target all post pages */
+body[data-section="blog"] article {
+  padding-top: 120px;
+}
+
+/* Fix 2: Add spacing between post footer and page footer */
+.post-footer {
+  margin-bottom: 80px; /* Adds space between "Back to All Posts" box and footer */
+  padding-bottom: 40px; /* Additional padding within the post-footer */
+}
+
+/* Optional: Add more breathing room to the entire post content */
+article.blog-post {
+  margin-bottom: 60px;
+}
+
+/* Optional: Ensure the back button box has some space */
+.post-footer .mt-4 {
+  margin-top: 2rem !important;
+  margin-bottom: 3rem !important;
+}
+
+/* For mobile responsiveness */
+@media only screen and (max-width: 991px) {
+  .blog-post {
+    padding-top: 100px; /* Slightly less padding on mobile */
+  }
+  
+  .post-footer {
+    margin-bottom: 60px;
+  }
+}
