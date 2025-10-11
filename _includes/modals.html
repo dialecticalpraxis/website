@@ -119,12 +119,10 @@
           <div class="col-lg-8 mx-auto">
             <div class="modal-body">
               {% if site.locale and site.locale != "" and site.locale != nil %}
-                <h2 class="text-uppercase">{{ site.data.sitetext[site.locale].education.button.text }}</h2>
                 <div class="modal-text">
                   {{ site.data.sitetext[site.locale].education.button.modal_content | markdownify }}
                 </div>
               {% else %}
-                <h2 class="text-uppercase">{{ site.data.sitetext.education.button.text }}</h2>
                 <div class="modal-text">
                   {{ site.data.sitetext.education.button.modal_content | markdownify }}
                 </div>
@@ -141,7 +139,7 @@
   </div>
 </div>
 
-<!-- Education/Philosophy Modal -->
+<!-- Scholarship Modal -->
 <div class="portfolio-modal modal fade" id="scholarshipModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
