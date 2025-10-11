@@ -1,0 +1,57 @@
+<!-- Activism -->
+{% if site.locale and site.locale != "" and site.locale != nil %}
+<section class="page-section" id="{{ site.data.sitetext[site.locale].activism.section | default: "activism" }}">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image column on the LEFT -->
+      <div class="col-lg-5">
+        {% if site.data.sitetext[site.locale].activism.image %}
+        <img src="{{ site.data.sitetext[site.locale].activism.image }}" 
+             alt="{{ site.data.sitetext[site.locale].activism.image_alt | default: 'activism image' }}" 
+             class="img-fluid rounded">
+        {% endif %}
+      </div>
+      <!-- Text column on the RIGHT -->
+      <div class="col-lg-7">
+        <div class="large text-muted">{{ site.data.sitetext[site.locale].activism.body | markdownify }}</div>
+        
+        {% if site.data.sitetext[site.locale].activism.button %}
+        <div class="text-center mt-4">
+          <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" data-target="#activismModal">
+            {{ site.data.sitetext[site.locale].activism.button.text }}
+          </button>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% else %}
+<section class="page-section" id="{{ site.data.sitetext.activism.section | default: "activism" }}">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image column on the LEFT -->
+      <div class="col-lg-5">
+        {% if site.data.sitetext.activism.image %}
+        <img src="{{ site.data.sitetext.activism.image }}" 
+             alt="{{ site.data.sitetext.activism.image_alt | default: 'activism image' }}" 
+             class="img-fluid rounded">
+        {% endif %}
+      </div>
+      <!-- Text column on the RIGHT -->
+      <div class="col-lg-7">
+        <div class="large text-muted">{{ site.data.sitetext.activism.body | markdownify }}</div>
+        
+        {% if site.data.sitetext.activism.button %}
+        <div class="text-center mt-4">
+          <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" data-target="#activismModal">
+            {{ site.data.sitetext.activism.button.text }}
+          </button>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End activism -->
