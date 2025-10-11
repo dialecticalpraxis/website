@@ -86,3 +86,15 @@ article.blog-post {
   background-color: #fed136 !important;
   color: $primary !important;
 }
+
+.post-content a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.post-content a:hover {
+  text-decoration: none;
+  color: #d4a91a; /* Slightly darker shade on hover */
+  text-decoration-thickness: 2px;
+  transition: all 0.2s ease;
+}
