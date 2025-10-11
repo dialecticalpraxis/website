@@ -63,7 +63,7 @@ While some may argue that the use of Native American mascots like the "Braves" a
 
 - The marching-band show, "honoring" the memory of Chief Logan, which used appropriated and stereotyped Native Imagery and sound, during the marching-band competition season of 2000.
 
-!(Logan Elm Braves Mascot)[https://substackcdn.com/image/fetch/$s_!qK_T!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa8e5b8b5-fbaa-4a9c-918f-371dd88d616c_484x1223.jpeg]
+![Logan Elm Braves Mascot](https://substackcdn.com/image/fetch/$s_!qK_T!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa8e5b8b5-fbaa-4a9c-918f-371dd88d616c_484x1223.jpeg)
 
 *Logan Elm High School’s “Brave” mascot, used until the early 2000s.*
 
