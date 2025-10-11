@@ -5,7 +5,74 @@ layout: default
 
 <body id="page-top" data-section="{{ page.section | default: 'page' }}">
 
-  {% include nav.html %}
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="{{ site.baseurl }}/#">
+        {%- if site.logo -%}
+          <img height="{{ site.logo.height | default: 52 }}" src="{{ site.logo.path }}" />
+        {%- else -%}
+          {{ site.title }}
+        {%- endif -%}
+      </a>
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          {%- if site.locale and site.locale != "" and site.locale != nil -%}
+            {%- assign nav_items = site.data.navigation[site.locale].nav -%}
+          {%- else -%}
+            {%- assign nav_items = site.data.navigation.nav -%}
+          {%- endif -%}
+
+          {%- for link in nav_items -%}
+            {%- if link.url -%}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ link.url }}" target="{{ link.target }}" rel="noopener noreferrer">{{ link.title }}</a>
+              </li>
+            {%- elsif link.section == "resources" -%}
+              {%- if page.section == "resources" or page.collection == "resources" -%}
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ link.title }}
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="resourcesDropdown"></div>
+                </li>
+              {%- else -%}
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="{{ site.baseurl }}/#resources">{{ link.title }}</a>
+                </li>
+              {%- endif -%}
+            {%- elsif link.section -%}
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{ site.baseurl }}/#{{ link.section }}">{{ link.title }}</a>
+              </li>
+            {%- else -%}
+              <li class="nav-item">
+                <a class="nav-link" href="#">{{ link.title }}</a>
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navigation -->
+
+  <!-- Header/Masthead for page -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        {%- if page.title -%}
+          <div class="intro-heading text-uppercase">{{ page.title }}</div>
+        {%- endif -%}
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
 
 {% if page.background == "grey" or page.background == "gray" %}
 <script>
