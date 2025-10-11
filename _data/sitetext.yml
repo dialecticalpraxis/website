@@ -116,7 +116,9 @@ en: &DEFAULT_EN
       section: activism
       image: /assets/img/flotilla.png
       image_alt: Activism and organizing
-
+      button:
+        text: "My Writing and Reflections"
+        url: "/blog.html"
 
   footer:
     legal: "Privacy Policy"
