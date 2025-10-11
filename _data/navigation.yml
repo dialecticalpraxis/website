@@ -22,7 +22,8 @@ en: &DEFAULT_EN
     - title: "Activism"
       section: activism
     - title: "CV"
-      url: "/cv.html"
+      url: "https://www.dialecticalpraxis.com/assets/pdf/cv.pdf"
+      target: "_blank"
 
 
 
