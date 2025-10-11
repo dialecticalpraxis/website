@@ -1,0 +1,52 @@
+---
+layout: page
+title: Writing & Reflections
+section: blog
+background: grey
+---
+
+<div class="row">
+  <div class="col-lg-12 text-center mb-5">
+    <h2 class="section-heading text-uppercase">Writing & Reflections</h2>
+    <h3 class="section-subheading text-muted">Essays, analysis, and reflections on activism, education, and liberation</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-10 mx-auto">
+    {% if site.posts.size > 0 %}
+      {% for post in site.posts %}
+        <div class="blog-post-preview mb-5 pb-4 border-bottom">
+          <h3 class="post-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
+          
+          <p class="post-meta text-muted">
+            <i class="far fa-calendar"></i> {{ post.date | date: "%B %-d, %Y" }}
+            {% if post.author %}
+              <span class="mx-2">•</span>
+              <i class="far fa-user"></i> {{ post.author }}
+            {% endif %}
+            {% if post.categories.size > 0 %}
+              <span class="mx-2">•</span>
+              <i class="far fa-folder"></i>
+              {% for category in post.categories %}
+                <span class="badge badge-secondary">{{ category }}</span>
+              {% endfor %}
+            {% endif %}
+          </p>
+          
+          {% if post.excerpt %}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          {% endif %}
+          
+          <a href="{{ post.url | relative_url }}" class="btn btn-primary">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+      {% endfor %}
+    {% else %}
+      <div class="alert alert-info" role="alert">
+        <i class="fas fa-info-circle"></i> No posts yet. Check back soon for new content!
+      </div>
+    {% endif %}
+  </div>
+</div>
