@@ -37,8 +37,11 @@
 
           {%- if link.url -%}
             <li class="nav-item">
-              <a class="nav-link" href="{{ link.url }}" target="{{ link.target }}" rel="noopener noreferrer">{{ link.title }}</a>
+              <a class="nav-link" href="{{ link.url }}" {% if link.title == "CV" or link.new_window %} target="_blank" rel="noopener noreferrer" {% endif %}>
+             {{ link.title }}
+              </a>
             </li>
+
 
           {%- elsif link.section == "resources" -%}
             {%- if page.section == "resources" or page.collection == "resources" -%}
