@@ -17,9 +17,9 @@
         
         {% if site.data.sitetext[site.locale].activism.button %}
         <div class="text-center mt-4">
-          <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" data-target="#activismModal">
+          <a class="btn btn-primary btn-xl text-uppercase" href="{{ site.data.sitetext[site.locale].activism.button.url }}">
             {{ site.data.sitetext[site.locale].activism.button.text }}
-          </button>
+          </a>
         </div>
         {% endif %}
       </div>
@@ -44,9 +44,9 @@
         
         {% if site.data.sitetext.activism.button %}
         <div class="text-center mt-4">
-          <button class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" data-target="#activismModal">
+          <a class="btn btn-primary btn-xl text-uppercase" href="{{ site.data.sitetext.activism.button.url }}">
             {{ site.data.sitetext.activism.button.text }}
-          </button>
+          </a>
         </div>
         {% endif %}
       </div>
