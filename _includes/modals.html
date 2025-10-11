@@ -153,7 +153,6 @@
           <div class="col-lg-8 mx-auto">
             <div class="modal-body">
               {% if site.locale and site.locale != "" and site.locale != nil %}
-                <h2 class="text-uppercase">{{ site.data.sitetext[site.locale].scholarship.button.text }}</h2>
                 <div class="modal-text">
                   {{ site.data.sitetext[site.locale].scholarship.button.modal_content | markdownify }}
                 </div>
