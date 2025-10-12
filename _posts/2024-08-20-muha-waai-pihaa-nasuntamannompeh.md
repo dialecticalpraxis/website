@@ -9,7 +9,7 @@ excerpt: "A tribute to Bryan Jay Hudson, Jr., a young Shoshone language keeper w
 reading_time: 8
 ---
 
-## Bittersweet Memories
+### Bittersweet Memories
 
 Fourteen years ago, my dad, our friend Dave, and I loaded up my dad's truck and Dave's trailer and drove out to Salt Lake City from Ohio. I was starting my master's of linguistics at the University of Utah that August. Unbeknownst to me, I would spend four years in Utah, which would forever change my life.
 
