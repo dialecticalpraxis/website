@@ -9,7 +9,6 @@ excerpt: "What happens when desire collides with health, dignity, and mutual car
 reading_time: 12
 ---
 
-## Chubs, Chasers, and the Politics of Desire
 ### What happens when desire collides with health, dignity, and mutual care?
 
 ![Fat man wearing a purple shirt biting his nails as if nervous. A caption underneath reads: my chubby chaser boyfriend doesn't want me to lose weight. Do I need to choose between my health and my relationship?](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F109812a7-8091-48ab-b509-a624ece44c52_1297x1826.png)
