@@ -15,7 +15,7 @@ No state has the right to exist.
 
 Legally, morally, and ontologically, this is a fact.
 
-States are instruments, not beings. They are abstractions maintained through coercion, territory, and recognition. They are not sentient; they do not breathe, suffer, or love. Only humans do. Thus, no state can posses a *right* to exist, only the power to impose its continued existence through violence.
+States are instruments, not beings. They are abstractions maintained through coercion, territory, and recognition. They are not sentient; they do not breathe, suffer, or love. Only humans do. Thus, no state can posses a right to exist, only the power to impose its continued existence through violence.
 
 Humans, however, do have the right to exist. This truth is inherent to all humans—buried deep within the very soul of each of us who claim to be human. To defend this truth is to live. To defend this truth is to resist.
 
@@ -37,7 +37,7 @@ I will always defend the right to resist dehumanization. I am not a Hamas apolog
 
 Over the last two years, I've been called every name you can think of—terrorist sympathizer, antisemite, fanatic. I've been doxxed, smeared, silenced. But each attempt to strip me of humanity only reaffirms why I spoke in the first place: because the struggle to be seen as human is never abstract. It's personal. It's embodied. It's lived.
 
-Still, I remain human. I want liberation for all humans—to see every person recognized as fully human, entitled to dignity and existence. This includes every person who has wished harm upon me. You deserve to be humanized as much as I do. My refusal to be silenced is not simply self-defense, it is an insistence on *our* shared right to exist as whole beings.
+Still, I remain human. I want liberation for all humans—to see every person recognized as fully human, entitled to dignity and existence. This includes every person who has wished harm upon me. You deserve to be humanized as much as I do. My refusal to be silenced is not simply self-defense, it is an insistence on our shared right to exist as whole beings.
 
 Two years on, Gaza lies in ruins. The rubble is not history—it's a mirror. It reflects what empire requires to sustain itself, and what humanity must become to survive it. Perhaps that is what resistance ultimately means: to keep insisting on the humanity of all, even when humanity itself seems impossible.
 
