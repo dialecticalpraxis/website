@@ -9,7 +9,6 @@ excerpt: "My journey toward veganism as a commitment to justice, compassion, and
 reading_time: 12
 ---
 
-## Embracing Veganism
 ### My Journey Toward Ethical Liberation
 
 TW: Animal cruelty and death
