@@ -39,4 +39,4 @@ This is radical love.
 
 Reference
 
-Freire, P. (2005). *Pedagogy of the oppressed* (30th anniversary ed). Continuum.
+Freire, P. (2005). <i>Pedagogy of the oppressed</i> (30th anniversary ed). Continuum.
