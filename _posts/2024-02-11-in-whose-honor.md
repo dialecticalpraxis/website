@@ -9,7 +9,7 @@ excerpt: "Indigenous Mascots in 2024: Examining the harmful legacy of Native Ame
 reading_time: 10
 ---
 
-## Indigenous Mascots in 2024
+### Indigenous Mascots in 2024
 
 ![Kansas City Chiefs fans chanting and doing “the chop” in 2018](https://substackcdn.com/image/fetch/$s_!xV9Z!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb86fd2c1-960f-4dfb-b922-0813e234748e_800x534.png)
 
