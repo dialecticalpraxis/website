@@ -21,9 +21,7 @@ en: &DEFAULT_EN
       section: scholarship
     - title: "Activism"
       section: activism
-    - title: "CV"
-      url: "https://www.dialecticalpraxis.com/assets/pdf/cv.pdf"
-      new_window: true
+
 
 
 
