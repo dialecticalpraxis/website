@@ -9,7 +9,6 @@ excerpt: "Jesus practiced a love so radical it unsettled the powerful. Drawing o
 reading_time: 8
 ---
 
-## Radical Love
 
 ![Love written in graffiti on a graffiti wall.](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc040216-0e0e-4d0e-a47e-36ba4ac580a2_1789x995.png)
 
