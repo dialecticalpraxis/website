@@ -95,7 +95,8 @@ article.blog-post {
 .post-content img {
   display: block;
   margin: 2rem auto;
-  max-width: 100%;
+  max-width: 600px;  /* Change this line from 100% to 600px */
+  width: 100%;       /* Add this line to make smaller images scale properly */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
