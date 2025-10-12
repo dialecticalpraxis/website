@@ -9,7 +9,6 @@ excerpt: "The mass migration of Americans to Xiaohongshu following the TikTok ba
 reading_time: 10
 ---
 
-## Xiaohongshu
 ### The implications of a mass migration
 
 ![TikTok Logo](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9c21c984-0b60-4cc5-ae4f-71da18d3cc01_3418x3417.png)
