@@ -9,7 +9,7 @@ excerpt: "Diversity, equity, and inclusion efforts often neglect religion, but t
 reading_time: 5
 ---
 
-## Deconstructing faith toward liberation
+### Deconstructing faith toward liberation
 
 ![Unraveling a person through a string](https://substackcdn.com/image/fetch/$s_!MeVY!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F558e116e-4fab-44dd-8764-ba8796055b35_800x529.jpeg)
 
