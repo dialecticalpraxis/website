@@ -9,7 +9,7 @@ excerpt: "Examining the racial wealth gap in America and debunking the model min
 reading_time: 25
 ---
 
-## The Racism of Wealth Inequality in the United States
+### The Racism of Wealth Inequality in the United States
 
 ![Wealth inequality visualization](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F891f2d88-3c91-4700-addc-0444b1b4db6b_736x777.jpeg)
 
