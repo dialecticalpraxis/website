@@ -9,8 +9,6 @@ excerpt: "Two years after October 7, 2023, reflecting on resistance, humanity, a
 reading_time: 7
 ---
 
-## Resistance
-
 No state has the right to exist.
 
 Legally, morally, and ontologically, this is a fact.
