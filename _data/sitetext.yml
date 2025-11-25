@@ -123,6 +123,13 @@ en: &DEFAULT_EN
 
   footer:
     legal: "Privacy Policy"
+    social
+      - url: https://scholar.google.com/citations?user=K4fEPEIAAAAJ&hl=en
+        icon: "fab fa-google-scholar"
+      - url: https://github.com/dialecticalpraxis
+        icon: "fab fa-github"
+      - url: https://bsky.app/profile/dialecticalpraxis.com
+        icon: "fab fa-bluesky"
 
 
    
