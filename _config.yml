@@ -1,7 +1,7 @@
 # ----------------------------------------
 # Basic site settings
 # ----------------------------------------
-remote_theme: raviriley/agency-jekyll-theme@v3.3.0
+remote_theme: raviriley/agency-jekyll-theme
 
 url       : "https://www.dialecticalpraxis.com"
 baseurl   : ""                 # leave empty for root‐domain site
