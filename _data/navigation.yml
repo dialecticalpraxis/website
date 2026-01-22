@@ -19,8 +19,8 @@ en: &DEFAULT_EN
       section: education
     - title: "Scholarship"
       section: scholarship
-    - title: "Activism"
-      section: activism
+    - title: "Organizing"
+      section: organizing
 
 
 
