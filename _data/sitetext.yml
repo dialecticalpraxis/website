@@ -114,7 +114,7 @@ en: &DEFAULT_EN
       body: |
         <p>My organizing is grounded in the belief that transformative change emerges from collective action rooted in solidarity, mutual aid, and sustained community engagement. I center the voices and leadership of those most impacted by systemic oppression, building coalitions across movements for racial justice, economic equity, housing rights, and climate justice.</p>
         <p>Whether through direct action, political education, or grassroots organizing, I strive to create spaces where people can develop critical consciousness, practice democratic participation, and exercise power together. My organizing philosophy draws from abolitionist frameworks, Indigenous sovereignty movements, and traditions of radical organizing by the Global South.</p>
-      section: activism
+      section: organizing
       image: /assets/img/flotilla.png
       image_alt: Organizing
       button:
