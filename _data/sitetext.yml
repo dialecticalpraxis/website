@@ -108,7 +108,7 @@ en: &DEFAULT_EN
         <p>Ultimately, my goal is to illuminate pathways out of epistemic entrenchment and to advance a vision of lifelong learning as both a personal and collective project—where knowledge is not merely acquired, but ethically lived.</p>
         <h4 align="center"><a href="https://www.dialecticalpraxis.com/assets/pdf/cv.pdf" target="_blank">My Curriculum Vitae</a></h4>
 
-  organizing:
+    organizing:
       title: ""
       text: ""
       body: |
