@@ -1,24 +1,24 @@
-<!-- Activism -->
+<!-- organizing -->
 {% if site.locale and site.locale != "" and site.locale != nil %}
-<section class="page-section" id="{{ site.data.sitetext[site.locale].activism.section | default: "activism" }}">
+<section class="page-section" id="{{ site.data.sitetext[site.locale].organizing.section | default: "organizing" }}">
   <div class="container">
     <div class="row align-items-center">
       <!-- Image column on the LEFT -->
       <div class="col-lg-5">
-        {% if site.data.sitetext[site.locale].activism.image %}
-        <img src="{{ site.data.sitetext[site.locale].activism.image }}" 
-             alt="{{ site.data.sitetext[site.locale].activism.image_alt | default: 'activism image' }}" 
+        {% if site.data.sitetext[site.locale].organizing.image %}
+        <img src="{{ site.data.sitetext[site.locale].organizing.image }}" 
+             alt="{{ site.data.sitetext[site.locale].organizing.image_alt | default: 'organizing image' }}" 
              class="img-fluid rounded">
         {% endif %}
       </div>
       <!-- Text column on the RIGHT -->
       <div class="col-lg-7">
-        <div class="large text-muted">{{ site.data.sitetext[site.locale].activism.body | markdownify }}</div>
+        <div class="large text-muted">{{ site.data.sitetext[site.locale].organizing.body | markdownify }}</div>
         
-        {% if site.data.sitetext[site.locale].activism.button %}
+        {% if site.data.sitetext[site.locale].organizing.button %}
         <div class="text-center mt-4">
-          <a class="btn btn-primary btn-xl text-uppercase" href="{{ site.data.sitetext[site.locale].activism.button.url }}">
-            {{ site.data.sitetext[site.locale].activism.button.text }}
+          <a class="btn btn-primary btn-xl text-uppercase" href="{{ site.data.sitetext[site.locale].organizing.button.url }}">
+            {{ site.data.sitetext[site.locale].organizing.button.text }}
           </a>
         </div>
         {% endif %}
@@ -27,25 +27,25 @@
   </div>
 </section>
 {% else %}
-<section class="page-section" id="{{ site.data.sitetext.activism.section | default: "activism" }}">
+<section class="page-section" id="{{ site.data.sitetext.organizing.section | default: "organizing" }}">
   <div class="container">
     <div class="row align-items-center">
       <!-- Image column on the LEFT -->
       <div class="col-lg-5">
-        {% if site.data.sitetext.activism.image %}
-        <img src="{{ site.data.sitetext.activism.image }}" 
-             alt="{{ site.data.sitetext.activism.image_alt | default: 'activism image' }}" 
+        {% if site.data.sitetext.organizing.image %}
+        <img src="{{ site.data.sitetext.organizing.image }}" 
+             alt="{{ site.data.sitetext.organizing.image_alt | default: 'organizing image' }}" 
              class="img-fluid rounded">
         {% endif %}
       </div>
       <!-- Text column on the RIGHT -->
       <div class="col-lg-7">
-        <div class="large text-muted">{{ site.data.sitetext.activism.body | markdownify }}</div>
+        <div class="large text-muted">{{ site.data.sitetext.organizing.body | markdownify }}</div>
         
-        {% if site.data.sitetext.activism.button %}
+        {% if site.data.sitetext.organizing.button %}
         <div class="text-center mt-4">
-          <a class="btn btn-primary btn-xl text-uppercase" href="{{ site.data.sitetext.activism.button.url }}">
-            {{ site.data.sitetext.activism.button.text }}
+          <a class="btn btn-primary btn-xl text-uppercase" href="{{ site.data.sitetext.organizing.button.url }}">
+            {{ site.data.sitetext.organizing.button.text }}
           </a>
         </div>
         {% endif %}
@@ -54,4 +54,4 @@
   </div>
 </section>
 {% endif %}
-<!-- End activism -->
+<!-- End organizing -->
