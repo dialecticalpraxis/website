@@ -1,7 +1,7 @@
 # ----------------------------------------
 # Basic site settings
 # ----------------------------------------
-remote_theme: raviriley/agency-jekyll-theme
+theme: jekyll-agency
 
 url       : "https://www.dialecticalpraxis.com"
 baseurl   : ""                 # leave empty for root‐domain site
@@ -33,7 +33,6 @@ markdown: kramdown
 # Plugins - MINIMAL SET FOR REMOTE THEME ONLY
 # ----------------------------------------
 plugins:
-  - jekyll-remote-theme
   - jekyll-github-metadata
 
 # Explicitly exclude GitHub Pages defaults that conflict
