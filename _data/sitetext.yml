@@ -108,15 +108,15 @@ en: &DEFAULT_EN
         <p>Ultimately, my goal is to illuminate pathways out of epistemic entrenchment and to advance a vision of lifelong learning as both a personal and collective project—where knowledge is not merely acquired, but ethically lived.</p>
         <h4 align="center"><a href="https://www.dialecticalpraxis.com/assets/pdf/cv.pdf" target="_blank">My Curriculum Vitae</a></h4>
 
-  activism:
+  organizing:
       title: ""
       text: ""
       body: |
-        <p>My activism is grounded in the belief that transformative change emerges from collective action rooted in solidarity, mutual aid, and sustained community organizing. I engage in work that centers the voices and leadership of those most impacted by systemic oppression, building coalitions across movements for racial justice, economic equity, housing rights, and climate justice.</p>
+        <p>My organizing is grounded in the belief that transformative change emerges from collective action rooted in solidarity, mutual aid, and sustained community engagement. I center the voices and leadership of those most impacted by systemic oppression, building coalitions across movements for racial justice, economic equity, housing rights, and climate justice.</p>
         <p>Whether through direct action, political education, or grassroots organizing, I strive to create spaces where people can develop critical consciousness, practice democratic participation, and exercise power together. My organizing philosophy draws from abolitionist frameworks, Indigenous sovereignty movements, and traditions of radical organizing by the Global South.</p>
       section: activism
       image: /assets/img/flotilla.png
-      image_alt: Activism and organizing
+      image_alt: Organizing
       button:
         text: "My Writing and Reflections"
         url: "/blog.html"
