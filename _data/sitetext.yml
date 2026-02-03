@@ -119,7 +119,7 @@ en: &DEFAULT_EN
     image_alt: Organizing
     button:
       text: "My Writing and Reflections"
-      url: "/blog.html"
+      url: "https://dialecticalpraxis.substack.com/"
 
 
   footer:
