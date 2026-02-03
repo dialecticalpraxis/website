@@ -120,6 +120,7 @@ en: &DEFAULT_EN
     button:
       text: "My Writing and Reflections"
       url: "https://dialecticalpraxis.substack.com/"
+      target: "_blank"
 
 
   footer:
