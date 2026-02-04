@@ -35,51 +35,7 @@ en: &DEFAULT_EN
     section: education
     image: /assets/img/influence.png  # Optional
     image_alt: Philosophy  # Optional
-    button:
-      text: "Learn More"
-      modal_content: |
-        <h3>Praxis as Revolutionary Dialogue</h3>
-        <p><em>"Education either functions as an instrument to bring about conformity or becomes the practice of freedom."</em> —Paulo Freire</p>
-        <p>Liberatory praxis begins with dialogue that bridges theory and lived experience. Drawing on Freire's conscientização (critical consciousness), I frame education as a collaborative process where adult learners interrogate the sociopolitical conditions shaping their epistemologies. This dialogue is inherently feminist (hooks, Lorde) and decolonial (Mignolo, Quijano), centering marginalized voices as sites of knowledge production. By engaging learners in problem-posing rather than banking education, we co-create narratives that expose power structures—capitalism, settler colonialism, white supremacy—and imagine alternatives.</p>
-        
-        <h3>Intersectionality as Epistemic Resistance</h3>
-        <p><em>"There is no such thing as a single-issue struggle because we do not live single-issue lives."</em> —Audre Lorde</p>
-        <p>My work prioritizes intersectionality (Crenshaw, Lorde) to confront the multiplicative violence of systemic oppression. Following Angela Davis and Toni Morrison, I analyze how race, gender, class, and coloniality coalesce to regulate access to knowledge and dignity. For adult learners in post-truth societies, this means:</p>
-        <ul>
-          <li><strong>Critiquing epistemicide:</strong> Challenging the erasure of Indigenous, Black, and queer knowledges (Mignolo, Lugones).</li>
-          <li><strong>Embodied inquiry:</strong> Recognizing how marginalized bodies carry histories of resistance (Fanon, Morrison).</li>
-          <li><strong>Solidarity across difference:</strong> Building coalitions that honor pluralistic truths without relativizing oppression (Lugones's world-travelling).</li>
-        </ul>
-        
-        <h3>Decolonizing Knowledge and Being</h3>
-        <p><em>"Decolonization is not a metaphor."</em> —Tuck & Yang</p>
-        <p>Informed by Indigenous and decolonial theories (Quijano, Mignolo, Tuck & Yang), my framework rejects the Eurocentric, neoliberal logics that fragment knowledge and commodify learning. Instead, I advocate for:</p>
-        <ul>
-          <li><strong>Relational epistemologies:</strong> Learning practices rooted in reciprocity, land-based wisdom, and communal accountability.</li>
-          <li><strong>Unsettling coloniality:</strong> Exposing how modernity/coloniality constructs hierarchies of humanity (Quijano's coloniality of power) and perpetuates epistemic bubbles.</li>
-          <li><strong>Reclamation as praxis:</strong> Supporting learners in recovering subjugated histories and languages, fostering what María Lugones calls "decolonial love."</li>
-        </ul>
-        
-        <h3>Radical Imagination as Collective Liberation</h3>
-        <p><em>"Without new visions, we don't know what to build, only what to knock down."</em> —Robin D.G. Kelley</p>
-        <p>Liberatory education demands radical imagination—a Marxist-feminist commitment to envisioning worlds beyond capitalist exploitation and carceral logics (Davis, Marx). This involves:</p>
-        <ul>
-          <li><strong>Critical hope:</strong> bell hooks's insistence on education as "the practice of freedom" amid despair.</li>
-          <li><strong>Prefigurative politics:</strong> Creating microcosms of justice within classrooms (e.g., democratic decision-making, resource sharing).</li>
-          <li><strong>Joy as resistance:</strong> Following Toni Morrison, centering joy and creativity as acts of defiance against dehumanization.</li>
-        </ul>
-        
-        <h3>Methodological Commitments</h3>
-        <p>My praxis is embodied through:</p>
-        <ul>
-          <li><strong>Participatory action research:</strong> Collaborating with communities to design curricula that address localized oppressions.</li>
-          <li><strong>Testimonio:</strong> Amplifying first-person narratives as pedagogical tools (a la Latina feminist epistemology).</li>
-          <li><strong>Abolitionist pedagogy:</strong> Dismantling punitive educational structures and fostering restorative, learner-centered spaces.</li>
-        </ul>
-        
-        <h3>Vision</h3>
-        <p>I strive to create educational ecosystems where adult learners are not merely "critical" but creators of liberatory futures. By intertwining Marxist critiques of capital, feminist ethics of care, and decolonial demands for land/body sovereignty, my work seeks to rupture epistemic bubbles and equip learners to re-member—to piece together fragmented selves and societies.</p>
-
+   
   scholarship:
     title: ""
     text: ""
@@ -89,24 +45,9 @@ en: &DEFAULT_EN
     image: /assets/img/olive.png  # Optional - uncomment to add an image
     image_alt: Olive branch with olives.  # Optional
     button:
-      text: "Learn More"
-      modal_content: |
-        <p>At the heart of my work are questions about how adults learn in conditions of polarization and disinformation:</p>
-        <ul>
-          <li>Under what circumstances do people move beyond entrenched beliefs?</li>
-          <li>How do trusted relationships and dialogue open space for transformative learning?</li>
-          <li>In what ways do social media practices both reflect and reshape critical consciousness?</li>
-        </ul>
-        <p>To answer these questions, I draw on transformative learning theory, critical pedagogy, and social epistemology, using narrative inquiry, digital ethnography, and mixed methods. My case study work explores how adults shift their stance from a pro-Western imperialist frame to an anti-colonial lens as an example of how ideological transformation unfolds in practice.</p>
-        <p>More broadly, I investigate how adults:</p>
-        <ul>
-          <li>Reconcile moral intuitions with the demands of epistemic responsibility.</li>
-          <li>Negotiate identity within knowledge communities, balancing belonging and autonomy</li>
-          <li>Cultivate reflective judgment and intellectual humility in evaluating sources, claims, and lived experiences.</li>
-        </ul>
-        <p>My research emphasizes the role of liberatory praxis in building not only individual intellectual growth, but also collective epistemic well-being. I aim to contribute actionable insights for educators, organizers, and policymakers designing interventions that empower adults to critically engage with complex information landscapes.</p>
-        <p>Ultimately, my goal is to illuminate pathways out of epistemic entrenchment and to advance a vision of lifelong learning as both a personal and collective project—where knowledge is not merely acquired, but ethically lived.</p>
-        <h4 align="center"><a href="https://www.dialecticalpraxis.com/assets/pdf/cv.pdf" target="_blank">My Curriculum Vitae</a></h4>
+      text: "Curriculum Vitae"
+      url: "https://www.dialecticalpraxis.com/assets/pdf/cv.pdf"
+      target: "_blank"
 
   organizing:
     title: ""
