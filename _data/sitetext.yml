@@ -58,7 +58,10 @@ en: &DEFAULT_EN
     section: organizing
     image: /assets/img/flotilla.png
     image_alt: Organizing
-
+    button:
+      text: "Essays & Reflections"
+      url: "https://www.dialecticalpraxis.com/blog"
+      target: "_blank"
 
 
   footer:
