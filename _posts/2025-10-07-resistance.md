@@ -29,10 +29,6 @@ That post remains one of the clearest things I've ever read. Because it refuses 
 
 The creation of Israel—its integration into the Western "family of nations"—was not an act of redemption for Jewish suffering. It was an act of empire. Without the assimilation of Ashkenazi Jews into whiteness, Israel could not exist as an arm of the Imperial Core. The same racial logic that dehumanized Jewish people became the justification to dehumanize Palestinians in turn. Empire simply rebranded one trauma into another occupation.
 
-The Muslim Brotherhood, from which Hamas emerged, arose as resistance to a global economic and political structure denying Muslims and others in the Global South their right to self-determination—to exist with dignity. The same can be said of Al-Qaeda, whose violence on September 11, 2001, reflected not religious fanaticism alone but decades of geopolitical subjugation. This does not make me an Islamist apologist. I loathe all forms of religious nationalism—Christian Nationalism, Zionism, Islamism, Hindutva—for they all transmute faith into fascism.
-
-I will always defend the right to resist dehumanization. I am not a Hamas apologist; I am a *human apologist.* Which, I suppose, makes me a resistance apologist. While I cannot dictate how the dehumanized should resist, I can affirm that they *must* have the right to resist.
-
 Over the last two years, I've been called every name you can think of—terrorist sympathizer, antisemite, fanatic. I've been doxxed, smeared, silenced. But each attempt to strip me of humanity only reaffirms why I spoke in the first place: because the struggle to be seen as human is never abstract. It's personal. It's embodied. It's lived.
 
 Still, I remain human. I want liberation for all humans—to see every person recognized as fully human, entitled to dignity and existence. This includes every person who has wished harm upon me. You deserve to be humanized as much as I do. My refusal to be silenced is not simply self-defense, it is an insistence on our shared right to exist as whole beings.
