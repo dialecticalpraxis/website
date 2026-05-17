@@ -13,7 +13,7 @@ No state has the right to exist.
 
 Legally, morally, and ontologically, this is a fact.
 
-States are instruments, not beings. They are abstractions maintained through coercion, territory, and recognition. They are not sentient; they do not breathe, suffer, or love. Only humans do. Thus, no state can posses a right to exist, only the power to impose its continued existence through violence.
+States are instruments, not beings. They are abstractions maintained through coercion, territory, and recognition. They are not sentient; they do not breathe, suffer, or love. Only humans do. Thus, no state possesses a right to exist, only the power to impose its continued existence through violence.
 
 Humans, however, do have the right to exist. This truth is inherent to all humans—buried deep within the very soul of each of us who claim to be human. To defend this truth is to live. To defend this truth is to resist.
 
