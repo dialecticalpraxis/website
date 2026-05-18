@@ -317,6 +317,7 @@ const PIECES = [
 ];
 
 const grid=document.getElementById('grid');
+const cardsById={};
 PIECES.forEach((p,i)=>{
   const idx=String(i+1).padStart(2,'0');
   const card=document.createElement(p.type==='link'?'a':'button');
@@ -341,6 +342,8 @@ PIECES.forEach((p,i)=>{
       <p class="desc">${p.desc}</p>
       <span class="open">${p.type==='link'?'Open in new tab':'Open'} <span class="arw">&rarr;</span></span>
     </div>`;
+  card.id='piece-'+p.id;
+  cardsById[p.id]={el:card,piece:p};
   if(p.type!=='link') card.addEventListener('click',()=>openModal(p));
   grid.appendChild(card);
 });
@@ -396,6 +399,11 @@ function openModal(p){
   ov.classList.add('on');
   document.body.style.overflow='hidden';
   ov.scrollTop=0;
+  if(p.id && history.replaceState){
+    history.replaceState(null,'','#'+p.id);
+  }
+  const ref=cardsById[p.id];
+  if(ref&&ref.el){ ref.el.scrollIntoView({block:'center'}); }
   document.getElementById('xbtn').focus();
 }
 
@@ -415,6 +423,9 @@ function closeModal(){
   ov.classList.remove('on');
   document.body.style.overflow='';
   gState=null;
+  if(history.replaceState){
+    history.replaceState(null,'',location.pathname+location.search);
+  }
   if(lastFocus) lastFocus.focus();
 }
 document.getElementById('xbtn').onclick=closeModal;
@@ -426,6 +437,32 @@ document.addEventListener('keydown',e=>{
     if(e.key==='ArrowLeft'&&gState.i>0){gState.i--;renderSlide();}
     if(e.key==='ArrowRight'&&gState.i<gState.p.n-1){gState.i++;renderSlide();}
   }
+});
+
+/* ---- Deep linking ----
+   /portfolio/#308b opens that piece directly.
+   Modal pieces (gallery/text) open in the modal with the card
+   centered behind it. Link pieces (essays, infographic) scroll
+   their card into view and highlight it briefly rather than
+   auto-redirecting the visitor off-site. */
+function handleHash(){
+  const id=(location.hash||'').replace('#','').trim();
+  if(!id) return;
+  const ref=cardsById[id];
+  if(!ref) return;
+  if(ref.piece.type==='link'){
+    ref.el.scrollIntoView({block:'center'});
+    ref.el.style.transition='box-shadow .3s';
+    ref.el.style.boxShadow='0 0 0 3px var(--ink)';
+    setTimeout(()=>{ref.el.style.boxShadow='';},1600);
+  }else{
+    openModal(ref.piece);
+  }
+}
+window.addEventListener('load',handleHash);
+window.addEventListener('hashchange',()=>{
+  if(!location.hash){ if(ov.classList.contains('on'))closeModal(); }
+  else handleHash();
 });
 </script>
 </body>
