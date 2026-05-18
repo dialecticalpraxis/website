@@ -17,9 +17,10 @@ sitemap: false
   /* ============================================================
      THEME TOKENS — matched to dialecticalpraxis.com
      Source SCSS: primary/black #403e3e, white #fdfdfa,
-     dark charcoal #2d2c2c (hover), heading Montserrat. Accent is
-     charcoal (no gold). IF _data/style.yml overrides `highlight` /
-     `black` / `white` or sets a body font, update values to match.
+     dark charcoal #2d2c2c (hover), heading Montserrat.
+     Accent is charcoal (no gold). IF _data/style.yml overrides
+     `highlight` / `black` / `white` or sets a body font, update
+     these to match exactly.
      ============================================================ */
   :root{
     --paper:#fdfdfa;
@@ -28,18 +29,16 @@ sitemap: false
     --ink-soft:#6c757d;
     --ink-dark:#2d2c2c;
     --rule:#d8d5cd;
-    --accent:#403e3e;          /* charcoal — no gold; matches site primary */
-    --accent-hover:#2d2c2c;    /* darker charcoal for hover differentiation */
+    --accent:#403e3e;          /* charcoal — no gold */
+    --accent-hover:#2d2c2c;    /* darker charcoal for hover */
     --shadow:rgba(64,62,62,.15);
     --maxw:1180px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{-webkit-text-size-adjust:100%}
-  body{
-    background:var(--paper);color:var(--ink);
+  body{background:var(--paper);color:var(--ink);
     font-family:"Newsreader",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    font-size:18px;line-height:1.6;font-optical-sizing:auto;-webkit-font-smoothing:antialiased;
-  }
+    font-size:18px;line-height:1.6;font-optical-sizing:auto;-webkit-font-smoothing:antialiased}
   ::selection{background:var(--ink);color:var(--paper)}
   a{color:inherit}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
@@ -47,8 +46,7 @@ sitemap: false
   .kicker,.meta-row span,.cat,.m-cat,.c-tag,.c-foot,.open,.idx,.btn,
   nav.filter button,.gnav button,.gnav .count,.slidecap b,.topline .back,
   h1.title,.card h2,.m-title,.cover .c-title,footer.foot,.m-note{
-    font-family:"Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  }
+    font-family:"Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
   .kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink);font-weight:700}
   .topline{display:flex;justify-content:space-between;align-items:baseline;
     border-bottom:2px solid var(--ink);padding-bottom:14px;gap:18px;flex-wrap:wrap}
@@ -58,7 +56,7 @@ sitemap: false
   .topline .back:hover{color:var(--accent-hover);border-color:var(--accent-hover)}
   h1.title{font-weight:800;font-size:clamp(2.7rem,7.5vw,5.4rem);line-height:1.0;
     letter-spacing:-.01em;text-transform:uppercase;margin:36px 0 0;max-width:16ch}
-  h1.title em{font-style:normal;color:var(--accent)}
+  h1.title em{font-style:normal;color:var(--ink)}
   .standfirst{margin:28px 0 0;max-width:62ch;font-size:1.2rem;line-height:1.62;color:var(--ink)}
   .standfirst strong{font-weight:600}
   .meta-row{margin:38px 0 0;display:flex;gap:30px;flex-wrap:wrap;font-size:11px;
@@ -77,7 +75,7 @@ sitemap: false
     border-radius:3px;overflow:hidden;cursor:pointer;text-align:left;font:inherit;color:inherit;
     padding:0;position:relative;transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .22s,border-color .22s}
   .card:hover{transform:translateY(-4px);box-shadow:0 18px 38px -20px var(--shadow);border-color:var(--ink)}
-  .card:focus-visible{outline:2.5px solid var(--accent);outline-offset:3px}
+  .card:focus-visible{outline:2.5px solid var(--ink);outline-offset:3px}
   .card.hide{display:none}
   .thumb{position:relative;aspect-ratio:3/2;overflow:hidden;background:var(--ink);
     display:flex;align-items:center;justify-content:center}
@@ -86,7 +84,6 @@ sitemap: false
   .cover{width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;
     padding:26px 26px;position:relative;color:var(--paper)}
   .cover.c-ink{background:linear-gradient(155deg,#403e3e,#2d2c2c)}
-  .cover.c-gold{background:linear-gradient(155deg,#9a7c1a,#5f4b0f);color:#fdfdfa}
   .cover.c-deep{background:linear-gradient(155deg,#34322f,#1c1b1a)}
   .cover .c-tag{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;opacity:.82;font-weight:600}
   .cover .c-title{font-weight:800;font-size:1.55rem;line-height:1.06;letter-spacing:-.01em;text-transform:uppercase}
@@ -97,7 +94,7 @@ sitemap: false
     font-weight:700;letter-spacing:.08em;padding:6px 11px;border-right:1px solid var(--rule);
     border-bottom:1px solid var(--rule);z-index:2}
   .body{padding:22px 22px 26px;display:flex;flex-direction:column;gap:11px;flex:1}
-  .cat{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  .cat{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
   .card h2{font-weight:700;font-size:1.3rem;line-height:1.18;letter-spacing:-.005em}
   .desc{font-size:.97rem;line-height:1.56;color:var(--ink-soft);flex:1}
   .open{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ink);
@@ -105,6 +102,7 @@ sitemap: false
   .open .arw{transition:transform .2s}
   .card:hover .open{color:var(--accent-hover)}
   .card:hover .open .arw{transform:translateX(5px)}
+  /* ---- Modal ---- */
   .ov{position:fixed;inset:0;z-index:1000;background:rgba(45,44,44,.74);backdrop-filter:blur(4px);
     display:none;align-items:flex-start;justify-content:center;padding:40px 20px;overflow-y:auto}
   .ov.on{display:flex}
@@ -112,23 +110,27 @@ sitemap: false
     box-shadow:0 40px 90px -30px rgba(0,0,0,.55);position:relative;
     animation:rise .32s cubic-bezier(.2,.7,.3,1);margin:auto}
   @keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-  .m-head{padding:34px 44px 24px;border-bottom:2px solid var(--ink);position:sticky;top:0;
-    background:var(--paper);z-index:3;border-radius:4px 4px 0 0}
-  .m-cat{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  /* header now scrolls away with content (NOT sticky) */
+  .m-head{padding:34px 44px 24px;border-bottom:2px solid var(--ink);
+    background:var(--paper);border-radius:4px 4px 0 0}
+  .m-cat{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
   .m-title{font-weight:800;font-size:clamp(1.5rem,3.6vw,2.3rem);line-height:1.08;
     letter-spacing:-.01em;text-transform:uppercase;margin:12px 0 10px;max-width:24ch}
   .m-sub{font-size:1.0rem;color:var(--ink-soft);max-width:64ch;font-style:italic}
-  .x{position:absolute;top:22px;right:24px;width:42px;height:42px;border-radius:50%;
-    background:var(--ink);color:var(--paper);border:none;cursor:pointer;font-size:20px;line-height:1;
-    display:flex;align-items:center;justify-content:center;transition:background .2s,transform .2s;z-index:4}
+  /* close button is FIXED to viewport so it stays reachable after header scrolls away */
+  .x{position:fixed;top:26px;right:30px;width:46px;height:46px;border-radius:50%;
+    background:var(--ink);color:var(--paper);border:none;cursor:pointer;font-size:21px;line-height:1;
+    display:flex;align-items:center;justify-content:center;
+    transition:background .2s,transform .2s;z-index:1100;
+    box-shadow:0 6px 18px -6px rgba(0,0,0,.5)}
   .x:hover{background:var(--accent-hover);transform:rotate(90deg)}
-  .m-body{padding:34px 44px 46px}
+  .m-body{padding:34px 44px 60px}
   .m-body p{margin:0 0 1.05em;font-size:1.05rem;line-height:1.72}
   .m-body p:last-child{margin-bottom:0}
   .m-body .lead::first-letter{font-weight:800;font-size:3.1em;float:left;line-height:.86;
-    margin:.05em .12em 0 0;color:var(--accent)}
+    margin:.05em .12em 0 0;color:var(--ink)}
   .m-note{font-size:12px;line-height:1.7;letter-spacing:.01em;color:var(--ink-soft);
-    background:var(--paper-2);border-left:3px solid var(--accent);padding:16px 20px;margin:0 0 28px}
+    background:var(--paper-2);border-left:3px solid var(--ink);padding:16px 20px;margin:0 0 28px}
   .gal{display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:3px;
     overflow:hidden;margin-bottom:30px}
   .gstage{background:var(--ink);display:flex;align-items:center;justify-content:center;
@@ -145,23 +147,14 @@ sitemap: false
   .slidecap{font-size:1.0rem;line-height:1.66;color:var(--ink);background:var(--paper);
     padding:20px 22px;border-top:1px solid var(--rule);font-style:italic}
   .slidecap b{font-style:normal;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--accent);display:block;margin-bottom:7px;font-weight:700}
-  .pdfwrap{border:1px solid var(--rule);border-radius:3px;overflow:hidden;background:var(--ink);margin-bottom:24px}
-  .pdfwrap iframe{width:100%;height:74vh;border:none;display:block;background:#333}
-  .btnrow{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px}
-  .btn{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;text-decoration:none;
-    padding:14px 26px;border-radius:999px;display:inline-flex;align-items:center;gap:9px;
-    transition:transform .18s,background .2s,color .2s}
-  .btn-fill{background:var(--ink);color:var(--paper)}
-  .btn-fill:hover{background:var(--accent-hover);transform:translateY(-2px)}
-  .btn-line{border:1.5px solid var(--ink);color:var(--ink)}
-  .btn-line:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px)}
+    color:var(--ink-soft);display:block;margin-bottom:7px;font-weight:700}
   footer.foot{border-top:2px solid var(--ink);padding:40px 0 70px;margin-top:30px;font-size:12px;
     letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;
     display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
-  footer.foot a{color:var(--accent);text-decoration:none}
+  footer.foot a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+  footer.foot a:hover{color:var(--accent-hover)}
   @media(max-width:640px){.wrap{padding:0 20px}.m-head,.m-body{padding-left:24px;padding-right:24px}
-    .grid{grid-template-columns:1fr;gap:26px}body{font-size:17px}}
+    .grid{grid-template-columns:1fr;gap:26px}body{font-size:17px}.x{top:18px;right:18px}}
   @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -176,7 +169,7 @@ sitemap: false
     <h1 class="title">Selected <em>Writing</em></h1>
     <p class="standfirst">
       A curated set of communications and editorial work spanning digital
-      advocacy, organizational statements, public essays, and scholarship. The
+      advocacy, an organizational statement, public essays, and scholarship. The
       throughline is <strong>writing that makes structural arguments legible to
       the people they concern</strong>&mdash;moving between movement copy, public
       address, and academic analysis on the same questions.
@@ -193,7 +186,7 @@ sitemap: false
       <button data-f="all" aria-pressed="true">All</button>
       <button data-f="advocacy" aria-pressed="false">Digital Advocacy</button>
       <button data-f="editorial" aria-pressed="false">Editorial &amp; Essay</button>
-      <button data-f="statement" aria-pressed="false">Statements</button>
+      <button data-f="statement" aria-pressed="false">Statement</button>
       <button data-f="scholarship" aria-pressed="false">Scholarship</button>
     </nav>
     <div class="grid" id="grid"></div>
@@ -206,8 +199,8 @@ sitemap: false
 </div>
 
 <div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <button class="x" id="xbtn" aria-label="Close">&times;</button>
   <div class="modal" id="modal">
-    <button class="x" id="xbtn" aria-label="Close">&times;</button>
     <div class="m-head">
       <div class="m-cat" id="mCat"></div>
       <h2 class="m-title" id="mTitle"></h2>
@@ -219,20 +212,19 @@ sitemap: false
 
 <script>
 /* ============================================================
-   PORTFOLIO DATA
+   PORTFOLIO DATA  (curated set of 6)
    ------------------------------------------------------------
-   THUMBNAILS: every entry has a `thumb` field. Put the path to
-   YOUR chosen image there, e.g.
-       thumb:"/assets/img/portfolio/my-image.jpg",
-   Leave it ""  to fall back to the typographic cover (its look
-   is set by coverStyle / coverTag / coverFoot). A uniform 3:2
-   crop is applied to every card image automatically.
+   THUMBNAILS: each entry has `thumb`. Put your chosen image path
+   there (e.g. "/assets/img/portfolio/my-image.jpg"). Leave ""
+   to use the typographic cover (coverStyle/coverTag/coverFoot).
+   Uniform 3:2 crop is applied to every card image.
 
-   type controls the modal:
-     gallery -> image sequence + transcribed text per frame
-     text    -> full text as paragraphs
-     pdf     -> embedded PDF + open/download
-     link    -> opens external URL in a new tab (no modal)
+   type:
+     gallery -> in-page image sequence + transcribed text
+     text    -> full text in the modal
+     link    -> opens URL in a NEW TAB, no modal
+                (used for essays, the manuscript abstract page,
+                 and the ALICE infographic PDF)
    ============================================================ */
 const PIECES = [
  {
@@ -268,26 +260,6 @@ const PIECES = [
   ]
  },
  {
-  id:"iran", cat:"Digital Advocacy", group:"advocacy",
-  title:"Rinse, Repeat, Destroy: The US War Machine Comes for Iran",
-  thumb:"",
-  coverStyle:"c-ink", coverTag:"Carousel \u00b7 2025", coverFoot:"Images supplied separately",
-  desc:"Eight-frame carousel on US military escalation toward Iran, written during heightened tension. Each frame lands a discrete historical or structural claim while sustaining a cumulative anti-war argument built for fast mobile reading.",
-  type:"gallery",
-  sub:"Carousel \u00b7 Sole copywriter \u00b7 Rapid-response advocacy",
-  note:"Slide images are not bundled (see CLAUDE_CODE_BRIEF / PORTFOLIO_SETUP). Full slide text is preserved below; add images and flip the two marked fields when ready.",
-  base:null, n:7, textOnly:true,
-  caps:[
-   ["Frame 01 \u00b7 Title","Rinse, repeat, destroy: the US war machine comes for Iran."],
-   ["Frame 02","Stop the war in Iran."],
-   ["Frame 03 \u00b7 The 1953 coup \u2014 we started this","The CIA and British intelligence overthrew Iran's democratically elected Prime Minister Mohammad Mosaddegh in Operation Ajax, because he nationalized Iran's oil. The US installed the Shah, whose brutal SAVAK secret police tortured and disappeared thousands. The blowback was the 1979 Islamic Revolution. We created the very government we now call our enemy."],
-   ["Frame 04 \u00b7 Iraq proved regime change doesn't work","The 2003 invasion of Iraq, built on lies about WMDs, killed an estimated one million Iraqis, destabilized the entire region, and directly gave rise to ISIS. The Middle East became more dangerous, not less. Iran grew more influential as a result. War didn't make us safer. It made things exponentially worse."],
-   ["Frame 05 \u00b7 Sanctions are already collective punishment","Current US sanctions on Iran have decimated access to medicine, food, and basic goods for ordinary Iranian people, not the government. Collective punishment of a civilian population violates international humanitarian law. We are already at war with the Iranian people. Bombs are just the next step."],
-   ["Frame 06 \u00b7 Every escalation breeds more instability","From arming the Mujahideen in Afghanistan to backing Saudi Arabia's war in Yemen to assassinating General Soleimani in 2020, every US military escalation in the region has produced more chaos, more displacement, and more anti-American sentiment. There is no military solution. There never was."],
-   ["Frame 07 \u00b7 War benefits weapons manufacturers, not us","Lockheed Martin, Raytheon, and Boeing rake in billions every time the US goes to war. Working-class Americans and Iranians both pay the price, in lives, in dollars, and in safety. The people calling for war on Iran are the same people who profit from it. We have more in common with Iranian civilians than we do with defense contractors."]
-  ]
- },
- {
   id:"resistance", cat:"Editorial & Essay", group:"editorial",
   title:"Resistance",
   thumb:"",
@@ -309,15 +281,13 @@ const PIECES = [
   id:"manuscript", cat:"Scholarship", group:"scholarship",
   title:"Exiting the Hegemony",
   thumb:"",
-  coverStyle:"c-gold", coverTag:"Manuscript \u00b7 Under review", coverFoot:"Autoethnography \u00b7 ~8,200 words",
-  desc:"Scholarly autoethnography submitted to the Journal for the Critical Study of Zionism. Applies Gramsci, Freire, and Mezirow to trace formation as a subject of Zionist hegemony in American civil society and the exit from it.",
-  type:"pdf",
-  sub:"Peer-review-track manuscript \u00b7 Sole author \u00b7 Depth anchor for the on-topic work",
-  note:"Submitted to the Journal for the Critical Study of Zionism. Included to evidence command of the subject underlying the advocacy work; pair with the public essays to see the same argument across scholarly and public registers.",
-  pdf:"/assets/pdf/exiting-the-hegemony.pdf"
+  coverStyle:"c-deep", coverTag:"Manuscript \u00b7 Under review", coverFoot:"Autoethnography \u00b7 ~8,200 words",
+  desc:"Scholarly autoethnography under review at the Journal for the Critical Study of Zionism. Applies Gramsci, Freire, and Mezirow to trace formation as a subject of Zionist hegemony in American civil society and the exit from it. Abstract and details on a dedicated page; full text available on request.",
+  type:"link",
+  url:"/manuscript/"
  },
  {
-  id:"sb244", cat:"Statements", group:"statement",
+  id:"sb244", cat:"Statement", group:"statement",
   title:"Trans Solidarity Statement",
   thumb:"",
   coverStyle:"c-ink", coverTag:"Statement \u00b7 2025", coverFoot:"Response to Kansas SB 244",
@@ -335,64 +305,13 @@ const PIECES = [
   ]
  },
  {
-  id:"breadbasket", cat:"Statements", group:"statement",
-  title:"Food Drive: Announce &amp; Report-Back",
-  thumb:"",
-  coverStyle:"c-deep", coverTag:"Campaign copy \u00b7 2025", coverFoot:"Operational \u00b7 two-post arc",
-  desc:"Operational campaign copy: a food-drive announcement with logistics and call to action, paired with a follow-up report-back that converts a result into renewed momentum. The announce-then-return arc digital organizing actually runs on.",
-  type:"text",
-  sub:"Campaign lifecycle copy \u00b7 Logistics + mobilization",
-  note:"Two posts shown together to demonstrate campaign-arc writing, not a single sample.",
-  text:[
-   "\u2014 ANNOUNCEMENT \u2014",
-   "Area food networks are feeling the pressures of the government shutdown, which includes the end of the SNAP program starting in less than a week. We are doing a food drive for the Flint Hills Breadbasket this Sunday, November 2, 2025 from 12 to 4pm at the Poyntz Shelter in the City Park.",
-   "Please drop off food to donate. We will have coolers and ice and access to a deep freezer, so we can take perishable items that will need to be frozen. The most needed items are produce, bread, and proteins. Cash donations can be made online or via the Flint Hills Breadbasket on Venmo. Please share this with your community organizations and networks.",
-   "\u2014 REPORT-BACK \u2014",
-   "Because of the Manhattan community, we were able to donate over 3,600 lbs of food and other necessities to the Flint Hills Breadbasket. We thank you. It's not over \u2014 we need to sustain this momentum. You can make monetary donations directly to them and drop off donations as well."
-  ]
- },
- {
-  id:"iwd", cat:"Editorial & Essay", group:"editorial",
-  title:"Women Who Built the Left",
-  thumb:"",
-  coverStyle:"c-deep", coverTag:"Carousel \u00b7 IWD", coverFoot:"Instagram \u00b7 8 frames",
-  desc:"International Women's Day profile series. Six biographical cards, each compressing a life and a body of theory into roughly forty words while carrying a pull-quote and a through-line on the inseparability of feminism and class struggle.",
-  type:"gallery",
-  sub:"Carousel \u00b7 Editorial profile writing \u00b7 Compression discipline",
-  note:"Eight-frame Instagram carousel. Transcribed copy below each frame.",
-  base:"/assets/img/portfolio/iwd-", n:8, pad:2,
-  caps:[
-   ["Frame 01 \u00b7 Cover","March 8 \u00b7 International Women's Day. Women Who Built the Left \u2014 honoring the revolutionary women whose courage, theory, and organizing shaped socialist and communist movements worldwide."],
-   ["Frame 02 \u00b7 Clara Zetkin (1857\u20131933)","Founder of International Women's Day. \u201CThe liberation of women will only be the work of the working class.\u201D German Marxist theorist who proposed IWD at the 1910 Second International, edited Die Gleichheit for 25 years, and co-founded the Communist Party of Germany."],
-   ["Frame 03 \u00b7 Rosa Luxemburg (1871\u20131919)","Revolutionary theorist and martyr. \u201CFreedom is always the freedom of the one who thinks differently.\u201D Polish-German economist whose theory of capitalist accumulation remains foundational. Murdered by Freikorps forces in 1919 after co-leading the Spartacist uprising."],
-   ["Frame 04 \u00b7 Alexandra Kollontai (1872\u20131952)","Feminist commissar and diplomat. \u201CThe woman worker is first a worker, and then a woman.\u201D First female government minister in modern history; led the Zhenotdel and championed reproductive rights and communal childcare decades before second-wave feminism."],
-   ["Frame 05 \u00b7 Claudia Jones (1915\u20131964)","Triple-oppression theorist. \u201CThe super-exploitation of Black women is a pillar of U.S. imperialism.\u201D Trinidadian-American communist deported under McCarthyism; founded the West Indian Gazette in London and launched the Notting Hill Carnival."],
-   ["Frame 06 \u00b7 Dolores Ib\u00e1rruri (1895\u20131989)","La Pasionaria. \u201C\u00A1No pasar\u00e1n! \u2014 They shall not pass.\u201D Spanish communist orator who galvanized Republican resistance to Franco. Spent 38 years in exile in the USSR, returning after Franco's death to reclaim her parliamentary seat at 81."],
-   ["Frame 07 \u00b7 Angela Davis (1944\u2013present)","Scholar, activist, abolitionist. \u201CYou have to act as if it were possible to radically transform the world.\u201D Communist philosopher and Black liberation leader; author of Women, Race & Class and a foundational voice in prison-abolition theory."],
-   ["Frame 08 \u00b7 Closing","Their struggle lives on. These women didn't just participate in socialist movements \u2014 they theorized, organized, agitated, and sacrificed to build a world where no one is exploited. Feminism and class struggle have always been inseparable."]
-  ]
- },
- {
   id:"alice", cat:"Digital Advocacy", group:"advocacy",
   title:"ALICE: Public Awareness Infographic",
   thumb:"",
   coverStyle:"c-deep", coverTag:"Infographic \u00b7 PDF", coverFoot:"Economic data \u2192 public copy",
-  desc:"Public-awareness infographic translating local economic-hardship data (poverty and ALICE thresholds in Riley County) into structured, accessible copy for a general community audience.",
-  type:"pdf",
-  sub:"Data-to-copy \u00b7 Wrote and structured the content",
-  note:"Distributed as a single-page public infographic.",
-  pdf:"/assets/pdf/alice-infographic.pdf"
- },
- {
-  id:"tenants", cat:"Statements", group:"statement",
-  title:"Tenants United: Know-Your-Rights Brochure",
-  thumb:"",
-  coverStyle:"c-deep", coverTag:"Brochure \u00b7 Bilingual PDF", coverFoot:"English & Spanish",
-  desc:"Trifold organizing brochure produced in parallel English and Spanish: a know-your-rights primer that walks renters from documentation through collective action and tenant-association formation.",
-  type:"pdf",
-  sub:"Bilingual organizing literature \u00b7 Plain-language instructional copy",
-  note:"Same content authored in English and Spanish for a bilingual tenant base.",
-  pdf:"/assets/pdf/tenants-united.pdf"
+  desc:"Public-awareness infographic translating local economic-hardship data (poverty and ALICE thresholds in Riley County) into structured, accessible copy for a general community audience. Opens as a PDF in a new tab.",
+  type:"link",
+  url:"/assets/pdf/alice-infographic.pdf"
  }
 ];
 
@@ -419,7 +338,7 @@ PIECES.forEach((p,i)=>{
       <span class="cat">${p.cat}</span>
       <h2>${p.title}</h2>
       <p class="desc">${p.desc}</p>
-      <span class="open">${p.type==='link'?'Read on site':'Open'} <span class="arw">&rarr;</span></span>
+      <span class="open">${p.type==='link'?'Open in new tab':'Open'} <span class="arw">&rarr;</span></span>
     </div>`;
   if(p.type!=='link') card.addEventListener('click',()=>openModal(p));
   grid.appendChild(card);
@@ -473,30 +392,17 @@ function openModal(p){
     });
     mBody.innerHTML=html;
   }
-  else if(p.type==='pdf'){
-    html+=`<div class="pdfwrap"><iframe src="${p.pdf}#view=FitH" title="${p.title}"></iframe></div>
-      <div class="btnrow">
-        <a class="btn btn-fill" href="${p.pdf}" target="_blank" rel="noopener">Open full PDF &nearr;</a>
-        <a class="btn btn-line" href="${p.pdf}" download>Download</a>
-      </div>`;
-    mBody.innerHTML=html;
-  }
   ov.classList.add('on');
   document.body.style.overflow='hidden';
+  ov.scrollTop=0;
   document.getElementById('xbtn').focus();
 }
 
 function renderSlide(){
   const {p,i}=gState;
   const stage=document.getElementById('gstage');
-  if(p.textOnly){
-    stage.innerHTML=`<div style="padding:54px 30px;text-align:center;color:var(--paper);
-      font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:.16em;
-      text-transform:uppercase;opacity:.6;font-weight:600">Slide ${i+1} \u2014 image supplied separately</div>`;
-  }else{
-    const num=String(i+1).padStart(p.pad||2,'0');
-    stage.innerHTML=`<img src="${p.base}${num}.png" alt="${p.title} \u2014 slide ${i+1}">`;
-  }
+  const num=String(i+1).padStart(p.pad||2,'0');
+  stage.innerHTML=`<img src="${p.base}${num}.png" alt="${p.title} \u2014 slide ${i+1}">`;
   const cap=p.caps[i]||["",""];
   document.getElementById('gcap').innerHTML=`<b>${cap[0]}</b>${cap[1]}`;
   document.getElementById('gcount').textContent=`${i+1} / ${p.n}`;
