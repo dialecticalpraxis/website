@@ -1,0 +1,83 @@
+@use './mixins' as *;
+
+@view-transition {
+  navigation: auto;
+}
+
+body {
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+a {
+  transition: color var(--animation-speed-fast) var(--cubic-bezier);
+  color: var(--link-color);
+
+  &:where(:hover, :focus-visible) {
+    color: var(--link-hover-color);
+  }
+}
+
+main a,
+footer a {
+  @include text-decoration(var(--link-color), var(--link-hover-color));
+
+  color: var(--link-color);
+
+  &:where(:hover, :focus-visible) {
+    color: var(--link-hover-color);
+  }
+
+  &.external-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3xs);
+
+    // small visual correction
+    svg {
+      margin-block-start: 3px;
+    }
+  }
+}
+
+*:focus,
+*:focus-visible {
+  @include outline;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+// Cards are text-only: hide the image slot entirely. The Card component always
+// renders an image (falling back to a stock placeholder), so we remove it here
+// rather than per-card. Applies to blog, portfolio, and featured sections.
+.card .image {
+  display: none;
+}
+
+// Homepage sections: two alternating backgrounds separated by thin charcoal
+// divider lines — matching the look of the previous site.
+.home-section {
+  border-top: 1px solid light-dark(#403e3e, #57565a);
+  background-color: light-dark(#f6f5f3, #2d2c2c);
+}
+
+.home-section--alt {
+  background-color: light-dark(#efeeec, #343333);
+}
+
+.home-section--last {
+  border-bottom: 1px solid light-dark(#403e3e, #57565a);
+}
