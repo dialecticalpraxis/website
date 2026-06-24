@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets'
+import heroImage from '@assets/images/site/derron.png'
+
+/**
+ * Hero Component
+ *
+ * @description The homepage hero introducing Derron Borders and Dialectical Praxis.
+ */
+---
+
+<section class="hero my-24">
+  <div class="container">
+    <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
+      <div class="flex flex-col items-center gap-8 md:items-start">
+        <h1 class="text-center text-6xl md:text-left lg:text-8xl"><span class="text-gradient">Dialectical</span> Praxis</h1>
+
+        <h3 class="text-center text-2xl md:text-left">
+         Education | Scholarship | Organizing
+        </h3>
+      </div>
+      <Image
+        class="hidden h-auto w-full rounded-lg lg:block"
+        src={heroImage}
+        alt="Portrait of Derron Borders"
+        decoding="async"
+        width={1080}
+        height={1080}
+        loading="eager"
+      />
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  h1 {
+    text-wrap: unset;
+  }
+
+  .text-gradient {
+    // solid charcoal (light) / cream (dark) — matches "Praxis", WCAG AAA
+    color: var(--foreground-color);
+    -webkit-text-fill-color: var(--foreground-color);
+  }
+</style>

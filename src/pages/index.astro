@@ -1,0 +1,155 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import Hero from '@components/Hero.astro'
+import { Heading } from 'accessible-astro-components'
+import { Image } from 'astro:assets'
+
+import influenceImage from '@assets/images/site/influence.png'
+import oliveImage from '@assets/images/site/olive.png'
+import flotillaImage from '@assets/images/site/flotilla.png'
+---
+
+<DefaultLayout title="Dialectical Praxis" useTitleTemplate={false}>
+  <Hero />
+
+  <!-- About -->
+  <section id="about" class="home-section py-24">
+    <div class="container space-content">
+      <Heading level="h2">About</Heading>
+      <p>
+        Welcome to Dialectical Praxis! I'm Derron Borders, and this is my professional academic website where I share my
+        academic and scholarly pursuits.
+      </p>
+      <p>
+        Hailing from Ohio, I am a higher education professional passionate about collective liberation. I believe in the
+        power of community building across difference through interpersonal connections rooted in authenticity, trust,
+        and grace.
+      </p>
+      <p>
+        As a doctoral student in Kansas State University's Adult Learning and Leadership program, I am interested in
+        radical philosophies of education, focusing on social epistemology, liberatory praxis, media literacy, and adult
+        learning in a settler colonial and neoliberal context.
+      </p>
+      <p>
+        When not working, studying, or doing research, you can find me volunteering and organizing, tending my plot at
+        the Manhattan Community Garden, reading epic fantasy fiction, crafting, playing cozy video games, and studying
+        and discussing linguistics and language.
+      </p>
+      <details class="definition">
+        <summary>What is Dialectical Praxis?</summary>
+        <p>
+          Dialectical praxis is the transformative process by which individuals and groups come to understand and change
+          the world through reflective, critical, and embodied action. It is rooted in Marxist dialectics, enriched by
+          Freirean <em>conscientização</em>, deepened through adult learning, and oriented toward liberation.
+        </p>
+        <p>
+          <strong>Dialectical</strong> (adj.) — a way of thinking, reasoning, or engaging with the world that emphasizes
+          contradiction, change, and the dynamic interplay of opposing forces. It is rooted in dialectics, a
+          philosophical method most prominently developed by Georg Wilhelm Friedrich Hegel.
+        </p>
+        <p>
+          <strong>Praxis</strong> (noun) — the process of putting theory into action in a deliberate, reflective, and
+          socially meaningful way. It is not just action, and not just thought — praxis is the fusion of both.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="home-section home-section--alt py-24">
+    <div class="container grid items-center gap-12 lg:grid-cols-12">
+      <div class="space-content lg:col-span-7">
+        <Heading level="h2">Education</Heading>
+        <p>
+          My philosophical framework of education is rooted in dialectical liberatory praxis — the symbiotic interplay of
+          critical reflection and transformative action — as a means to dismantle oppressive systems and cultivate
+          collective freedom. Grounded in the works of Paulo Freire, Myles Horton, bell hooks, Frantz Fanon, and other
+          critical theorists, this framework rejects neutrality in education, insisting instead that teaching and
+          learning must be acts of resistance, healing, and reclamation. The core pillars of my approach weave together
+          feminist, decolonial, Marxist, and critical race theories to advance a pedagogy of radical hope and embodied
+          justice.
+        </p>
+      </div>
+      <Image
+        class="h-auto w-full rounded-lg lg:col-span-5"
+        src={influenceImage}
+        alt="A black-and-white portrait collage of the critical theorists and educators who inform my work, including Karl Marx, bell hooks, John Dewey, Paulo Freire, Frantz Fanon, and Antonio Gramsci."
+        width={1080}
+        height={1350}
+        loading="lazy"
+      />
+    </div>
+  </section>
+
+  <!-- Scholarship -->
+  <section id="scholarship" class="home-section py-24">
+    <div class="container grid items-center gap-12 lg:grid-cols-12">
+      <Image
+        class="order-2 h-auto w-full rounded-lg lg:order-1 lg:col-span-5"
+        src={oliveImage}
+        alt="An olive branch bearing green olives, set against a pale background."
+        width={1080}
+        height={1350}
+        loading="lazy"
+      />
+      <div class="order-1 space-content lg:order-2 lg:col-span-7">
+        <Heading level="h2">Scholarship</Heading>
+        <p>
+          My research sits at the intersection of social epistemology and adult learning, with a particular focus on how
+          people break free from hegemonic frames — the deeply embedded worldviews shaped by ideology, power, and social
+          belonging. I study how adults in so-called "post-truth" societies navigate — and sometimes transcend —
+          epistemic bubbles, echo chambers, and neoliberal discourses that shape public understanding of political
+          issues.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizing -->
+  <section id="organizing" class="home-section home-section--alt home-section--last py-24">
+    <div class="container grid items-center gap-12 lg:grid-cols-12">
+      <div class="space-content lg:col-span-7">
+        <Heading level="h2">Organizing</Heading>
+        <p>
+          My organizing is grounded in the belief that transformative change emerges from collective action rooted in
+          solidarity, mutual aid, and sustained community engagement. I center the voices and leadership of those most
+          impacted by systemic oppression, building coalitions across movements for racial justice, economic equity,
+          housing rights, and climate justice.
+        </p>
+        <p>
+          Whether through direct action, political education, or grassroots organizing, I strive to create spaces where
+          people can develop critical consciousness, practice democratic participation, and exercise power together. My
+          organizing philosophy draws from abolitionist frameworks, Indigenous sovereignty movements, and traditions of
+          radical organizing across the Global South.
+        </p>
+      </div>
+      <Image
+        class="h-auto w-full rounded-lg lg:col-span-5"
+        src={flotillaImage}
+        alt="Crossing Borders: The Global Sumud Flotilla, a painting by Beesan Arafat depicting paper boats carrying Palestinian flags across a harbor."
+        width={1080}
+        height={1350}
+        loading="lazy"
+      />
+    </div>
+  </section>
+</DefaultLayout>
+
+<style lang="scss">
+  .definition {
+    margin-block-start: var(--space-m);
+    border: 1px solid var(--border-color-subtle);
+    border-radius: var(--radius-large);
+    padding: var(--space-m);
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--link-color);
+    }
+
+    p {
+      margin-block-start: var(--space-s);
+    }
+  }
+</style>
