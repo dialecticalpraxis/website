@@ -1,8 +1,10 @@
 ---
 import DefaultLayout from '@layouts/DefaultLayout.astro'
 import Hero from '@components/Hero.astro'
-import { Heading } from 'accessible-astro-components'
+import { Heading, Link } from 'accessible-astro-components'
+import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
+import { Notification } from 'accessible-astro-components'
 
 import influenceImage from '@assets/images/site/influence.png'
 import oliveImage from '@assets/images/site/olive.png'
@@ -11,6 +13,15 @@ import flotillaImage from '@assets/images/site/flotilla.png'
 
 <DefaultLayout title="Dialectical Praxis" useTitleTemplate={false}>
   <Hero />
+
+<!-- Accessibility Notifcation -->
+<section id="accessibility" class="home-section py-24">
+ <div class="container space-content">
+     <Notification type="info" variant="accent" role="status">
+  <p>This website was designed with <strong>digital accessibility</strong> in mind. </p>
+</Notification>
+</div>
+</section>
 
   <!-- About -->
   <section id="about" class="home-section py-24">
