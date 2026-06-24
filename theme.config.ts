@@ -25,8 +25,8 @@ export default defineThemeConfig({
     items: [
       { type: 'link', label: 'Home', href: '/' },
       { type: 'link', label: 'About', href: '/#about' },
-      { type: 'link', label: 'Scholarship', href: '/#scholarship' },
       { type: 'link', label: 'Education', href: '/#education' },
+      { type: 'link', label: 'Scholarship', href: '/#scholarship' },
       { type: 'link', label: 'Organizing', href: '/#organizing' },
       { type: 'link', label: 'Contact', href: '/contact' },
     ],
