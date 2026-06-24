@@ -24,10 +24,9 @@ export default defineThemeConfig({
     darkmode: true,
     items: [
       { type: 'link', label: 'Home', href: '/' },
-      { type: 'link', label: 'About', href: '/#about' },
-      { type: 'link', label: 'Education', href: '/#education' },
-      { type: 'link', label: 'Scholarship', href: '/#scholarship' },
-      { type: 'link', label: 'Organizing', href: '/#organizing' },
+      { type: 'link', label: 'Education', href: '/education' },
+      { type: 'link', label: 'Scholarship', href: '/scholarship' },
+      { type: 'link', label: 'Organizing', href: '/organizing' },
       { type: 'link', label: 'Contact', href: '/contact' },
     ],
   },
@@ -36,6 +35,12 @@ export default defineThemeConfig({
       label: 'Google Scholar',
       href: 'https://scholar.google.com/citations?user=K4fEPEIAAAAJ&hl=en',
       icon: 'lucide:graduation-cap',
+      external: true,
+    },
+    {
+      label: 'ORCiD',
+      href: 'https://orcid.org/0009-0008-0286-4511',
+      icon: 'lucide:badge',
       external: true,
     },
     {
