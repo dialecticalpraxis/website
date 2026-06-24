@@ -60,11 +60,16 @@ footer a {
   box-shadow: none;
 }
 
-// Cards are text-only: hide the image slot entirely. The Card component always
-// renders an image (falling back to a stock placeholder), so we remove it here
-// rather than per-card. Applies to blog, portfolio, and featured sections.
+// Card images: make the image area a square (1:1) instead of the default fixed
+// 250px-tall rectangle, so square images fill it with no gaps. `contain` still
+// guarantees the whole image shows (no cropping) for non-square images.
 .card .image {
-  display: none;
+  block-size: auto;
+  aspect-ratio: 1 / 1;
+}
+
+.card .image img {
+  object-fit: contain;
 }
 
 // Homepage sections: two alternating backgrounds separated by thin charcoal
