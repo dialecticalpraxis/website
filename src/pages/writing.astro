@@ -1,0 +1,75 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import PageHeader from '@components/PageHeader.astro'
+import { Heading, Badge } from 'accessible-astro-components'
+import { getCollection } from 'astro:content'
+
+// Load all essays, drop drafts, newest first
+const posts = (await getCollection('blog'))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+
+const formatDate = (date: Date) =>
+  date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+---
+
+<DefaultLayout title="Writing">
+  <PageHeader
+    title="Writing"
+    subtitle="Essays and reflections on the world."
+    bgType="gradient"
+  />
+  <section class="container my-16">
+    <div class="space-content flex flex-col gap-8">
+      {
+        posts.map((post) => (
+          <article class="entry-card">
+            <p class="entry-date">
+              <time datetime={post.data.publishDate.toISOString()}>{formatDate(post.data.publishDate)}</time>
+            </p>
+            <Heading level="h2" size="h4">
+              <a href={`/writing/${post.id}`}>{post.data.title}</a>
+            </Heading>
+            <p>{post.data.description}</p>
+            {post.data.tags.length > 0 && (
+              <div class="flex flex-wrap gap-2">
+                {post.data.tags.map((tag) => (
+                  <Badge size="sm">{tag}</Badge>
+                ))}
+              </div>
+            )}
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</DefaultLayout>
+
+<style lang="scss">
+  .entry-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: var(--space-2xs);
+    border: 2px solid var(--border-color-subtle);
+    border-radius: var(--radius-large);
+    padding: var(--space-m);
+    transition: box-shadow var(--animation-speed-fast) var(--cubic-bezier);
+
+    &:hover,
+    &:focus-within {
+      box-shadow: 0 0 0 0.2rem var(--color-primary-500);
+    }
+
+    a::after {
+      position: absolute;
+      inset: 0;
+      content: '';
+    }
+  }
+
+  .entry-date {
+    color: var(--color-neutral-700);
+    font-size: var(--font-size--1);
+  }
+</style>

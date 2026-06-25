@@ -1,0 +1,50 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import PageHeader from '@components/PageHeader.astro'
+import { Heading, Badge } from 'accessible-astro-components'
+import { getCollection } from 'astro:content'
+
+// Load all projects, drop drafts, newest first (by publishDate when set, else by title)
+const projects = (await getCollection('projects'))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => {
+    const da = a.data.publishDate?.valueOf() ?? 0
+    const db = b.data.publishDate?.valueOf() ?? 0
+    if (db !== da) return db - da
+    return a.data.title.localeCompare(b.data.title)
+  })
+---
+
+<DefaultLayout title="Projects">
+  <PageHeader
+    title="Projects"
+    subtitle="My personal projects and work related to education, scholarship, and organizing."
+    bgType="gradient"
+  />
+  
+</DefaultLayout>
+
+<style lang="scss">
+  .entry-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: var(--space-s);
+    border: 2px solid var(--border-color-subtle);
+    border-radius: var(--radius-large);
+    padding: var(--space-m);
+    transition: box-shadow var(--animation-speed-fast) var(--cubic-bezier);
+
+    &:hover,
+    &:focus-within {
+      box-shadow: 0 0 0 0.2rem var(--color-primary-500);
+    }
+
+    // Make the whole card clickable via the title link
+    a::after {
+      position: absolute;
+      inset: 0;
+      content: '';
+    }
+  }
+</style>
