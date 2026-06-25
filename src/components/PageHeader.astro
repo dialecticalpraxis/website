@@ -131,7 +131,7 @@ const sanitizedSubtitle: string = subtitle
         })()
     }
   </div>
-  <div class:list={['py-16', bgType && `bg-${bgType}`]}>
+  <div class:list={[bgType && bgType !== 'none' ? 'py-16' : 'py-2', bgType && bgType !== 'none' && `bg-${bgType}`]}>
     <div class="space-content container">
       {
         featuredImage && (
