@@ -72,6 +72,26 @@ footer a {
   object-fit: contain;
 }
 
+// Custom topic badges (use via <Badge class="badge-education">…</Badge>).
+// Each is a bg/text/border trio; all three pass WCAG AA contrast.
+.badge.badge-education {
+  border-color: #1d6fa5;
+  background-color: #d6ebfa; // light blue
+  color: #0c4a74;
+}
+
+.badge.badge-scholarship {
+  border-color: #08395a;
+  background-color: #0c4a74; // dark blue
+  color: #ffffff;
+}
+
+.badge.badge-organizing {
+  border-color: #7c1f2e;
+  background-color: #9e2a3c; // slightly dark crimson
+  color: #ffffff;
+}
+
 // Homepage sections: two alternating backgrounds separated by thin charcoal
 // divider lines — matching the look of the previous site.
 .home-section {

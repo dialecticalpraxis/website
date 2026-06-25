@@ -1,0 +1,35 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import PageHeader from '@components/PageHeader.astro'
+import { Badge } from 'accessible-astro-components'
+import { getCollection, render } from 'astro:content'
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects')
+  return projects
+    .filter((p) => !p.data.draft)
+    .map((entry) => ({ params: { slug: entry.id }, props: { entry } }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+---
+
+<DefaultLayout title={entry.data.title} description={entry.data.description}>
+  <PageHeader title={entry.data.title} subtitle={entry.data.description} bgType="bordered" />
+  <section class="container my-16">
+    <div class="narrow container space-content">
+      {
+        entry.data.tags.length > 0 && (
+          <div class="mb-8 flex flex-wrap gap-2">
+            {entry.data.tags.map((tag) => (
+              <Badge size="sm">{tag}</Badge>
+            ))}
+          </div>
+        )
+      }
+      <Content />
+      <p class="mt-12"><a href="/projects">&larr; Back to all projects</a></p>
+    </div>
+  </section>
+</DefaultLayout>
