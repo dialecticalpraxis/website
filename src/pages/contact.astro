@@ -15,12 +15,18 @@ import { Icon } from 'astro-icon/components'
     <div class="grid grid-cols-1 gap-16 md:grid-cols-2">
       <div class="space-content">
         <Heading level="h2">Send a message</Heading>
-        <Form name="contact" action="/thank-you" method="post">
-          <Input name="name" label="Name" required autocomplete="name" />
-          <Input name="email" label="Email address" type="email" required autocomplete="email" />
-          <Textarea name="message" label="Message" required />
-          <Button htmlType="submit" type="primary">Send message</Button>
-        </Form>
+        <Form name="contact" action="https://api.web3forms.com/submit" method="post">
+  <input type="hidden" name="access_key" value="8e084397-cc32-4497-aa36-964dfd51ce25" />
+  <input type="hidden" name="subject" value="New message from dialecticalpraxis.com" />
+  <input type="hidden" name="redirect" value="https://www.dialecticalpraxis.com/thank-you" />
+  <!-- spam honeypot: bots fill this, humans don't -->
+  <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
+
+  <Input name="name" label="Name" required autocomplete="name" />
+  <Input name="email" label="Email address" type="email" required autocomplete="email" />
+  <Textarea name="message" label="Message" required />
+  <Button htmlType="submit" type="primary">Send message</Button>
+</Form>
       </div>
       
     </div>
