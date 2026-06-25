@@ -24,9 +24,16 @@ export default defineThemeConfig({
     darkmode: true,
     items: [
       { type: 'link', label: 'Home', href: '/' },
-      { type: 'link', label: 'Education', href: '/education' },
-      { type: 'link', label: 'Scholarship', href: '/scholarship' },
-      { type: 'link', label: 'Organizing', href: '/organizing' },
+      {
+      type: 'dropdown',
+      label: 'About',
+      items: [
+        { label: 'Education', href: '/#education' },
+        { label: 'Scholarship', href: '/#scholarship' },
+        { label: 'Organizing', href: '/#organizing' },
+      ],
+    },
+    { type: 'link', label: 'CV', href: '/cv' },
       { type: 'link', label: 'Contact', href: '/contact' },
     ],
   },
