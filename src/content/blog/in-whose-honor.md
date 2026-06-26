@@ -4,6 +4,8 @@ author: "Derron Borders"
 description: "Indigenous Mascots in 2024: Examining the harmful legacy of Native American imagery in sports and education, from the tomahawk chop to school mascots in Ohio."
 publishDate: 2024-02-11
 tags: ["Indigenous mascots", "racism", "cultural appropriation", "education", "Native American"]
+cover: ../../assets/images/site/chiefs.webp
+coverAlt: "Fans of the Kansas City Chiefs football team in the stands making chopping motions with their hands."
 draft: false
 ---
 ### Indigenous Mascots in 2024

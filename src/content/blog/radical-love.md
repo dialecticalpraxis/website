@@ -4,9 +4,11 @@ author: "Derron Borders"
 description: "Jesus practiced a love so radical it unsettled the powerful. Drawing on Paulo Freire's pedagogy, this essay explores what it means to practice radical love as an act of humanization and collective liberation in our divided world."
 publishDate: 2025-09-23
 tags: ["radical love", "Paulo Freire", "humanization", "class consciousness", "collective liberation"]
+cover: ../../assets/images/site/love.jpg
+coverAlt: "Wall of graffitti with the word love written over top in pink bubble letters."
 draft: false
 ---
-![Love written in graffiti on a graffiti wall.](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffc040216-0e0e-4d0e-a47e-36ba4ac580a2_1789x995.png)
+
 
 Jesus practiced a love so radical it unsettled the powerful and disoriented even his closest followers. He loved people who were cast aside, touched those considered untouchable, and welcomed those others despised. Yet in all my years in church, I rarely saw that kind of love in practice. I heard countless sermons about love and acceptance, but when love became costly—when it meant breaking social rules or standing with the marginalized—it disappeared.
 
