@@ -30,3 +30,6 @@ yarn-error.log*
 
 # cursor
 .cursor
+
+# archived essays — kept locally, never published or pushed to the public repo
+src/content/archive/
