@@ -4,6 +4,8 @@ author: "Derron Borders"
 description: "A tribute to Bryan Jay Hudson, Jr., a young Shoshone language keeper whose passion for languages, music, and culture touched countless lives and advanced Shoshone language revitalization efforts."
 publishDate: 2024-08-20
 tags: ["Shoshone", "linguistics", "cultural preservation", "Indigenous communities"]
+cover: ../../assets/images/site/bryan.jpg
+coverAlt: "Smiling man wearing a white long-sleeve shirt, black vest, and black fedora with a purple silk scarf around his neck."
 draft: false
 ---
 ### Bittersweet Memories

@@ -10,28 +10,36 @@ import { glob } from 'astro/loaders'
 // Portfolio items — one .mdx per project in src/content/projects
 const projects = defineCollection({
   loader: glob({ pattern: '**/*.mdx', base: './src/content/projects' }),
-  schema: z.object({
-    title: z.string(),
-    author: z.string(),
-    description: z.string(),
-    tags: z.array(z.string()).default([]),
-    // Optional: when set, used to sort "latest" on the Projects page
-    publishDate: z.coerce.date().optional(),
-    draft: z.boolean().default(false),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      author: z.string(),
+      description: z.string(),
+      tags: z.array(z.string()).default([]),
+      // Optional: when set, used to sort "latest" on the Projects page
+      publishDate: z.coerce.date().optional(),
+      draft: z.boolean().default(false),
+      // Optional cover image (path relative to this file). Falls back to brand logo.
+      cover: image().optional(),
+      coverAlt: z.string().default(''),
+    }),
 })
 
-// Blog essays — one .mdx per essay in src/content/blog
+// Blog essays — one .md/.mdx per essay in src/content/blog
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
-  schema: z.object({
-    title: z.string(),
-    author: z.string(),
-    description: z.string(),
-    publishDate: z.coerce.date(),
-    tags: z.array(z.string()).default([]),
-    draft: z.boolean().default(false),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      author: z.string(),
+      description: z.string(),
+      publishDate: z.coerce.date(),
+      tags: z.array(z.string()).default([]),
+      draft: z.boolean().default(false),
+      // Optional cover image (path relative to this file). Falls back to brand logo.
+      cover: image().optional(),
+      coverAlt: z.string().default(''),
+    }),
 })
 
 // 4. Export a single `collections` object to register your collection(s)

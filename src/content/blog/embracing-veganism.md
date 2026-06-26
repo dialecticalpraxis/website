@@ -4,6 +4,8 @@ author: "Derron Borders"
 description: "My journey toward veganism as a commitment to justice, compassion, and collective liberation—rejecting all forms of exploitation and harm against sentient beings."
 publishDate: 2025-01-06
 tags: ["veganism", "animal rights", "collective liberation", "ethical living", "social justice"]
+cover: ../../assets/images/site/veganflag.png
+coverAlt: "The International Vegan Flag, adopted in 2017, is composed of three interlocking triangles. Two blue triangles represent the sea and sky, while one green triangle represents the land. Together, they create a white 'V' in the middle, standing for veganism and unity."
 draft: false
 ---
 ### My Journey Toward Ethical Liberation
