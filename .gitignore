@@ -33,3 +33,6 @@ yarn-error.log*
 
 # archived essays — kept locally, never published or pushed to the public repo
 src/content/archive/
+
+# editor/agent tooling
+.claude/
