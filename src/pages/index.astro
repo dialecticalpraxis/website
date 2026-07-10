@@ -1,130 +1,205 @@
 ---
 import DefaultLayout from '@layouts/DefaultLayout.astro'
-import Hero from '@components/Hero.astro'
 import { Heading, Link } from 'accessible-astro-components'
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
-import { Notification } from 'accessible-astro-components'
 
-import influenceImage from '@assets/images/site/influence.png'
-import oliveImage from '@assets/images/site/olive.png'
-import flotillaImage from '@assets/images/site/flotilla.png'
+import derronImage from '@assets/images/site/derron.png'
 ---
 
 <DefaultLayout title="Dialectical Praxis" useTitleTemplate={false}>
+  {/* Hide reveal sections before paint (only when JS runs) to avoid a flash */}
+  <script is:inline>
+    document.documentElement.classList.add('reveal-enabled')
+  </script>
 
-
-
-
-
-  <!-- About -->
-  <section id="about" class="home-section py-24">
-    <div class="container space-content">
-
-      <Heading level="h1">Dialectical Praxis</Heading>
-      <Heading level="h2">Education | Scholarship | Organizing</Heading>
-
-      
-
-      <p>
-        Hello and welcome! My name is Derron. I'm an educator, scholar, and organizer who cares deeply about humans and our collective liberation.
-      </p>
-      <p>
-        Hailing from Ohio, my interests and career have carried me across the Atlantic to Western Europe, all the way to the Intermountain West and the Great Basin, to Upstate New York, and to the rolling Flint Hills of Kansas.
-      </p>
-      <p>
-        My educational background is in languages and linguistics, the scientific study of language, and in college student development. I've worked within higher education institutions for over 15 years teaching, building and supporting communities, strategically creating inclusive spaces and advocating for historically excluded populations, and designing instructional and digital learning.
-      </p>
-      <p>
-        As a doctoral student of adult and continuing education at Kansas State University, I study adult learning under an imperialist apparatus that governs what counts as knowledge, and I am building a materialist theory of how adults come to accept, reproduce, or break from the frames that order hands them.
-      </p>
-      <p>
-        When not working, studying, or doing research, you can find me volunteering and organizing, tending my plot at the community garden, reading epic fantasy fiction, crafting, playing cozy video games, and studying and discussing linguistics and language.
-      </p>
-      
-      <details class="definition">
-        <summary>What is Dialectical Praxis?</summary>
+  <!-- Intro -->
+  <section id="about" class="home-section snap-section snap-section--first pt-8 pb-24">
+    <div class="container grid items-center gap-12 lg:grid-cols-[1.7fr_1fr]">
+      <div class="space-content">
+        <h1 class="sr-only">Dialectical Praxis</h1>
+        <Heading level="h2" class="intro-tagline">Education | Scholarship | Organizing</Heading>
         <p>
-          Dialectical praxis is the transformative process by which individuals and groups come to understand and change the world through reflective, critical, and embodied action. It is rooted in Marxist dialectics, enriched by Freirean <em>conscientização</em>, deepened through adult learning, and oriented toward liberation.
+          Hello and welcome! My name is Derron. I'm an educator, scholar, and organizer who cares deeply about humans and
+          our collective liberation.
         </p>
         <p>
-          <strong>Dialectical</strong> (adj.): a way of thinking, reasoning, or engaging with the world that emphasizes contradiction, change, and the dynamic interplay of opposing forces. It is rooted in dialectics, a philosophical method most prominently developed by Georg Wilhelm Friedrich Hegel and reworked on materialist ground by Karl Marx.
+          Hailing from Ohio, my interests and career have carried me across the Atlantic to Western Europe, all the way
+          to the Intermountain West and the Great Basin, to Upstate New York, and to the rolling Flint Hills of Kansas.
         </p>
         <p>
-          <strong>Praxis</strong> (noun): the process of putting theory into action in a deliberate, reflective, and socially meaningful way. Praxis is the fusion of reflection and action into a single movement.
+          My educational background is in languages and linguistics, the scientific study of language, and in college
+          student development. I've worked within higher education institutions for over 15 years teaching, building and
+          supporting communities, strategically creating inclusive spaces and advocating for historically excluded
+          populations, and designing instructional and digital learning.
         </p>
-      </details>
-           
+        <p>
+          As a doctoral student of adult and continuing education at Kansas State University, I study adult learning
+          under an imperialist apparatus that governs what counts as knowledge, and I am building a materialist theory of
+          how adults come to accept, reproduce, or break from the frames that order hands them.
+        </p>
+        <p>
+          When not working, studying, or doing research, you can find me volunteering and organizing, tending my plot at
+          the community garden, reading epic fantasy fiction, crafting, playing cozy video games, and studying and
+          discussing linguistics and language.
+        </p>
+      </div>
+      <Image
+        class="intro-photo h-auto w-full rounded-lg"
+        src={derronImage}
+        alt="Portrait of Derron Borders"
+        width={1080}
+        height={1080}
+        loading="eager"
+      />
     </div>
-
-   
   </section>
 
-<section id="education" class="home-section home-section--alt py-24">
+  <!-- What is Dialectical Praxis? -->
+  <section id="definition" class="home-section snap-section reveal py-24">
     <div class="container space-content">
-    <Heading level="h2">Education</Heading>
-    
-           <p>
-      My teaching is grounded in dialectical praxis, the unity of critical reflection and material action. Education is never neutral. The classroom sits inside the same apparatus that conditions what counts as knowledge, and teaching either reproduces that order or works to transform it. I treat learning as the working through of real contradictions in students' material conditions, developing both the consciousness that grasps the relations beneath appearances and the collective capacity to act on them. My practice draws on Paulo Freire, Myles Horton, bell hooks, and Frantz Fanon, and on the longer tradition of movement-based political education in which study is bound to organization. Feminist, decolonial, Marxist, and critical race theories inform this work, held together by a materialist commitment to changing the conditions that produce oppression rather than only the ideas that justify it.
-    </p>
+      <Heading level="h2">What is Dialectical Praxis?</Heading>
+      <p>
+        Dialectical praxis is the transformative process by which individuals and groups come to understand and change
+        the world through reflective, critical, and embodied action. It is rooted in Marxist dialectics, enriched by
+        Freirean <em>conscientização</em>, deepened through adult learning, and oriented toward liberation.
+      </p>
+      <p>
+        <strong>Dialectical</strong> (adj.): a way of thinking, reasoning, or engaging with the world that emphasizes
+        contradiction, change, and the dynamic interplay of opposing forces. It is rooted in dialectics, a philosophical
+        method most prominently developed by Georg Wilhelm Friedrich Hegel and reworked on materialist ground by Karl
+        Marx.
+      </p>
+      <p>
+        <strong>Praxis</strong> (noun): the process of putting theory into action in a deliberate, reflective, and
+        socially meaningful way. Praxis is the fusion of reflection and action into a single movement.
+      </p>
     </div>
-
-   
   </section>
 
-  <section id="scholarship" class="home-section py-24">
+  <!-- Education -->
+  <section id="education" class="home-section snap-section reveal py-24">
     <div class="container space-content">
-    <Heading level="h2">Scholarship</Heading>
-    
-           <p>
-      My research sits at the intersection of social epistemology and adult learning. I study how an imperialist apparatus of knowledge production governs what counts as legitimate understanding, and how its operation conditions the learning orientations available to differently positioned social groups. In so-called post-truth societies, this apparatus organizes public understanding of political life through epistemic enclosures: the bubbles, echo chambers, and neoliberal discourses that contain what people are able to know.
-    </p>
-    <p>
-      Adults do sometimes contest the frames the order hands them. How they do so, and under what material and collective conditions it becomes possible, is the center of my work. I pursue it by building a theory of adult learning from dialectical materialism. Gabriel Rockhill supplies the macro structure, a political economy of knowledge and a basis for distinguishing ideology from science, along with the insistence that orientation is conditioned by mediated material position rather than freely chosen. Paulo Freire contributes the account of how reflection bound to action carries a situated subject through a real contradiction in their conditions. Jack Mezirow gives the finest grain, the mechanics by which a meaning perspective actually shifts. Reflection holds a central place in this synthesis, always anchored in a learner's material position within the apparatus.
-    </p>
-    <p>
-      My current work extends this framework empirically, mapping the distinct learning orientations that adults occupy across social positions and tracing how those orientations form, hold, and sometimes break.
-    </p>
- <div class="align-center flex flex-wrap gap-2">
-    <Link href="/cv" isButton type="primary" variant="outlined">View my Curriculum Vitae</Link>
+      <Heading level="h2">Education</Heading>
+      <p>
+        My teaching is grounded in dialectical praxis, the unity of critical reflection and material action. Education is
+        never neutral. The classroom sits inside the same apparatus that conditions what counts as knowledge, and
+        teaching either reproduces that order or works to transform it. I treat learning as the working through of real
+        contradictions in students' material conditions, developing both the consciousness that grasps the relations
+        beneath appearances and the collective capacity to act on them. My practice draws on Paulo Freire, Myles Horton,
+        bell hooks, and Frantz Fanon, and on the longer tradition of movement-based political education in which study is
+        bound to organization. Feminist, decolonial, Marxist, and critical race theories inform this work, held together
+        by a materialist commitment to changing the conditions that produce oppression rather than only the ideas that
+        justify it.
+      </p>
     </div>
-</div>
-   
   </section>
 
-  <section id="organizing" class="home-section home-section--alt home-section--last py-24">
+  <!-- Scholarship -->
+  <section id="scholarship" class="home-section snap-section reveal py-24">
     <div class="container space-content">
-    <Heading level="h2">Organizing</Heading>
-    
-            <p>
-      My organizing treats theory and practice as a single movement. Collective action builds the material counter-power through which a dominant order is contested, and study bound to organization is how a movement develops the consciousness to wield it. I center the leadership of those most impacted by systemic oppression, building coalitions across struggles for racial justice, economic equity, housing, and climate.
-    </p>
-    <p>
-      Through <Link href="https://fhdsa.org" isExternal>direct action</Link>, <Link href="https://github.com/dialecticalpraxis/the-peoples-free-school" isExternal>political education</Link>, and <Link href="https://flinthillstenantsunited.org" isExternal>grassroots organizing</Link>, I work to create spaces where people develop critical consciousness, practice democratic participation, and exercise power together. This is where my research and my practice meet. The reflection anchored in material conditions and joined to action that I study as a theory of adult learning is the same work that political education does inside a movement. My organizing draws on abolitionist frameworks, Indigenous sovereignty movements, and traditions of radical organizing across the Global South.
-    </p>
+      <Heading level="h2">Scholarship</Heading>
+      <p>
+        My research sits at the intersection of social epistemology and adult learning. I study how an imperialist
+        apparatus of knowledge production governs what counts as legitimate understanding, and how its operation
+        conditions the learning orientations available to differently positioned social groups. In so-called post-truth
+        societies, this apparatus organizes public understanding of political life through epistemic enclosures: the
+        bubbles, echo chambers, and neoliberal discourses that contain what people are able to know.
+      </p>
+      <p>
+        Adults do sometimes contest the frames the order hands them. How they do so, and under what material and
+        collective conditions it becomes possible, is the center of my work. I pursue it by building a theory of adult
+        learning from dialectical materialism. Gabriel Rockhill supplies the macro structure, a political economy of
+        knowledge and a basis for distinguishing ideology from science, along with the insistence that orientation is
+        conditioned by mediated material position rather than freely chosen. Paulo Freire contributes the account of how
+        reflection bound to action carries a situated subject through a real contradiction in their conditions. Jack
+        Mezirow gives the finest grain, the mechanics by which a meaning perspective actually shifts. Reflection holds a
+        central place in this synthesis, always anchored in a learner's material position within the apparatus.
+      </p>
+      <p>
+        My current work extends this framework empirically, mapping the distinct learning orientations that adults occupy
+        across social positions and tracing how those orientations form, hold, and sometimes break.
+      </p>
+      <div>
+        <Link href="/cv" isButton type="primary" animateOnHover animationType="boop">
+          <Icon aria-hidden="true" name="lucide:file-text" size="1.5rem" />
+          Curriculum Vitae
+        </Link>
+      </div>
     </div>
-
-   
   </section>
 
-     
+  <!-- Organizing -->
+  <section id="organizing" class="home-section snap-section reveal py-24">
+    <div class="container space-content">
+      <Heading level="h2">Organizing</Heading>
+      <p>
+        My organizing treats theory and practice as a single movement. Collective action builds the material
+        counter-power through which a dominant order is contested, and study bound to organization is how a movement
+        develops the consciousness to wield it. I center the leadership of those most impacted by systemic oppression,
+        building coalitions across struggles for racial justice, economic equity, housing, and climate.
+      </p>
+      <p>
+        Through <Link href="https://fhdsa.org" isExternal>direct action</Link>, <Link
+          href="https://github.com/dialecticalpraxis/the-peoples-free-school"
+          isExternal>political education</Link
+        >, and <Link href="https://flinthillstenantsunited.org" isExternal>grassroots organizing</Link>, I work to create
+        spaces where people develop critical consciousness, practice democratic participation, and exercise power
+        together. This is where my research and my practice meet. The reflection anchored in material conditions and
+        joined to action that I study as a theory of adult learning is the same work that political education does inside
+        a movement. My organizing draws on abolitionist frameworks, Indigenous sovereignty movements, and traditions of
+        radical organizing across the Global South.
+      </p>
+    </div>
+  </section>
 </DefaultLayout>
 
+<script>
+  const setup = () => {
+    const sections = document.querySelectorAll('.reveal:not(.is-visible)')
+    if (!sections.length) return
+    document.documentElement.classList.add('reveal-enabled')
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      sections.forEach((section) => section.classList.add('is-visible'))
+      return
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible')
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -10% 0px' },
+    )
+
+    sections.forEach((section) => observer.observe(section))
+  }
+
+  if (document.readyState !== 'loading') setup()
+  else document.addEventListener('DOMContentLoaded', setup)
+  document.addEventListener('astro:page-load', setup)
+</script>
+
 <style lang="scss">
-  .definition {
-    margin-block-start: var(--space-m);
-    border: 1px solid var(--border-color-subtle);
-    border-radius: var(--radius-large);
-    padding: var(--space-m);
+  // Tagline: single line, roughly the width of the paragraphs below it.
+  .intro-tagline {
+    font-size: clamp(1.5rem, 4.5vw, 2rem);
+  }
 
-    summary {
-      cursor: pointer;
-      font-weight: 700;
-      color: var(--link-color);
+  @media (min-width: 60rem) {
+    .intro-tagline {
+      white-space: nowrap;
     }
+  }
 
-    p {
-      margin-block-start: var(--space-s);
-    }
+  // Smaller portrait, centered horizontally in its column.
+  .intro-photo {
+    max-inline-size: 280px;
+    justify-self: center;
   }
 </style>

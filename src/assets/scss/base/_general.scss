@@ -92,17 +92,51 @@ footer a {
   color: #ffffff;
 }
 
-// Homepage sections: two alternating backgrounds separated by thin charcoal
-// divider lines — matching the look of the previous site.
+// Homepage sections: no dividers, single page background shows through.
 .home-section {
-  border-top: 1px solid light-dark(#403e3e, #57565a);
-  background-color: light-dark(#f6f5f3, #2d2c2c);
+  background-color: transparent;
 }
 
-.home-section--alt {
-  background-color: light-dark(#efeeec, #343333);
+// Scroll-reveal: sections fade + rise into view as they are scrolled to.
+// Only active when JS runs (.reveal-enabled on <html>) and motion is allowed,
+// so the content is always visible for no-JS or reduced-motion users.
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-enabled .reveal {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
+  }
+
+  .reveal-enabled .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-.home-section--last {
-  border-bottom: 1px solid light-dark(#403e3e, #57565a);
+// Full-viewport section snapping (homepage, wider screens, motion allowed).
+// Each .snap-section fills the screen and vertically centers its content, so
+// only one section shows at a time. The first section aligns to the top and
+// leaves room for the header so the navbar stays visible there. Pages without
+// .snap-section elements are unaffected.
+@media (min-width: 60rem) and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+
+  .snap-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-block-size: 100dvh;
+    scroll-snap-align: center;
+  }
+
+  .snap-section--first {
+    justify-content: flex-start;
+    min-block-size: calc(100dvh - 7rem);
+    scroll-snap-align: start;
+    scroll-margin-block-start: 7rem;
+  }
 }

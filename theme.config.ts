@@ -33,10 +33,8 @@ export default defineThemeConfig({
         { label: 'Organizing', href: '/#organizing' },
       ],
     },
-      { type: 'link', label: 'Projects', href: '/projects' },
-      { type: 'link', label: 'Writing', href: '/writing' },
       { type: 'link', label: 'CV', href: '/cv' },
-      { type: 'link', label: 'Contact', href: '/contact' },
+      { type: 'link', label: 'Contact', href: '/#contact' },
     ],
   },
   socials: [

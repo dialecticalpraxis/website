@@ -1,67 +1,81 @@
 ---
-import CallToAction from './CallToAction.astro'
 import Logo from './Logo.astro'
-import { Heading, Link } from 'accessible-astro-components'
+import { Heading, Link, Notification, Form, Input, Textarea, Button } from 'accessible-astro-components'
 import { Icon } from 'astro-icon/components'
 import themeConfig from '@theme-config'
-import { Notification } from 'accessible-astro-components'
 
 /**
  * Footer Component
  *
- * @description The site footer with navigation, social links, and copyright.
+ * @description The site footer with a contact form, social links, and copyright.
  */
 const currentYear = new Date().getFullYear()
 const socials = themeConfig.socials ?? []
+// On the single-page homepage the footer is its own full-viewport snap section.
+const isHome = Astro.url.pathname === '/'
 ---
 
-<footer>
+<footer id="contact" class:list={[{ 'snap-section': isHome }]}>
   <section class="py-20">
-
-      
     <Heading level="h2" class="sr-only">Footer</Heading>
-     <div class="container space-content mb-16">
+
+    <div class="container space-content mb-16">
       <Notification>
-        <p><strong>Note on Digital Accessibility:</strong> This website was designed with digital accessibility in mind, utilizing <Link href="https://astro.build">Astro</Link> and the <Link href="https://github.com/incluud/accessible-astro-starter">Accessible Astro Starter</Link>. To learn more about digital accessibility, please read my <Link href="/accessibility-statement"> accessibility statement</Link>.</p>
+        <p>
+          <strong>Note on Digital Accessibility:</strong> This website was designed with digital accessibility in mind, utilizing
+          <Link href="https://astro.build">Astro</Link> and the <Link
+            href="https://github.com/incluud/accessible-astro-starter">Accessible Astro Starter</Link
+          >. To learn more about digital accessibility, please read my <Link href="/accessibility-statement">
+            accessibility statement</Link
+          >.
+        </p>
       </Notification>
     </div>
-</div>
-    <div class="container grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <div class="flex flex-col gap-4">
-        <Heading level="h3" size="h6">Explore</Heading>
-        <ul class="flex flex-col gap-2">
-          <li><Link href="/#about">About</Link></li>
-          <li><Link href="/#education">Education</Link></li>
-          <li><Link href="/#scholarship">Scholarship</Link></li>
-          <li><Link href="/#organizing">Organizing</Link></li>
-          <li><Link href="/cv">CV</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
-        </ul>
+
+    <div class="container grid grid-cols-1 gap-12 lg:grid-cols-2">
+      <div class="space-content">
+        <Heading level="h3" size="h6">Get in touch</Heading>
+        <Form name="footer-contact" action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="8e084397-cc32-4497-aa36-964dfd51ce25" />
+          <input type="hidden" name="subject" value="New message from dialecticalpraxis.com" />
+          <input type="hidden" name="redirect" value="https://www.dialecticalpraxis.com/thank-you" />
+          <!-- spam honeypot: bots fill this, humans don't -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <Input id="footer-name" name="name" label="Name" required autocomplete="name" />
+          <Input id="footer-email" name="email" label="Email address" type="email" required autocomplete="email" />
+          <Textarea id="footer-message" name="message" label="Message" required />
+          <Button htmlType="submit" type="primary">Send message</Button>
+        </Form>
       </div>
-      <div class="flex flex-col gap-4">
-        <Heading level="h3" size="h6">Connect</Heading>
-        <ul class="flex flex-col gap-2">
-          {
-            socials.map((social) => (
-              <li>
-                <Link isExternal href={social.href}>
-                  <Icon aria-hidden="true" name={social.icon} size="1.25rem" />
-                  {social.label}
-                </Link>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-      <div class="flex flex-col gap-4">
-        <Logo loading="lazy" />
-        <p class="leading-[1.75]">
-          Dialectical praxis — the fusion of critical reflection and transformative action in pursuit of collective
-          liberation.
-        </p>
+
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <div class="flex flex-col gap-4">
+          <Heading level="h3" size="h6">Connect</Heading>
+          <ul class="flex flex-col gap-2">
+            {
+              socials.map((social) => (
+                <li>
+                  <Link isExternal href={social.href}>
+                    <Icon aria-hidden="true" name={social.icon} size="1.25rem" />
+                    {social.label}
+                  </Link>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+          <Logo loading="lazy" />
+          <p class="leading-[1.75]">
+            Dialectical praxis — the fusion of critical reflection and transformative action in pursuit of collective
+            liberation.
+          </p>
+        </div>
       </div>
     </div>
   </section>
+
   <section class="py-8">
     <div class="container flex flex-col gap-4 md:flex-row md:justify-between">
       <p>&copy; {currentYear} Derron Borders · Dialectical Praxis.</p>
