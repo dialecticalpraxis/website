@@ -1,6 +1,6 @@
 ---
 import Logo from './Logo.astro'
-import { Heading, Link, Notification, Form, Input, Textarea, Button } from 'accessible-astro-components'
+import { Heading, Link, Notification, Form, Input, Textarea, Button, Modal } from 'accessible-astro-components'
 import { Icon } from 'astro-icon/components'
 import themeConfig from '@theme-config'
 
@@ -11,11 +11,9 @@ import themeConfig from '@theme-config'
  */
 const currentYear = new Date().getFullYear()
 const socials = themeConfig.socials ?? []
-// On the single-page homepage the footer is its own full-viewport snap section.
-const isHome = Astro.url.pathname === '/'
 ---
 
-<footer id="contact" class:list={[{ 'snap-section': isHome }]}>
+<footer id="contact">
   <section class="py-20">
     <Heading level="h2" class="sr-only">Footer</Heading>
 
@@ -35,18 +33,22 @@ const isHome = Astro.url.pathname === '/'
     <div class="container grid grid-cols-1 gap-12 lg:grid-cols-2">
       <div class="space-content">
         <Heading level="h3" size="h6">Get in touch</Heading>
-        <Form name="footer-contact" action="https://api.web3forms.com/submit" method="post">
-          <input type="hidden" name="access_key" value="8e084397-cc32-4497-aa36-964dfd51ce25" />
-          <input type="hidden" name="subject" value="New message from dialecticalpraxis.com" />
-          <input type="hidden" name="redirect" value="https://www.dialecticalpraxis.com/thank-you" />
-          <!-- spam honeypot: bots fill this, humans don't -->
-          <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
+        <p>Have a question, an idea, or want to collaborate? Send me a message.</p>
+        <Button id="contact-modal-trigger" type="primary">Contact me</Button>
+        <Modal triggerId="contact-modal-trigger" title="Contact me">
+          <Form name="footer-contact" class="w-full" action="https://api.web3forms.com/submit" method="post">
+            <input type="hidden" name="access_key" value="8e084397-cc32-4497-aa36-964dfd51ce25" />
+            <input type="hidden" name="subject" value="New message from dialecticalpraxis.com" />
+            <input type="hidden" name="redirect" value="https://www.dialecticalpraxis.com/thank-you" />
+            <!-- spam honeypot: bots fill this, humans don't -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
 
-          <Input id="footer-name" name="name" label="Name" required autocomplete="name" />
-          <Input id="footer-email" name="email" label="Email address" type="email" required autocomplete="email" />
-          <Textarea id="footer-message" name="message" label="Message" required />
-          <Button htmlType="submit" type="primary">Send message</Button>
-        </Form>
+            <Input id="footer-name" name="name" label="Name" required autocomplete="name" />
+            <Input id="footer-email" name="email" label="Email address" type="email" required autocomplete="email" />
+            <Textarea id="footer-message" name="message" label="Message" required />
+            <Button htmlType="submit" type="primary">Send message</Button>
+          </Form>
+        </Modal>
       </div>
 
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
