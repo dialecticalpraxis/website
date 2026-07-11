@@ -51,6 +51,12 @@ export default defineThemeConfig({
       external: true,
     },
     {
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/derronborders/',
+      icon: 'lucide:linkedin',
+      external: true,
+    },
+    {
       label: 'GitHub',
       href: 'https://github.com/dialecticalpraxis',
       icon: 'lucide:github',
