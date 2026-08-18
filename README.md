@@ -1,4 +1,4 @@
-# Dialectical Praxis
+# Derron Borders
 
 This project was generated with `npm create accessible-astro-starter@latest`.
 

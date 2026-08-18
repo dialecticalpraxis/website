@@ -1,11 +1,11 @@
 import { defineThemeConfig } from '@utils/defineThemeConfig'
-import logoImage from '@assets/images/site/dplogo.png'
+import logoImage from '@assets/images/site/derron.png'
 
 export default defineThemeConfig({
-  name: 'Dialectical Praxis',
-  id: 'dialectical-praxis',
+  name: 'Derron Borders',
+  id: 'derron-borders',
   seo: {
-    title: 'Dialectical Praxis',
+    title: 'Derron Borders',
     description:
       'The academic work and writing of Derron Borders — adult learning, critical pedagogy, social epistemology, and liberatory praxis.',
     author: 'Derron Borders',
@@ -64,7 +64,7 @@ export default defineThemeConfig({
     },
     {
       label: 'Bluesky',
-      href: 'https://bsky.app/profile/dialecticalpraxis.com',
+      href: 'https://bsky.app/profile/derronborders.com',
       icon: 'lucide:cloud',
       external: true,
     },

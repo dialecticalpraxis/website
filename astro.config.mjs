@@ -36,7 +36,7 @@ const viteConfig = {
 
 export default defineConfig({
   compressHTML: true,
-  site: 'https://www.dialecticalpraxis.com',
+  site: 'https://derronborders.com',
   integrations: [compress({ Image: false }), icon(), mdx(), sitemap()],
   vite: viteConfig,
   env: {

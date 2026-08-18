@@ -7,7 +7,7 @@ import { Image } from 'astro:assets'
 import derronImage from '@assets/images/site/derron.png'
 ---
 
-<DefaultLayout title="Dialectical Praxis" useTitleTemplate={false}>
+<DefaultLayout title="Derron Borders" useTitleTemplate={false}>
   {/* Hide reveal sections before paint (only when JS runs) to avoid a flash */}
   <script is:inline>
     document.documentElement.classList.add('reveal-enabled')
@@ -17,7 +17,7 @@ import derronImage from '@assets/images/site/derron.png'
   <section id="about" class="home-section snap-section snap-section--first pt-8 pb-24">
     <div class="container grid items-center gap-12 lg:grid-cols-[1.7fr_1fr]">
       <div class="space-content">
-        <h1 class="sr-only">Dialectical Praxis</h1>
+        <h1 class="sr-only">Derron Borders</h1>
         <Heading level="h2" class="intro-tagline">Education | Scholarship | Organizing</Heading>
         <p>
           Hello and welcome! My name is Derron. I'm an educator, scholar, and organizer who cares deeply about humans and
@@ -52,28 +52,6 @@ import derronImage from '@assets/images/site/derron.png'
         height={1080}
         loading="eager"
       />
-    </div>
-  </section>
-
-  <!-- What is Dialectical Praxis? -->
-  <section id="definition" class="home-section snap-section reveal py-24">
-    <div class="container space-content">
-      <Heading level="h2">What is Dialectical Praxis?</Heading>
-      <p>
-        Dialectical praxis is the transformative process by which individuals and groups come to understand and change
-        the world through reflective, critical, and embodied action. It is rooted in Marxist dialectics, enriched by
-        Freirean <em>conscientização</em>, deepened through adult learning, and oriented toward liberation.
-      </p>
-      <p>
-        <strong>Dialectical</strong> (adj.): a way of thinking, reasoning, or engaging with the world that emphasizes
-        contradiction, change, and the dynamic interplay of opposing forces. It is rooted in dialectics, a philosophical
-        method most prominently developed by Georg Wilhelm Friedrich Hegel and reworked on materialist ground by Karl
-        Marx.
-      </p>
-      <p>
-        <strong>Praxis</strong> (noun): the process of putting theory into action in a deliberate, reflective, and
-        socially meaningful way. Praxis is the fusion of reflection and action into a single movement.
-      </p>
     </div>
   </section>
 
