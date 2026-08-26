@@ -3,7 +3,7 @@ import DefaultLayout from '@layouts/DefaultLayout.astro'
 import { Heading, Link } from 'accessible-astro-components'
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
-
+import { Accordion, AccordionItem } from 'accessible-astro-components'
 import derronImage from '@assets/images/site/derron.png'
 ---
 
@@ -84,10 +84,15 @@ import derronImage from '@assets/images/site/derron.png'
   <section id="scholarship" class="home-section snap-section reveal py-24">
     <div class="container space-content">
       <Heading level="h2">Scholarship</Heading>
-      <Heading level="h3">Adult learning, hegemony, and the politics of knowledge</Heading>
+      <p>Adult learning, hegemony, and the politics of knowledge</p>
 
-<Heading level="h3">Research Interests</Heading>
-<ul>
+<Accordion>
+  <AccordionItem
+    name="astro"
+    title="Research Interests"
+    open
+  >
+    <ul>
 <li>Adult learning and the formation of critical consciousness</li>
 <li>Gramscian hegemony, with attention to common sense and good sense as pedagogical objects</li>
 <li>Christian nationalism, rural political formation, and the study of whiteness in its beneficiaries</li>
@@ -96,6 +101,8 @@ import derronImage from '@assets/images/site/derron.png'
 <li>Information infrastructure, platform ownership, and how people judge credibility</li>
 <li>Qualitative methodology and mixed methods research</li>
 </ul>
+  </AccordionItem>
+
       <div>
         <Link href="/cv" isButton type="primary" animateOnHover animationType="boop">
           <Icon aria-hidden="true" name="lucide:file-text" size="1.5rem" />
