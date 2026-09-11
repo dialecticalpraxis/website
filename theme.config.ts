@@ -51,6 +51,12 @@ export default defineThemeConfig({
       external: true,
     },
     {
+      label: 'ResearchGate',
+      href: 'https://www.researchgate.net/profile/Derron-Borders',
+      icon: 'lucide:notebook-pen',
+      external: true,
+    },
+    {
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/derronborders/',
       icon: 'lucide:linkedin',
