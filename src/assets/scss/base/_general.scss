@@ -19,6 +19,29 @@ body {
   color: var(--foreground-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--accent-color);
+}
+
+.button.type-primary {
+  --color-primary-bg: #512888;
+  --color-primary-border: var(--accent-color);
+  --color-primary-text: #ffffff;
+}
+
+.notification.type-default {
+  --color-default-border: var(--accent-color);
+
+  strong {
+    color: var(--accent-color);
+  }
+}
+
 a {
   transition: color var(--animation-speed-fast) var(--cubic-bezier);
   color: var(--link-color);
