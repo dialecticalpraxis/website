@@ -17,7 +17,7 @@ export default defineThemeConfig({
     // These four feed the scales/semantic colors in _root.scss. All WCAG AA+.
     primary: '#2d2c2c', // deep charcoal (dark-mode background)
     secondary: '#403e3e', // charcoal (body text)
-    neutral: '#f6f5f3', // cream (light-mode background)
+    neutral: '#ffffff', // white (light-mode background, button text)
     outline: '#403e3e', // charcoal (no separate accent — charcoal & cream only)
   },
   navigation: {
